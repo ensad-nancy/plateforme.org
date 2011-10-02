@@ -3,7 +3,7 @@
 //// accounts
 set_time_limit(0);
 @ignore_user_abort(true);
-
+error_reporting(E_ALL);
 
 $comptes["capture"] 	= array(
 0 				=> 'capture', 
