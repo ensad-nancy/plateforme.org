@@ -1,0 +1,21 @@
+body { 
+background-color: #BEBEBE;
+overflow: hidden;
+}
+.carton {
+position: absolute;
+bottom: 10px;
+right: 10px;
+height: 5em;
+padding: 10px;
+
+}
+h1 {
+font-family: Geneva;
+font-weight: bold;
+font-size: 2em;
+text-align: left;
+
+}
+
+a { color: #404040; text-decoration: none;}
