@@ -5,7 +5,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
-    <link rel="stylesheet" type="text/css" href="../lib/baseline.reset.css" />
+    <link rel="stylesheet" type="text/css" href="../_lib/baseline.reset.css" />
 </head>
 <style type="text/css">
 
@@ -24,7 +24,7 @@ h1{font-weight: bold; font-size: 1.5em;}
 <h1>sandbox@</h1>
 <hr>
 <?php
-include('../lib/fonction.php');
+include('../_lib/fonction.php');
 
 $connection = connec_inbox('sandbox','[Gmail]/Chats');
 
