@@ -10,7 +10,7 @@
     
     <script src="_lib/js/jquery.min.js"></script>
 	<script src="_lib/js/jquery-ui.min.js"></script>
-	
+	<script src="_lib/js/jquery.cookie.js"></script>
 	<script>
   $(document).ready(function() {
     $("#draggable").draggable();
