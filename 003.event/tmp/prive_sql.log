@@ -1,0 +1,266 @@
+Dec 05 11:09:56 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+SELECT *
+FROM meta
+WHERE nom='plugin'
+Dec 05 11:09:56 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+DELETE FROM meta
+WHERE nom='message_crash_plugins'
+Dec 05 11:09:56 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+SELECT *
+FROM meta
+WHERE nom='plugin_header'
+Dec 05 11:09:56 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+SELECT *
+FROM meta
+WHERE nom='plugin'
+Dec 05 11:09:56 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+DELETE FROM meta
+WHERE nom='message_crash_plugins'
+Dec 05 11:09:56 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+SELECT *
+FROM meta
+WHERE nom='plugin_header'
+Dec 05 11:09:56 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+SELECT *
+FROM meta
+WHERE nom='plugin'
+Dec 05 11:09:56 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+DELETE FROM meta
+WHERE nom='message_crash_plugins'
+Dec 05 11:09:56 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+SELECT *
+FROM meta
+WHERE nom='plugin_header'
+Dec 05 11:09:57 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+SELECT *
+FROM meta
+WHERE nom='plugin'
+Dec 05 11:09:57 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+DELETE FROM meta
+WHERE nom='message_crash_plugins'
+Dec 05 11:09:57 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+SELECT *
+FROM meta
+WHERE nom='plugin_header'
+Dec 05 11:09:57 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+SELECT *
+FROM meta
+WHERE nom='plugin'
+Dec 05 11:09:57 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+DELETE FROM meta
+WHERE nom='message_crash_plugins'
+Dec 05 11:09:57 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+SELECT *
+FROM meta
+WHERE nom='plugin_header'
+Dec 05 11:09:57 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+SELECT *
+FROM meta
+WHERE nom='plugin'
+Dec 05 11:09:57 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+DELETE FROM meta
+WHERE nom='message_crash_plugins'
+Dec 05 11:09:57 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+SELECT *
+FROM meta
+WHERE nom='plugin_header'
+Dec 05 11:09:57 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+SELECT *
+FROM meta
+WHERE nom='plugin'
+Dec 05 11:09:57 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+DELETE FROM meta
+WHERE nom='message_crash_plugins'
+Dec 05 11:09:57 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+SELECT *
+FROM meta
+WHERE nom='plugin_header'
+Dec 05 11:09:57 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+SELECT *
+FROM meta
+WHERE nom='plugin'
+Dec 05 11:09:57 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+DELETE FROM meta
+WHERE nom='message_crash_plugins'
+Dec 05 11:09:57 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+SELECT *
+FROM meta
+WHERE nom='plugin_header'
+Dec 05 11:09:57 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+SELECT *
+FROM meta
+WHERE nom='plugin'
+Dec 05 11:09:57 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+DELETE FROM meta
+WHERE nom='message_crash_plugins'
+Dec 05 11:09:57 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+SELECT *
+FROM meta
+WHERE nom='plugin_header'
+Dec 05 11:09:57 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+SELECT *
+FROM meta
+WHERE nom='plugin'
+Dec 05 11:09:57 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+DELETE FROM meta
+WHERE nom='message_crash_plugins'
+Dec 05 11:09:57 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+SELECT *
+FROM meta
+WHERE nom='plugin_header'
+Dec 05 11:09:57 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+SELECT *
+FROM meta
+WHERE nom='plugin'
+Dec 05 11:09:57 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+DELETE FROM meta
+WHERE nom='message_crash_plugins'
+Dec 05 11:09:57 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+SELECT *
+FROM meta
+WHERE nom='plugin_header'
+Dec 05 11:09:57 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+SELECT *
+FROM meta
+WHERE nom='plugin'
+Dec 05 11:09:57 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+DELETE FROM meta
+WHERE nom='message_crash_plugins'
+Dec 05 11:09:57 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+SELECT *
+FROM meta
+WHERE nom='plugin_header'
+Dec 05 11:09:57 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+SELECT *
+FROM meta
+WHERE nom='plugin'
+Dec 05 11:09:57 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+DELETE FROM meta
+WHERE nom='message_crash_plugins'
+Dec 05 11:09:57 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+SELECT *
+FROM meta
+WHERE nom='plugin_header'
+Dec 05 11:09:57 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+SELECT *
+FROM meta
+WHERE nom='plugin'
+Dec 05 11:09:57 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+DELETE FROM meta
+WHERE nom='message_crash_plugins'
+Dec 05 11:09:57 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+SELECT *
+FROM meta
+WHERE nom='plugin_header'
+Dec 05 11:09:57 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+SELECT *
+FROM meta
+WHERE nom='plugin'
+Dec 05 11:09:57 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+DELETE FROM meta
+WHERE nom='message_crash_plugins'
+Dec 05 11:09:57 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+SELECT *
+FROM meta
+WHERE nom='plugin_header'
+Dec 05 11:09:57 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+SELECT *
+FROM meta
+WHERE nom='plugin'
+Dec 05 11:09:57 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+DELETE FROM meta
+WHERE nom='message_crash_plugins'
+Dec 05 11:09:57 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+SELECT *
+FROM meta
+WHERE nom='plugin_header'
+Dec 05 11:09:57 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+SELECT *
+FROM meta
+WHERE nom='plugin'
+Dec 05 11:09:57 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+DELETE FROM meta
+WHERE nom='message_crash_plugins'
+Dec 05 11:09:57 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+SELECT *
+FROM meta
+WHERE nom='plugin_header'
+Dec 05 11:09:58 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+SELECT *
+FROM meta
+WHERE nom='plugin'
+Dec 05 11:09:58 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+DELETE FROM meta
+WHERE nom='message_crash_plugins'
+Dec 05 11:09:58 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+SELECT *
+FROM meta
+WHERE nom='plugin_header'
+Dec 05 11:09:58 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+SELECT *
+FROM meta
+WHERE nom='plugin'
+Dec 05 11:09:58 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+DELETE FROM meta
+WHERE nom='message_crash_plugins'
+Dec 05 11:09:58 193.51.201.248 (pid 871333) Erreur 1046 de sql: No database selected
+
+SELECT *
+FROM meta
+WHERE nom='plugin_header'

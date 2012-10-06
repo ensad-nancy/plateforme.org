@@ -1,0 +1,52 @@
+a:11:{s:5:"texte";s:2050:"<?xml 
+version="1.0" encoding="utf-8"?>
+<rss version="2.0" 
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+>
+
+<channel xml:lang="fr">
+	<title>Event &#8212; Multimodale Graphique</title>
+	<link>http://event.plateforme.org/</link>
+	
+	<language>fr</language>
+	<generator>SPIP - www.spip.net</generator>
+
+
+
+
+<?php echo recuperer_fond( 'inc-rss-item', array('id_article' => '11',
+	'lang' => 'fr'), array("compil"=>array('squelettes-dist/backend.html','html_6e2efe63dd9202a6371932853505f2fb','',25,$GLOBALS['spip_lang'])), _request("connect"));
+?>
+
+<?php echo recuperer_fond( 'inc-rss-item', array('id_article' => '10',
+	'lang' => 'fr'), array("compil"=>array('squelettes-dist/backend.html','html_6e2efe63dd9202a6371932853505f2fb','',25,$GLOBALS['spip_lang'])), _request("connect"));
+?>
+
+<?php echo recuperer_fond( 'inc-rss-item', array('id_article' => '5',
+	'lang' => 'fr'), array("compil"=>array('squelettes-dist/backend.html','html_6e2efe63dd9202a6371932853505f2fb','',25,$GLOBALS['spip_lang'])), _request("connect"));
+?>
+
+<?php echo recuperer_fond( 'inc-rss-item', array('id_article' => '7',
+	'lang' => 'fr'), array("compil"=>array('squelettes-dist/backend.html','html_6e2efe63dd9202a6371932853505f2fb','',25,$GLOBALS['spip_lang'])), _request("connect"));
+?>
+
+<?php echo recuperer_fond( 'inc-rss-item', array('id_article' => '6',
+	'lang' => 'fr'), array("compil"=>array('squelettes-dist/backend.html','html_6e2efe63dd9202a6371932853505f2fb','',25,$GLOBALS['spip_lang'])), _request("connect"));
+?>
+
+<?php echo recuperer_fond( 'inc-rss-item', array('id_article' => '9',
+	'lang' => 'fr'), array("compil"=>array('squelettes-dist/backend.html','html_6e2efe63dd9202a6371932853505f2fb','',25,$GLOBALS['spip_lang'])), _request("connect"));
+?>
+
+<?php echo recuperer_fond( 'inc-rss-item', array('id_article' => '3',
+	'lang' => 'fr'), array("compil"=>array('squelettes-dist/backend.html','html_6e2efe63dd9202a6371932853505f2fb','',25,$GLOBALS['spip_lang'])), _request("connect"));
+?>
+
+
+
+
+</channel>
+
+</rss>
+";s:9:"squelette";s:37:"html_6e2efe63dd9202a6371932853505f2fb";s:6:"source";s:28:"squelettes-dist/backend.html";s:11:"process_ins";s:3:"php";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"6/backend%2Fspip-backend--a21657a5d";}s:7:"entetes";a:2:{s:12:"Content-Type";s:23:"text/xml; charset=utf-8";s:12:"X-Spip-Cache";i:86400;}s:5:"duree";i:0;s:5:"notes";s:0:"";s:8:"contexte";a:5:{s:4:"page";s:7:"backend";s:4:"date";s:19:"2012-05-09 22:02:06";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2012-05-09 22:02:06";s:18:"date_redac_default";b:1;}s:12:"lastmodified";i:1336593727;s:2:"gz";b:0;}

@@ -1,0 +1,9 @@
+a:11:{s:5:"texte";s:457:"<div class="formulaire_spip formulaire_recherche" id="formulaire_recherche">
+<form action="http://event.plateforme.org/spip.php?page=recherche" method="get"><div>
+	<input name="page" value="recherche" type="hidden" />
+	
+	<label for="recherche">Rechercher&nbsp;:</label>
+	<input type="text" class="text" size="10" name="recherche" id="recherche" accesskey="4" /><input type="submit" class="submit" value="&gt;&gt;" title="Rechercher" />
+</div></form>
+</div>
+";s:9:"squelette";s:37:"html_3f21567892824ca74d105e484c8aa256";s:6:"source";s:42:"squelettes-dist/formulaires/recherche.html";s:11:"process_ins";s:4:"html";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"6/for-htt---BnW-arr-rec-ne-04e82d40";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";i:3600;}s:5:"duree";i:0;s:5:"notes";s:0:"";s:8:"contexte";a:12:{s:6:"action";s:51:"http://event.plateforme.org/spip.php?page=recherche";s:9:"recherche";N;s:4:"lang";s:0:"";s:15:"formulaire_args";s:104:"BnWrQmeWRNozro9BqmQfrP7FAAXQTFXDYlqaLOQfJmqKXsUdlxNMXj+DuzimvFO80tMZwD7oMvPgQ0toI387/OKFYiK4TtJyTgsaWYLj";s:7:"erreurs";a:0:{}s:4:"form";s:9:"recherche";s:2:"id";s:3:"new";s:8:"editable";s:1:" ";s:4:"date";s:19:"2011-12-06 16:02:36";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2011-12-06 16:02:36";s:18:"date_redac_default";b:1;}s:12:"lastmodified";i:1323183756;s:2:"gz";b:0;}

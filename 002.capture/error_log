@@ -1,0 +1,5 @@
+[28-Feb-2012 15:21:39] PHP Warning:  imap_open() [<a href='function.imap-open'>function.imap-open</a>]: Couldn't open stream localhost in /home/dcfvgfr/public_html/_projets/ensan/plateforme.org/002.capture/imap.php on line 17
+[28-Feb-2012 15:21:41] PHP Warning:  imap_open() [<a href='function.imap-open'>function.imap-open</a>]: Couldn't open stream localhost in /home/dcfvgfr/public_html/_projets/ensan/plateforme.org/002.capture/imap.php on line 17
+[28-Feb-2012 15:21:56] PHP Warning:  imap_open() [<a href='function.imap-open'>function.imap-open</a>]: Couldn't open stream mail.dcfvg.fr in /home/dcfvgfr/public_html/_projets/ensan/plateforme.org/002.capture/imap.php on line 17
+[28-Feb-2012 15:21:58] PHP Warning:  imap_open() [<a href='function.imap-open'>function.imap-open</a>]: Couldn't open stream mail.dcfvg.fr in /home/dcfvgfr/public_html/_projets/ensan/plateforme.org/002.capture/imap.php on line 17
+[28-Feb-2012 15:32:14] PHP Warning:  imap_open() [<a href='function.imap-open'>function.imap-open</a>]: Couldn't open stream mail.dcfvg.fr in /home/dcfvgfr/public_html/_projets/ensan/plateforme.org/002.capture/imap.php on line 17

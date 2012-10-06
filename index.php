@@ -10,7 +10,7 @@
     
     <script src="_lib/js/jquery.min.js"></script>
 	<script src="_lib/js/jquery-ui.min.js"></script>
-	<script src="_lib/js/jquery.cookie.js"></script>
+	
 	<script>
   $(document).ready(function() {
     $("#draggable").draggable();
@@ -20,13 +20,11 @@
 
 <body>
 <nav id="draggable">
-	<h1>Multimodale graphique/ENSAN</h1>&#8212;
 	<ol>
 		<li><a href="/">plateforme</a></li>
-		<li><a href="?p=gratuit">Objet gratuit</a></li>
+		<li><a href="?p=gratuit">gratuit</a></li>
 		<li><a href="?p=nouvelleimage">nouvelle image</a></li>
 		<li><a href="?p=erasmus2012">échanges 2012</a></li>
-		<li>manifeste </li>
 	</ol>
 </nav>
 

@@ -1,0 +1,35 @@
+a:11:{s:5:"texte";s:1668:"
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr" dir="ltr">
+<head>
+<title>Net Culture 2 : Hacktivisme &amp; culture "libre" - Event — Multimodale Graphique</title>
+<meta name="description" content="Net Culture 2" />
+<?php echo recuperer_fond( 'inc-head', array('lang' => 'fr'), array("compil"=>array('squelettes/article.html','html_776b5d13ec72d3739f328574f43de380','',7,$GLOBALS['spip_lang'])), _request("connect"));
+?>
+</head>
+
+<body class="page_article">
+	    <?php echo recuperer_fond( 'inc-barrehaute', array('skel' => 'squelettes/article.html',
+	'lang' => 'fr'), array("compil"=>array('squelettes/article.html','html_776b5d13ec72d3739f328574f43de380','',11,$GLOBALS['spip_lang'])), _request("connect"));
+?>
+	    <div class="col">
+			 <div class="contenu">
+				<h1 class="entry-title">Net Culture 2&nbsp;: Hacktivisme &amp; culture "libre"</h1>
+				<h2><span class="vcard author"><a class="url fn spip_in" href="spip.php?auteur2">Annick Rivoire</a></span></h2>
+	            <p><small><abbr class="published" title="2011-12-05T08:30:00Z">
+	            lundi 5 d&eacute;cembre 2011</abbr></small></p>
+		
+				<div class="texte entry-content"><p>Net Culture 2</p></div>
+			 </div>
+		</div>
+		<div class="col">
+			 <div class="contenu">
+				 
+			 </div>
+		</div>
+		<?php echo recuperer_fond( 'inc-pied', array('skel' => 'squelettes/article.html',
+	'lang' => 'fr'), array("compil"=>array('squelettes/article.html','html_776b5d13ec72d3739f328574f43de380','',34,$GLOBALS['spip_lang'])), _request("connect"));
+?>
+</body>
+</html>
+";s:9:"squelette";s:37:"html_776b5d13ec72d3739f328574f43de380";s:6:"source";s:23:"squelettes/article.html";s:11:"process_ins";s:3:"php";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"f/%2Fspip---2c3a49d37acfbc34cf0d541";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";i:86400;}s:5:"duree";i:0;s:5:"notes";s:0:"";s:8:"contexte";a:6:{s:8:"article7";s:0:"";s:10:"id_article";s:1:"7";s:4:"date";s:19:"2012-03-21 11:24:40";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2012-03-21 11:24:40";s:18:"date_redac_default";b:1;}s:12:"lastmodified";i:1332325480;s:2:"gz";b:0;}

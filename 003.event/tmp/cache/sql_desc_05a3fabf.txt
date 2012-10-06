@@ -1,0 +1,1 @@
+a:1:{s:9:"CONDITION";a:5:{s:5:"field";a:1:{s:6:"valeur";s:4:"text";}s:3:"key";a:1:{s:11:"PRIMARY KEY";s:6:"valeur";}s:5:"table";s:9:"CONDITION";s:9:"connexion";s:9:"condition";s:5:"titre";s:0:"";}}

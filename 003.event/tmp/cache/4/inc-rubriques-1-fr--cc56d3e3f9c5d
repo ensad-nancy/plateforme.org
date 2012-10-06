@@ -1,0 +1,18 @@
+a:11:{s:5:"texte";s:158:"
+
+
+<div class="menu rubriques">
+	<h2>Rubriques</h2>
+	<ul>
+	
+		<li>
+			<a href="spip.php?rubrique1" class="on">intervention</a>
+
+			
+
+		</li>
+	
+
+	</ul>
+</div>
+";s:9:"squelette";s:37:"html_f1aaca8455250cd904efd39ebb352e23";s:6:"source";s:34:"squelettes-dist/inc-rubriques.html";s:11:"process_ins";s:4:"html";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"4/inc-rubriques-1-fr--cc56d3e3f9c5d";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";i:86400;}s:5:"duree";i:0;s:5:"notes";s:0:"";s:8:"contexte";a:6:{s:11:"id_rubrique";s:1:"1";s:4:"lang";s:2:"fr";s:4:"date";s:19:"2011-12-05 16:01:50";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2011-12-05 16:01:50";s:18:"date_redac_default";b:1;}s:12:"lastmodified";i:1323097310;s:2:"gz";b:0;}

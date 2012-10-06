@@ -1,0 +1,5 @@
+a:11:{s:5:"texte";s:201:"<div id="entete">
+<!--<a rel="start home" href="http://event.plateforme.org/" title="Accueil du site" class="accueil"><strong id="nom_site_spip">Event — Multimodale Graphique</strong></a>-->
+
+</div>
+";s:9:"squelette";s:37:"html_ddf1253ab81d53b5f598039f194c4baa";s:6:"source";s:26:"squelettes/inc-entete.html";s:11:"process_ins";s:4:"html";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"3/inc-entete-fr--a9ad2f7bf9bfecf35b";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";i:86400;}s:5:"duree";i:0;s:5:"notes";s:0:"";s:8:"contexte";a:5:{s:4:"lang";s:2:"fr";s:4:"date";s:19:"2012-03-23 21:34:39";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2012-03-23 21:34:39";s:18:"date_redac_default";b:1;}s:12:"lastmodified";i:1332534879;s:2:"gz";b:0;}

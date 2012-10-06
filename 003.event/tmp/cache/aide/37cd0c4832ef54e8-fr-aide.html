@@ -1,0 +1,2690 @@
+<body>
+<div><h1>Installation de SPIP</h1>
+<h2>install0/Régler les droits d&#8217;accès</h2>
+
+<h3 class="spip">Préliminaire&nbsp;: Régler les droits d&#8217;accès</h3>
+
+<p>Lorsque vous installez  SPIP sur votre 
+propre serveur, 
+ou que vous utilisez une intallation mutualisée de SPIP,
+celui-ci ne pourra pas toujours créer
+les &#171;&nbsp;répertoires de données&nbsp;&#187;
+avec les droits appropriés. Vous devrez alors intervenir
+avec votre logiciel de FTP ou de SSH habituel, pour
+&#171;&nbsp;fixer les droits d&#8217;accès&nbsp;&#187; manuellement.</p>
+
+<p>Cette opération concerne quatre répertoires,
+SPIP vous signalera leur emplacement. Celui-ci varie selon que SPIP est en usage mutualisé ou non, et selon les versions de SPIP&nbsp;; depuis <a href="fr_article3368.html" class='spip_in'><span style='color: darkviolet;'>S</span><span style='color: blue;'>P</span><span style='color: green;'>I</span><span style='color: salmon;'>P</span> <span style='color: green;'>1</span><span style='color: blue;'>.</span><span style='color: darkviolet;'>9</span></a>,
+ces répertoires se nomment  
+<strong>IMG</strong>,
+<strong>tmp</strong>,
+<strong>config</strong>
+et  <strong>local</strong>.</p>
+
+<p>Les logiciels (&#171;&nbsp;clients&nbsp;&#187;) FTP ont des fonctionnements
+différents, mais la procédure est 
+généralement la suivante&nbsp;:</p>
+
+<p>- &nbsp;sélectionnez le dossier dont vous voulez modifier les 
+&#171;&nbsp;droits d&#8217;accès&nbsp;&#187;&nbsp;;</p>
+
+<p>- &nbsp;trouvez dans votre logiciel de FTP une fonction intitulée 
+&#171;&nbsp;changer (ou <i>modifier</i>, ou <i>fixer</i>) les droits 
+d&#8217;accès&nbsp;&#187;&nbsp;;</p>
+
+<p>- &nbsp;si cette fonction se présente sous la forme d&#8217;une interface 
+graphique, vous devez cocher la case correspondant à 
+&#171;&nbsp;Ecriture&nbsp;&#187;, pour l&#8217;utilisateur &#171;&nbsp;Autres&nbsp;&#187; (ou 
+&#171;&nbsp;Tous utilisateurs&nbsp;&#187;)&nbsp;:</p>
+
+<div align='center'><img src="./?exec=aide_index&amp;img=0:AIDE-fr-install0.gif" alt=" "  
+border="0">
+</div>
+
+<p>- &nbsp;si cette modification se fait en mode &#171;&nbsp;texte&nbsp;&#187;, la 
+configuration numérique est &#171;&nbsp;777&nbsp;&#187;.</p>
+
+<p>Lors vous avez effectué cette opération pour chaque 
+répertoire signalé par le système 
+d&#8217;installation, rechargez la page, la procédure se poursuit 
+automatiquement.</p>
+
+<h2>install1/Votre connexion SQL</h2>
+
+<h3 class="spip">Votre connexion SQL</h3>
+
+<p>Cette étape consiste à indiquer les informations 
+nécessaires à la connexion de SPIP au serveur SQL.</p>
+
+<p>- &nbsp;<i>Adresse de la base de données&nbsp;:</i> en fonction des choix de 
+votre hébergeur, cette information sera simplement 
+&#171;&nbsp;localhost&nbsp;&#187;, ou bien l&#8217;adresse de votre site 
+(&#171;&nbsp;<a href="http://www.monsite.org&nbsp;&#187;" class='spip_url spip_out' rel='nofollow external' target="_blank">www.monsite.org&nbsp;&#187;</a>).</p>
+
+<p>- &nbsp;<i>Le login de connexion&nbsp;:</i> souvent, il s&#8217;agit du même login que 
+celui utilisé pour le téléchargement de vos 
+fichiers par FTP.</p>
+
+<p>- &nbsp;<i>Le mot de passe de connexion&nbsp;:</i> souvent, il s&#8217;agit du même 
+mot de passe que celui de votre accès FTP au site.</p>
+
+<p>- &nbsp;Ces informations ne s&#8217;inventent pas&nbsp;: si vous ne les connaissez pas, 
+c&#8217;est que votre hébergeur ne vous les a pas fournies. Donc&nbsp;: si 
+n&#8217;avez pas sous la main ces trois informations, vous ne pouvez pas 
+continuer.</p>
+
+<p>- &nbsp;Ces informations vous sont fournies <strong>par l&#8217;hébergeur de 
+votre site</strong>&nbsp;: pour les obtenir, vous devez le contacter directement 
+(ne demandez pas à l&#8217;équipe de développement de 
+SPIP de vous les fournir, nous ne les connaissons pas&nbsp;!). Chez 
+certains hébergeurs, ces informations vous sont fournies dans 
+un mode d&#8217;emploi en ligne.</p>
+
+<p>- &nbsp;Notez encore que, très souvent, il faut <strong>demander</strong> 
+à votre hébergeur d&#8217;activer votre accès SQL, 
+ou effectuer vous-même une opération spécifique 
+dans ce but. Beaucoup d&#8217;hébergeurs annonçant un 
+hébergement doté d&#8217;une base de données SQL 
+n&#8217;activent pas automatiquement cette connexion lors de l&#8217;ouverture du 
+site&nbsp;; une démarche supplémentaire de votre part 
+(après l&#8217;ouverture de votre compte chez cet hébergeur) 
+est souvent nécessaire. Dans ce cas, voyez la documentation de 
+votre hébergeur pour savoir comment <i>activer</i> votre connexion 
+SQL. (Là encore&nbsp;: l&#8217;équipe de SPIP ne peut pas vous 
+aider.)</p>
+
+<h2>install2/Choix de votre base</h2>
+
+<h3 class="spip">Choix de votre base</h3>
+
+<p>- &nbsp;Vous devez indiquer le <i>nom</i> de la base de données que vous 
+a attribué votre hébergeur. Cette information vous est 
+fournie par votre hébergeur&nbsp;: si vous ne l&#8217;avez pas, 
+demandez-la lui, ou bien consultez la documentation en ligne de cet 
+hébergeur (inutile de la demander à l&#8217;équipe de 
+développement de SPIP, nous ne connaissons pas cette 
+information).</p>
+
+<p>- &nbsp;Très souvent, cette information correspond au <i>login</i> de 
+votre compte d&#8217;hébergement (celui que vous utilisez pour vous 
+connecter à votre site par FTP).</p>
+
+<p>- &nbsp;Première possibilité (le plus souvent)&nbsp;: une liste de 
+comptes est affichée (parfois un peu longue, selon la 
+configuration fixée par votre hébergeur). Parmi les 
+comptes indiqués, un seul correspond au vôtre, il vous 
+suffit donc de le sélectionner et de valider pour passer 
+à l&#8217;étape suivante.</p>
+
+<p>- &nbsp;Deuxième possibilité&nbsp;: un seul nom, correspondant à
+votre compte, s&#8217;affiche (automatiquement, votre hébergeur a
+configuré son système pour que s&#8217;affiche uniquement votre
+propre compte). Facile&nbsp;: sélectionnez ce compte et validez.</p>
+
+<p>- &nbsp;Troisième possibilité (généralement sur 
+un hébergement pour professionnels, ou s&#8217;il s&#8217;agit d&#8217;une 
+machine sur laquelle vous avez des droits élevés)&nbsp;: vous 
+devez <i>créer</i> votre propre base. Dans ce cas (après 
+avoir bien vérifié qu&#8217;un tel compte n&#8217;existait pas dans 
+la liste indiquée ci-dessus), vous pouvez indiquer le nom de 
+votre choix à la suite de l&#8217;indication &#171;&nbsp;Créez une 
+nouvelle base&nbsp;&#187;.</p>
+
+<p>- &nbsp;Dernière possibilité (échec)&nbsp;: votre compte 
+n&#8217;apparaît pas dans la liste proposée, et vous ne pouvez 
+pas en créer vous-même. C&#8217;est assez rare&nbsp;: cela signifie 
+que votre hébergeur a créé pour vous un 
+accès au serveur de la base, mais a oublié de vous 
+créer un compte. Dans ce cas, vous devez directement consulter 
+votre hébergeur.</p>
+
+<h2>install5/Informations personnelles</h2>
+
+<h3 class="spip">Informations personnelles</h3>
+
+<p>Cette étape est très simple, mais doit être 
+effectuée attentivement. En effet, c&#8217;est elle qui 
+détermine vos identifiants de connexion à votre propre 
+site&nbsp;! Si vous procédez trop vite, vous risquez de ne pas 
+pouvoir vous connecter...</p>
+
+<p>Notez qu&#8217;une fois votre site installé, vous aurez la 
+possibilité de modifier ces informations.</p>
+
+<p>- &nbsp;<i>Votre identité publique&nbsp;:</i> c&#8217;est ce qui apparaîtra en 
+tant que signature de vos articles.</p>
+
+<p>- &nbsp;<i>Vos identifiants de connexion&nbsp;:</i> il s&#8217;agit ici des identifiants que 
+<strong>vous choisissez vous-même</strong> pour vous connecter à 
+votre propre système SPIP. Ces informations n&#8217;ont aucunement 
+besoin d&#8217;être identiques à celles que votre 
+hébergeur vous a indiquées pour vous connecter à 
+votre compte par FTP. Au contraire, <i>nous vous recommandons 
+très fortement de ne pas utiliser les mêmes 
+identifiants</i> pour votre accès SPIP (que vous choisissez 
+librement) et pour votre connexion FTP (imposées par votre 
+hébergeur).</p>
+
+<h2>ftp_auth/Vérification par FTP</h2>
+
+<h3 class="spip">Authentification par FTP</h3>
+
+<p>Certaines fonctionnalités de SPIP influent directement sur la 
+structure et le contenu mêmes de la base de données 
+(notamment&nbsp;: mise-à-jour, sauvegarde et restauration de la 
+base...). Pour ces fonctionnalités, particulièrement 
+sensibles, il a été ajouté une procédure 
+d&#8217;identification par FTP, de façon à les 
+réserver aux quelques personnes ayant accès au serveur 
+du site par FTP (généralement, si un site peut 
+comporter plusieurs administrateurs pour SPIP, l&#8217;accès FTP est 
+réservé à un webmestre principal).</p>
+
+<p>Pour utiliser ces fonctionnalités, vous devez simultanément&nbsp;:</p>
+
+<ul><li>vous connecter par le Web avec votre butineur habituel&nbsp;; lorsque vous
+lancez l&#8217;action, SPIP vous indique un nom de la forme 
+&#171;&nbsp;admin_<i>xxxxx</i>&nbsp;&#187; 
+et vous demande de créer une entrée portant ce nom dans un
+répertoire qu&#8217;il vous indique également&nbsp;;</li>
+<li>vous connecter au serveur de votre site par FTP ,
+vous placer dans le répertoire indiqué
+et créer un fichier (ou un 
+répertoire vide) portant le nom 
+&#171;&nbsp;admin_<i>xxxxx</i>&nbsp;&#187;&nbsp;;</li>
+<li>une fois ce fichier ou ce dossier créé, retournez 
+à votre butineur Web, et rechargez la page. Dès lors, 
+l&#8217;authentification par FTP est réalisée, et l&#8217;action 
+désirée est déclenchée.</li>
+</ul><h2>erreur_mysql/Un problème de squelette&nbsp;?</h2>
+
+<h3 class="spip">Un problème de squelette&nbsp;?</h3>
+
+<p>Lorsque SPIP se trouve confronté à une erreur dans sa
+communication avec la base de données SQL, il affiche à
+l&#8217;écran la requête qui a échoué, ainsi que le
+message d&#8217;erreur renvoyé par la base de données (en rouge).</p>
+
+<p>Le problème peut provenir&nbsp;:
+<br />- &nbsp;soit d&#8217;une erreur dans la définition de
+votre squelette, si vous êtes en train de modifier votre site&nbsp;;
+<br />- &nbsp;soit d&#8217;une panne de la base de données.</p>
+
+<p>Par exemple, un message du type <b style='color: red'>
+<br /><code class='spip_code' dir='ltr'>&gt; Unknown column 'articles.chapi' in 'where clause'</code>
+</b> signale que la boucle fait appel à un critère de
+sélection (<code class='spip_code' dir='ltr'>chapi</code>) qui n&#8217;est pas prévu.</p>
+
+<p>En revanche, un message du type <b style='color: red'>
+<br /><code class='spip_code' dir='ltr'>&gt; Can't open file: 'spip_articles.MYD'</code></b>
+signale un grave problème de la base SQL elle-même&nbsp;: voyez
+alors avec votre hébergeur pour qu&#8217;il révise son installation
+et/ou répare votre base de données. Vous pouvez
+aussi tenter <a href="./?exec=admin_repair" target="_blank">une
+auto-réparation de la base</a> (si votre base le permet).</p>
+
+<h1>Les articles</h1>
+<h2>raccourcis/Les raccourcis typographiques</h2>
+
+
+<p><strong>Pour faciliter la mise en page des documents publiés avec
+SPIP, le système propose un certain nombre de
+&#171;&nbsp;raccourcis SPIP&nbsp;&#187; destinés&nbsp;:
+<br />- &nbsp;à simplifier l&#8217;utilisation par des utilisateurs ne
+connaissant pas le HTML&nbsp;;
+<br />- &nbsp;à faciliter le traitement automatique de la mise en page.</strong></p>
+
+<p>Par conséquent naturellement vous pouvez toujours utiliser le code HTML dans vos documents SPIP, mais nous vous conseillons d&#8217;utiliser de préférence ces quelques raccourcis SPIP (peu nombreux), qui sont beaucoup plus faciles à mémoriser et plus particulièrement permettent au système certaines opérations automatisées.</strong></p>
+
+<p>&nbsp;</p>
+
+<h3 class="spip">Les raccourcis typographiques simples de SPIP</h3>
+
+<p>Dans un premier temps, nous présentons ici les raccourcis typographiques les plus courants et les plus simples. Pour les utilisateurs qui souhaiteraient affiner encore le contrôle de la mise en forme de leurs textes, nous présenterons des versions plus complexes de ces raccourcis.</p>
+
+<p><i>N.B.</i> Les raccourcis simples répondent déjà largement à la grande majorité des besoins, et permettent de publier en ligne presque aussi simplement que l&#8217;on écrit un mail.</p>
+
+<p>- &nbsp;<strong>Typographie française automatique</strong></p>
+
+<p>SPIP respecte automatiquement les principales règles
+d&#8217;espacement de la typographie française - ainsi des espaces
+insécables sont ajoutées devant les caractères
+&#171;&nbsp;:&#187;, &#171;&nbsp;;&nbsp;&#187;, &#171;&nbsp;!&nbsp;&#187;, &#171;&nbsp;?&nbsp;&#187;&nbsp;-,
+et place des espaces insécables avant et après les
+guillemets &#171;&nbsp;à la française&nbsp;&#187;.</p>
+
+<p>(Note&nbsp;: cette fonctionnalité n&#8217;est activée que sur les sites
+dont la langue principale est le français.)</p>
+
+<p>- &nbsp;<strong>Créer des paragraphes</strong></p>
+
+<p>Pour créer des paragraphes, il suffit de laisser une ligne
+vide, un peu comment on sépare les paragraphes dans un email
+(on &#171;&nbsp;saute&nbsp;&#187; une ligne).</p>
+
+<p>Le fait de simplement &#171;&nbsp;revenir à la ligne&nbsp;&#187;
+(retour-chariot) sans séparer les deux paragraphes par une
+ligne vide ne suffit pas pour provoquer un changement de paragraphe
+(cela ne provoque même pas un retour à la ligne).</p>
+
+<p>Vous pouvez laisser plusieurs lignes vides à la suite sans que
+cela modifie la présentation.</p>
+
+<p><a name="puces"></a>
+<br />- &nbsp;<strong>Insérer une puce</strong></p>
+
+<p>On peut insérer une puce en début de ligne dans SPIP&nbsp;: il suffit de revenir à la
+ligne et de commencer la nouvelle ligne avec un tiret
+(&#171;&nbsp;-&nbsp;&#187;).</p>
+
+<p>Notez&nbsp;: ici un simple retour à la ligne suffit (on peut faire
+des énumérations dans le même paragraphe)&nbsp;; mais
+si l&#8217;on &#171;&nbsp;saute&nbsp;&#187; une ligne avant la ligne
+commençant par un tiret, une ligne vide est affichée
+avant l&#8217;énumération.</p>
+
+<p>Par exemple,</p>
+
+<form action=''  method='get'><div>
+<input type='hidden' name='exec' value='' />
+<textarea readonly='readonly' cols='40' rows='7' class='spip_cadre' dir='ltr'>- Qu'est-ce que cela peut faire que je lutte pour la mauvaise cause 
+puisque je suis de bonne foi?
+- Et qu'est-ce que ça peut faire que je sois de mauvaise foi 
+puisque c'est pour la bonne cause. (Jacques 
+Prévert)</textarea></div></form>
+
+
+<p>sera affiché ainsi&nbsp;:</p>
+
+<blockquote class="spip">
+
+<p>
+<br />- &nbsp;Qu&#8217;est-ce que cela peut faire que je lutte pour la mauvaise cause puisque je suis de bonne foi&nbsp;?
+<br />- &nbsp;Et qu&#8217;est-ce que ça peut faire que je sois de mauvaise foi
+puisque c&#8217;est pour la bonne cause. (Jacques Prévert)</p>
+
+</blockquote>
+
+<p>On notera qu&#8217;il s&#8217;agit bien d&#8217;insérer une <i>puce</i> et non de créer une liste (<a href="#listes" class='spip_ancre'>pour créer des listes voir</a>)</p>
+
+<p>- &nbsp;<strong>Gras et italique</strong></p>
+
+<p>On  indique simplement du texte <i>en italique</i> en le plaçant 
+entre des accolades simples&nbsp;: &#171;&nbsp;<TT>...du texte {en 
+italique} en...</TT>&nbsp;&#187;.</p>
+
+<p>On indique du texte <strong>en gras</strong> en le plaçant entre des 
+accolades doubles&nbsp;: &#171;&nbsp;<TT>...du texte {{en gras}} 
+en...</TT>&nbsp;&#187;.</p>
+
+<p>- &nbsp;<strong>Intertitres</strong></p>
+
+<p>Les intertitres sont des titres à l&#8217;intérieur d&#8217;un 
+texte permettant d&#8217;en indiquer la structure. Dans SPIP, on les 
+indique très simplement en les plaçant entre des 
+accolades triples&nbsp;: &#171;&nbsp;<TT>{{{Un titre de 
+partie}}}</tt>&nbsp;&#187; affichera le texte en gras et centré&nbsp;:</p>
+
+<blockquote class="spip">
+<h3 class="spip">Un titre de partie</h3>
+</blockquote>
+
+<p>- &nbsp;<strong>Trait de séparation horizontal</strong></p>
+
+<p>Il est très simple d&#8217;insérer un trait de séparation horizontal sur toute la largeur du texte&nbsp;: il suffit de placer une ligne ne contenant qu&#8217;une succession d&#8217;au moins quatre tirets, ainsi&nbsp;:</p>
+
+<form action=''  method='get'><div>
+<input type='hidden' name='exec' value='' />
+<textarea readonly='readonly' cols='40' rows='2' class='spip_cadre' dir='ltr'>----</textarea></div></form>
+
+
+<p>donne&nbsp;:</p>
+
+<blockquote class="spip">
+<hr class="spip" />
+</blockquote>
+<hr class="spip" />
+
+<p>- &nbsp;<strong>Les liens hypertextes</strong></p>
+
+<p>On fabriquera facilement un lien hypertexte avec le code suivant&nbsp;:</p>
+
+<form action=''  method='get'><div>
+<input type='hidden' name='exec' value='' />
+<textarea readonly='readonly' cols='40' rows='2' class='spip_cadre' dir='ltr'>SPIP est une initiative du [minirézo-&gt;http://www.minirezo.net/].</textarea></div></form>
+
+
+<p>devient&nbsp;:</p>
+
+<blockquote class="spip">
+
+<p>SPIP est une initiative du <a href="http://www.minirezo.net/" class='spip_out' rel='external' target="_blank">minirézo</a>.</p>
+
+</blockquote>
+
+<p>
+(Mnémotechnique&nbsp;: le tiret suivi d&#8217;un chevron dessine une sorte de flèche qui indique que le texte du lien (avant la flèche) &#171;&nbsp;pointe vers&nbsp;&#187; une adresse.)</p>
+
+<p>L&#8217;adresse du lien peut être une adresse absolue
+(commençant, comme ici, par <code class='spip_code' dir='ltr'>http://</code>),
+une adresse relative (vers une autre page du même site), un
+lien vers un document utilisant un protocole de l&#8217;internet
+(<code class='spip_code' dir='ltr'>ftp://</code>...), une adresse email
+(&#171;&nbsp;<code class='spip_code' dir='ltr'>[-&gt;minirezo@rezo.net]</code>&nbsp;&#187;)...</p>
+
+<p>Application spécifique&nbsp;: vous pouvez afficher en toutes lettres un lien cliquable sous la forme d&#8217;une adresse URL, 
+en n&#8217;indiquant rien avant la &#171;&nbsp;flèche&nbsp;&#187;. Par exemple&nbsp;:</p>
+
+<form action=''  method='get'><div>
+<input type='hidden' name='exec' value='' />
+<textarea readonly='readonly' cols='40' rows='2' class='spip_cadre' dir='ltr'>[-&gt;http://dmoz.org/World/Deutsch/Kultur/Literatur/Autoren_und_Autorinnen/P/Proust,_Marcel/]</textarea></div></form>
+
+
+<p>affiche&nbsp;:</p>
+
+<blockquote class="spip">
+
+<p><a href="http://dmoz.org/World/Deutsch/Kultur/Literatur/Autoren_und_Autorinnen/P/Proust,_Marcel/" class='spip_url spip_out' rel='external' target="_blank">http://dmoz.org/World/Deutsch/Kultu...</a></p>
+
+</blockquote>
+
+<p> Notez que, dans le cas des URL très longues, l&#8217;affichage est tronqué (pour éviter de dégrader 
+votre interface graphique), mais le lien hypertexte pointe vers la bonne adresse.</p>
+
+<p><a name="liensite"></a></p>
+
+<p>Il est possible de préciser  la langue de la page vers laquelle le lien pointe,
+ce que les navigateurs afficheront à leur convenance. Pour cela, il faut mettre le code-langue entre accolades.</p>
+
+<form action=''  method='get'><div>
+<input type='hidden' name='exec' value='' />
+<textarea readonly='readonly' cols='40' rows='2' class='spip_cadre' dir='ltr'>[Un site en français{fr}-&gt;http:///www.adresse.tld]</textarea></div></form>
+
+
+<p>Cela est particulièrement recommandé lorsque la page de destination n&#8217;est pas dans la même langue que votre texte.</p>
+
+<p>Si l&#8217;on veut donner beaucoup d&#8217;informations  sur le lien sans allonger excessivement  la zone cliquable, on peut provoquer l&#8217;apparition d&#8217;une info-bulle  en plaçant  avant la flèche le signe | suivi du texte souhaité&nbsp;:</p>
+
+<form action=''  method='get'><div>
+<input type='hidden' name='exec' value='' />
+<textarea readonly='readonly' cols='40' rows='2' class='spip_cadre' dir='ltr'>[voir ici|Ce lien vous expliquera tout ce qu'il faut savoir-&gt;http:///www.adresse.tld]</textarea></div></form>
+
+
+<p>affichera <tt>voir ici</tt>, le reste du texte n&#8217;apparaissant  qu&#8217;au survol.</p>
+
+<p>- &nbsp;<strong>Liens hypertextes à l&#8217;intérieur du site</strong></p>
+
+<p>Ce même système de liens hypertextes facilite, de plus,
+la création de liens à l&#8217;intérieur de votre site
+sous SPIP. La seule subtilité consiste à repérer
+le <i>numéro</i> de l&#8217;article, de la rubrique, ou de la
+brève vers laquelle vous voulez mener votre lien hypertexte&nbsp;:
+<img src="./?exec=aide_index&amp;img=0:AIDE-fr-articlenumero.gif" alt="NUMERO" border="0" align="right">
+lorsque vous &#171;&nbsp;visitez&nbsp;&#187;, dans l&#8217;espace privé, un
+article, une brève ou une rubrique, la colonne de gauche
+contient un pavé indiquant, en gros caractères, ce
+numéro.</p>
+
+<p>C&#8217;est ce numéro que vous allez indiquer dans le lien hypertexte&nbsp;:</p>
+
+<ul class="spip"><li> Lien vers l&#8217;article 342 (quatre possibilités)&nbsp;:</i>
+<TT>
+<br />lien vers [l'article->342]
+<br />lien vers [l'article->art342]
+<br />lien vers [l'article->article 342]
+<br /></tt>
+Application spécifique&nbsp;: <TT>[->art342]</tt> (on n&#8217;a rien indiqué avant la &#171;&nbsp;flèche&nbsp;&#187;) affichera automatiquement
+le titre de l&#8217;article 342 avec un lien vers cet article.</li></ul>
+<ul class="spip"><li> Lien vers la rubrique 12&nbsp;:</i>
+<TT>
+<br />lien vers [la rubrique->rub12]
+<br />lien vers [la rubrique->rubrique 12]
+</tt></li></ul>
+<ul class="spip"><li> Lien vers la brève 65&nbsp;:</i>
+<TT>
+<br />lien vers [la brève->br65]
+<br />lien vers [la brève->breve 65]
+<br />lien vers [la brève->brève 65]
+</tt></li></ul>
+<ul class="spip"><li> Auteurs, mots-clés, sites, images, documents&nbsp;:</i>
+<TT>
+<br />lien vers [un auteur->aut13] ou [le même auteur->auteur13]
+<br />lien vers [un mot->mot32]
+<br />lien vers [un site syndiqué->site1]
+<br />lien vers [un document joint->doc17] ou [le même document->document17]
+<br />lien vers [une image->img13] ou [la même image->image13]
+<br />
+</tt></li></ul>
+
+<p>Application spécifique&nbsp;: on peut, là aussi, ne rien spécifier avant la &#171;&nbsp;flèche&nbsp;&#187; 
+(<tt>[->aut13]</tt>...).
+SPIP insérera automatiquement les informations nécessaires. Dans le cas d&#8217;un document joint ou d&#8217;une image, si l&#8217;on a indiqué un titre manuellement, c&#8217;est ce titre qui sera affiché&nbsp;; sinon c&#8217;est le nom du fichier lui-même qui sera utilisé.</p>
+
+<p>Les raccourcis pour mentionner la langue et créer une info-bulle, expliqués pour les liens externes, fonctionnent également pour les liens internes.</p>
+
+<div align='right'>en savoir plus&nbsp;: <a href='#glossaire'>liens vers un glossaire</a>,
+<br /><a href="#ancres" class='spip_ancre'>ancres nommées</a>.
+</div>
+
+<p>- &nbsp;<strong>Notes de bas de page</strong></p>
+
+<p>Une note de bas de page est, habituellement, signalée par un
+numéro placé à l&#8217;intérieur du texte,
+numéro repris en bas de page et proposant un complément
+d&#8217;information.</p>
+
+<p>Dans SPIP, cette fonctionnalité (assez lourde à
+gérer manuellement en HTML) est automatisée&nbsp;: les notes
+sont numérotées par SPIP, qui gère
+également des liens hypertextes à l&#8217;intérieur du
+document pour passer directement de l&#8217;appel de note au texte de la
+note correspondante, et vice-versa.</p>
+
+<p>Une note de bas de page est indiquée, dans SPIP, entre doubles
+crochets&nbsp;: &#171;&nbsp;<TT>Une note[[Voici un complément
+d'information.]] de bas de page.</TT>&nbsp;&#187; sera
+affiché sous la forme&nbsp;: &#171;&nbsp;Une note&nbsp;[<a href='#nb1' class='spip_note' rel='footnote' title='Voici un complément d’information.' id='nh1'>1</a>] de bas de page.&nbsp;&#187;</p>
+
+<div align='right'><a href='#notes'>en savoir plus&nbsp;: des notes non automatiques</a></div>
+
+<p>- &nbsp;<strong>Citer un extrait (de forum)</strong></p>
+
+<p>Il est souvent pratique, dans un forum de discussion, de citer un extrait du message auquel on 
+est en train de répondre. Pour homogénéiser la présentation de telles citations, SPIP propose le raccourci
+<tt>&lt;quote>...&lt;/quote></tt>.</p>
+
+<p>Par exemple&nbsp;:</p>
+
+<form action=''  method='get'><div>
+<input type='hidden' name='exec' value='' />
+<textarea readonly='readonly' cols='40' rows='3' class='spip_cadre' dir='ltr'>&lt;quote&gt;C'est drôlement bien, SPIP.&lt;/quote&gt;
+
+Kikou, je suis bien d'accord :-)</textarea></div></form>
+
+
+<p>donne&nbsp;:</p>
+
+<blockquote class="spip">
+<blockquote class="spip">
+
+<p>C&#8217;est drôlement bien, SPIP.</p>
+
+</blockquote>
+
+<p>Kikou, je suis bien d&#8217;accord&nbsp;:-)</p>
+
+</blockquote>
+<h3 class="spip">Fonctionnalités plus complètes</h3>
+
+<p>Les raccourcis qui suivent offrent des 
+fonctionnalités plus puissantes et d&#8217;un usage plus spécifique.
+Si cela est votre premier contact avec les raccourcis de SPIP, il est sans doute inutile que vous
+tentiez de les apprendre par cœur dès maintenant. Il vous suffit de savoir qu&#8217;ils existent&nbsp;; lorsque
+vous en aurez réellement besoin, revenez sur cette page, il sera alors beaucoup plus facile
+pour vous de mémoriser des raccourcis dont vous avez réellement l&#8217;utilité.</p>
+
+<p>- &nbsp;<strong>Tableaux</strong></p>
+
+<p>Pour réaliser des tableaux très simples dans SPIP, il 
+suffit de faire des lignes dont les &#171;&nbsp;cases&nbsp;&#187; sont 
+séparées par le symbole &#171;&nbsp;|&nbsp;&#187; 
+(<i>pipe</i>, un trait vertical), lignes commençant et se terminant 
+par des traits verticaux. Il est impératif de laisser des 
+lignes vides avant et après ce tableau.</p>
+
+<p>Par exemple, le tableau&nbsp;:</p>
+
+<table class="spip">
+<thead><tr class='row_first'><th scope='col'> Nom </th><th scope='col'> Prénom </th><th scope='col'> Age </th></tr></thead>
+<tbody>
+<tr class='row_even'>
+<td> Marso </td>
+<td> Ben </td>
+<td> 23 ans </td></tr>
+<tr class='row_odd'>
+<td> Capitaine </td>
+<td> </td>
+<td> non connu </td></tr>
+<tr class='row_even'>
+<td> Philant </td>
+<td> Philippe </td>
+<td> 46 ans </td></tr>
+<tr class='row_odd'>
+<td> Cadoc </td>
+<td> Bébé </td>
+<td> 4 mois </td></tr>
+</tbody>
+</table>
+
+<p>se code ainsi&nbsp;:</p>
+
+<form action=''  method='get'><div>
+<input type='hidden' name='exec' value='' />
+<textarea readonly='readonly' cols='40' rows='5' class='spip_cadre' dir='ltr'>| {{Nom}} | {{Prénom}} | {{Age}} |
+| Marso | Ben | 23 ans |
+| Capitaine | | non connu |
+| Philant | Philippe | 46 ans |
+| Cadoc | Bébé | 4 mois |</textarea></div></form>
+
+
+<p>Remarquez que toutes les entrées de la première ligne sont placées en gras. SPIP identifie ainsi
+qu&#8217;il s&#8217;agit d&#8217;une page d&#8217;entête, et lui attribue une présentation différente des autres lignes (fond de couleur
+différente). La présence d&#8217;une telle ligne n&#8217;est pas obligatoire.</p>
+
+<p>On peut aussi ajouter une légende et un résumé à la table. Ces deux informations sont optionnelles mais sont très importantes pour rendre la table accessible aux mal-voyants, le résumé donnant une meilleure idée du contenu de la table.
+<br />Ces informations sont spécifiées entre double trait vertical avant la table comme ceci&nbsp;:</p>
+
+<form action=''  method='get'><div>
+<input type='hidden' name='exec' value='' />
+<textarea readonly='readonly' cols='40' rows='6' class='spip_cadre' dir='ltr'>||Légende|Résumé||
+| {{Nom}} | {{Date de naissance}} | {{Ville}} |
+| Jacques | 5/10/1970 | Paris |
+| Claire | 12/2/1975 | Belfort |
+| Martin | 1/31/1957 | Nice |
+| Marie | 23/12/1948 | Perpignan |</textarea></div></form>
+
+
+<p>et apparaitront comme cela&nbsp;:</p>
+
+<table class="spip" summary="Résumé">
+<caption>Légende</caption>
+<thead><tr class='row_first'><th scope='col'> Nom </th><th scope='col'> Date de naissance </th><th scope='col'> Ville </th></tr></thead>
+<tbody>
+<tr class='row_even'>
+<td> Jacques </td>
+<td> 5/10/1970 </td>
+<td> Paris </td></tr>
+<tr class='row_odd'>
+<td> Claire </td>
+<td> 12/2/1975 </td>
+<td> Belfort </td></tr>
+<tr class='row_even'>
+<td> Martin </td>
+<td> 1/31/1957 </td>
+<td> Nice </td></tr>
+<tr class='row_odd'>
+<td> Marie </td>
+<td> 23/12/1948 </td>
+<td> Perpignan </td></tr>
+</tbody>
+</table>
+
+<p>On peut ne pas spécifier l&#8217;une ou l&#8217;autre des informations, mais il faut bien penser à mettre un trait vertical simple devant le résumé si vous ne spécifiez que celui-ci&nbsp;: <code class='spip_code' dir='ltr'>|| | résumé ||</code></p>
+
+<p>Il est également possible de fusionner une case avec d&#8217;autres, en réduisant son contenu à  <code class='spip_code' dir='ltr'>|&lt;|</code> pour la fusionner avec la case qui la précède horizontalement&nbsp;; ou à <code class='spip_code' dir='ltr'>|^|</code> pour la fusionner avec la  case qui la précède verticalement.</p>
+
+<form action=''  method='get'><div>
+<input type='hidden' name='exec' value='' />
+<textarea readonly='readonly' cols='40' rows='5' class='spip_cadre' dir='ltr'>||Tableau avec fusion| Raccourci de fusion||
+| {{Colonne 1}} | {{Colonne 2}} | {{Colonne 3}} |
+| Ligne 1 | L1C2 et L1C3 |&lt;|
+| Ligne 2 | L2C2 et L3C2|L2C3|
+| Ligne 3 |^| L3C3 |</textarea></div></form>
+
+
+<p>donnera</p>
+
+<table class="spip" summary="Raccourci de fusion">
+<caption>Tableau avec fusion</caption>
+<thead><tr class='row_first'><th scope='col'> Colonne 1 </th><th scope='col'> Colonne 2 </th><th scope='col'> Colonne 3 </th></tr></thead>
+<tbody>
+<tr class='row_even'>
+<td> Ligne 1 </td>
+<td colspan='2'> L1C2 et L1C3 </td></tr>
+<tr class='row_odd'>
+<td> Ligne 2 </td>
+<td rowspan='2'> L2C2 et L3C2</td>
+<td>L2C3</td></tr>
+<tr class='row_even'>
+<td> Ligne 3 </td>
+<td> L3C3 </td></tr>
+</tbody>
+</table>
+
+<p><a name="listes"></a></p>
+
+<h3 class="spip">Fabriquer des listes ou des énumérations</h3>
+
+<p>- &nbsp;Un simple retour à la ligne s&#8217;obtient en tapant <tt>_</tt> (le trait
+de soulignement ou <i>underscore</i>) au début de la ligne, suivi d&#8217;une espace.</p>
+
+<p><i>N.B.</i> En typographie classique, le simple retour à la ligne est très rare (limité essentiellement à la poésie). On le confond souvent avec le changement de paragraphe tel qu&#8217;il est affiché sur les documents imprimés (sans espacement vertical entre les paragraphes), alors que, par défaut, les butineurs Web insèrent un espacement entre les paragraphes. Beaucoup d&#8217;utilisateurs cherchent à reproduire cette caractéristique de l&#8217;imprimé (pas d&#8217;espacement vertical) en insérant de simples retours à la ligne entre ce qu&#8217;ils considèrent être des paragraphes&nbsp;; cela est un erreur qui risque de nuire à la facilité de maintenance et d&#8217;évolution de leur site. La solution consiste à définir, dans les squelettes, une feuille de style (CSS) décrivant le comportement des paragraphes (c&#8217;est-à-dire, selon les choix, pas d&#8217;espacement vertical entre les paragraphes, indentation de la première ligne...).</p>
+
+<p>- &nbsp;On peut faire des <strong>énumérations imbriquées</strong> en
+ajoutant des étoiles après le tiret d&#8217;énumération.</p>
+
+<p> Ainsi&nbsp;:</p>
+
+<form action=''  method='get'><div>
+<input type='hidden' name='exec' value='' />
+<textarea readonly='readonly' cols='40' rows='8' class='spip_cadre' dir='ltr'>-* Ton cheval est:
+-** alezan;
+-** bai;
+-** noir;
+-* mais mon lapin est:
+-** blanc;
+-*** angora; 
+-*** ou à poil ras.</textarea></div></form>
+
+
+<p> donne&nbsp;:</p>
+
+<blockquote class="spip">
+<ul class="spip"><li> Ton cheval est&nbsp;:<ul class="spip"><li> alezan&nbsp;;</li><li> bai&nbsp;;</li><li> noir&nbsp;;</li></ul></li><li> mais mon lapin est&nbsp;:<ul class="spip"><li> blanc&nbsp;;<ul class="spip"><li> angora&nbsp;; </li><li> ou à poil ras.</blockquote>
+</li></ul></li></ul></li></ul>
+
+<p>- &nbsp;Enfin, on peut faire des <strong>listes numérotées</strong> en utilisant le <code class='spip_code' dir='ltr'>#</code>
+à la place de l&#8217;étoile&nbsp;:</p>
+
+<form action=''  method='get'><div>
+<input type='hidden' name='exec' value='' />
+<textarea readonly='readonly' cols='40' rows='3' class='spip_cadre' dir='ltr'>-# premier
+-# deuxieme
+-# troisieme</textarea></div></form>
+
+
+<p>donnera&nbsp;:</p>
+
+<blockquote class="spip">
+<ol class="spip"><li> premier</li><li> deuxième</li><li> troisième</blockquote>
+</li></ol>
+
+<p><a name='glossaire'>
+<br />- &nbsp;<strong>Les liens hypertextes vers un glossaire externe</strong></p>
+
+<p>Vous pouvez en outre créer très rapidement un lien
+hypertexte vers la définition d&#8217;un terme dans un glossaire
+externe&nbsp;; pour un terme donné, il suffit d&#8217;insérer
+au sein de votre texte le raccourci <code class='spip_code' dir='ltr'>[?terme]</code>.</p>
+
+<p>Ainsi le code suivant&nbsp;:
+&#171;&nbsp;<code class='spip_code' dir='ltr'>{À la recherche du temps perdu} est l'œuvre majeure de [?Marcel Proust]</code>&nbsp;&#187;
+donnera à l&#8217;affichage&nbsp;:
+&#171;&nbsp;<i>À la recherche du temps perdu</i> est l&#8217;œuvre majeure de <a href="http://fr.wikipedia.org/wiki/Marcel_Proust" class='spip_glossaire' rel='external' target="_blank">Marcel Proust</a>&nbsp;&#187;.
+Pensez à cliquer sur le lien pour vérifier que le terme entré
+(nom propre ou nom commun) est correctement orthographié,
+et qu&#8217;il pointe sur une destination valide.</p>
+
+<p>Le glossaire externe prédéfini est <a href="http://www.wikipedia.org" class='spip_out' rel='external' target="_blank">Wikipedia</a> qui impose certaines <a href="http://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Conventions_sur_les_titres" class='spip_out' rel='external' target="_blank">conventions sur les titres</a>.
+Cette encyclopédie multilingue écrite sur un mode
+coopératif est ouverte à tous les contributeurs via
+Internet&nbsp;; prenez le temps de la connaître et d&#8217;y contribuer afin d&#8217;enrichir ce fonds de savoir partagé.</p>
+
+<p>Vous pouvez aussi référencer un autre glossaire en plaçant après le terme le signe # suivi du nom <i>G</i>&nbsp;du glossaire. SPIP appliquera alors la fonction <tt>glossaire_</tt><i>G</i> sur le terme pour obtenir le lien à insérer.
+Cette fonction aura été placée dans le fichier <tt>mes_options.php</tt>.  Si le nom <i>G</i>&nbsp;se termine par des chiffres, ceux-ci seront préalablement retirés de ce nom, et formeront le deuxième argument de la fonction, ce qui est très utile pour un glossaire divisé en sections. On écrira donc&nbsp;:</p>
+
+<form action=''  method='get'><div>
+<input type='hidden' name='exec' value='' />
+<textarea readonly='readonly' cols='40' rows='2' class='spip_cadre' dir='ltr'>[?read#man2]</textarea></div></form>
+
+
+<p>pour indiquer que l&#8217;on référence l&#8217;explication du terme <tt>read</tt> dans la section 2 du glossaire nommé <tt>man</tt>.</p>
+
+<p>Les raccourcis pour mentionner la langue et créer une info-bulle, expliqués pour les liens externes, fonctionnent également pour les glossaires.</p>
+
+<p><a name="ancres"></a>
+<br />- &nbsp;<strong>Des ancres nommées</strong></p>
+
+<p>Vous pouvez définir des &#171;&nbsp;ancres HTML&nbsp;&#187; afin de pouvoir construire un lien direct vers un point donné au milieu d&#8217;une page d&#8217;un site SPIP. Il suffit d&#8217;introduire le raccourci&nbsp;:</p>
+
+<form action=''  method='get'><div>
+<input type='hidden' name='exec' value='' />
+<textarea readonly='readonly' cols='40' rows='2' class='spip_cadre' dir='ltr'>[direct&lt;-]</textarea></div></form>
+
+
+<p>et cela créera une ancre de nom <code class='spip_code' dir='ltr'>direct</code>. Ainsi, s&#8217;il s&#8217;agit, par exemple, de l&#8217;article 3723, l&#8217;URL <code class='spip_code' dir='ltr'>http://monsite/article.php3?id_article=3723#direct</code> conduira directement à l&#8217;endroit de l&#8217;article où est situé cette ancre.</p>
+
+<p>Il est à noter que les ancres sont compatibles avec les <a href="#liensite" class='spip_ancre'>liens hypertexte à l&#8217;intérieur du site</a>. Ainsi, le raccourci &#171;&nbsp;<code class='spip_code' dir='ltr'>[ce point précis-&gt;art123#precis]</code>&nbsp;&#187; conduira vers l&#8217;ancre nommée &#171;&nbsp;<code class='spip_code' dir='ltr'>precis</code>&nbsp;&#187; défini dans l&#8217;article 123.</p>
+
+<p><a name='notes'></a>
+<br />- &nbsp;<strong>Des notes non automatiques</strong></p>
+
+<p>Dans la plupart des cas, le système de notes automatiques
+indiqué ci-dessus suffit amplement. Cependant, vous pouvez
+gérer les notes d&#8217;une manière non automatique en &#171;&nbsp;forçant&nbsp;&#187; 
+le choix du numéro ou de la mention affichée pour réaliser le lien.</p>
+
+<p>Le principe général consiste à indiquer votre choix de la mention utilisée
+entre chevrons au début de la note&nbsp;:</p>
+
+<form action=''  method='get'><div>
+<input type='hidden' name='exec' value='' />
+<textarea readonly='readonly' cols='40' rows='2' class='spip_cadre' dir='ltr'>Une note «forcée»[[&lt;xxx&gt; Le texte de la note.]]</textarea></div></form>
+
+
+<p>Sur ce principe&nbsp;:</p>
+
+<form action=''  method='get'><div>
+<input type='hidden' name='exec' value='' />
+<textarea readonly='readonly' cols='40' rows='18' class='spip_cadre' dir='ltr'>vous pouvez utiliser les notes numérotées automatiques[[En plaçant le texte de la note entre crochets.]],
+- mais aussi forcer la numérotation de la note[[&lt;23&gt; En indiquant le numéro de la note entre les symboles «&lt;» et «&gt;».]],
+- utiliser des notes sous forme d'astérisques [[&lt;*&gt; En plaçant simplement une astérisque entre les symboles «&lt;» et «&gt;».]],
+- fabriquer des notes sans références (non numérotées); attention, de telles notes ne présentent plus de lien entre la note et l'appel de note[[&lt;&gt; En n'indiquant rien entre les symboles «&lt;» et «&gt;».]],
+- donner un nom (en toutes lettres) à une note; cet usage est très répandu pour les références bibliographiques[[&lt;Rab&gt; François Rabelais.]];
+- rappeler une note déjà existante[[&lt;23&gt;]] en indiquant le numéro de cette note entre les symboles «&lt;» et «&gt;» et en laissant vide le reste de la note.</textarea></div></form>
+
+
+<p>donne&nbsp;:</p>
+
+<blockquote class="spip">
+
+<p>vous pouvez utiliser les notes numérotées automatiques&nbsp;[<a href='#nb2' class='spip_note' rel='footnote' title='En plaçant le texte de la note entre crochets.' id='nh2'>2</a>],
+<br />- &nbsp;mais aussi forcer la numérotation de la note&nbsp;[<a href='#nb23' class='spip_note' rel='footnote' title='En indiquant le numéro de la note entre les symboles «  ».' id='nh23'>23</a>],
+<br />- &nbsp;utiliser des notes sous forme d&#8217;astérisques&nbsp;[<a href='#nb_2A' class='spip_note' rel='footnote' title='En plaçant simplement une astérisque entre les symboles «  ».' id='nh_2A'>*</a>],
+<br />- &nbsp;fabriquer des notes sans références (non numérotées)&nbsp;; attention, de telles notes ne présentent plus de lien entre la note et l&#8217;appel de note,
+<br />- &nbsp;donner un nom (en toutes lettres) à une note&nbsp;; cet usage est très répandu pour les références bibliographiques&nbsp;[<a href='#nbRab' class='spip_note' rel='footnote' title='François Rabelais.' id='nhRab'>Rab</a>]&nbsp;;
+<br />- &nbsp;rappeler une note déjà existante&nbsp;[<a href='#nb23' class='spip_note' rel='footnote'>23</a>] en indiquant le numéro de cette note entre les symboles &#171;&nbsp;<&nbsp;&#187; et &#171;&nbsp;>&nbsp;&#187;. et en laissant vide le reste de la note.</p>
+
+</blockquote>
+
+<p>- &nbsp;<strong>Court-circuiter les raccourcis SPIP</strong></p>
+
+<p>Dans certains cas, il peut être utile d&#8217;indiquer à SPIP 
+que certaines parties d&#8217;un document ne doivent pas être 
+&#171;&nbsp;traitées&nbsp;&#187; par le filtre des raccourcis 
+typographiques&nbsp;: vous ne voulez pas corriger la typographie, vous devez afficher 
+du code source (par exemple en PHP, JavaScript...)...</p>
+
+<p>Le code de ce raccourci est&nbsp;:</p>
+
+<form action=''  method='get'><div>
+<input type='hidden' name='exec' value='' />
+<textarea readonly='readonly' cols='40' rows='2' class='spip_cadre' dir='ltr'>&lt;HTML&gt;texte à ne 
+pas transformer; attention!&lt;/HTML&gt;</textarea></div></form>
+
+
+<p>ce qui donne&nbsp;:</p>
+
+<blockquote class="spip">
+
+<p>
+texte à ne pas transformer; attention!</p>
+
+</blockquote>
+
+<p>
+(ici, notez l&#8217;absence d&#8217;espaces avant le point-virgule et le point 
+d&#8217;exclamation).</p>
+
+<p>- &nbsp;<strong>Afficher du code informatique</strong></p>
+
+<p>Certains utilisateurs de SPIP veulent parfois afficher du code informatique dans leurs pages. 
+Le raccourci <TT>&lt;code>...&lt;/code></TT> est là pour ça.</p>
+
+<p>Exemple&nbsp;:</p>
+
+<form action=''  method='get'><div>
+<input type='hidden' name='exec' value='' />
+<textarea readonly='readonly' cols='40' rows='3' class='spip_cadre' dir='ltr'>&lt;code&gt;&lt;?php     // ceci est du langage php
+      echo &quot;bonjour&quot;;
+?&gt;&lt;/code&gt;</textarea></div></form>
+
+
+<p>donne</p>
+
+<blockquote class="spip">
+<div style='text-align: left;' class='spip_code' dir='ltr'><code>&lt;?php &nbsp; &nbsp; // ceci est du langage php<br />
+ &nbsp; &nbsp; &nbsp;echo &quot;bonjour&quot;;<br />
+?&gt;</code></div>
+</blockquote>
+
+<p>Il existe un autre raccourci pour publier des extraits de code informatique de plusieurs lignes&nbsp;:
+<tt>&lt;cadre>...&lt;/cadre></tt>. Cela place le code dans un &#171;&nbsp;formulaire&nbsp;&#187; (ceci est souvent utilisé
+sur la présente page). L&#8217;avantage de cette méthode est de faciliter grandement le copier-coller à partir
+de votre page Web&nbsp;: il suffit de placer le curseur à l&#8217;intérieur du code, de faire &#171;&nbsp;tout sélectionner&nbsp;&#187; (ctrl-A)
+pour pouvoir copier directement le code. De plus sur de nombreux butineurs, ce cadre permet de
+bien restituer les tabulations en début de ligne.</p>
+
+<p> Voici un exemple&nbsp;:</p>
+
+<form action=''  method='get'><div>
+<input type='hidden' name='exec' value='' />
+<textarea readonly='readonly' cols='40' rows='19' class='spip_cadre' dir='ltr'>class Texte {
+	var 
+type = 'texte';
+	var 
+texte;
+}
+
+ class Champ {
+	var 
+type = 'champ';
+	var 
+nom_champ, 
+id_champ;
+	var 
+cond_avant, 
+cond_apres; // tableaux d'objets
+	var 
+fonctions;
+}</textarea></div></form>
+
+<hr class="spip" />
+
+<div class='notes'><small><div id='nb1'>
+
+<p>[<a href='#nh1' class='spip_note' title='Notes 1' rev='footnote'>1</a>] Voici un
+complément d&#8217;information.</p>
+
+</div>
+<div id='nb2'>
+
+<p>[<a href='#nh2' class='spip_note' title='Notes 2' rev='footnote'>2</a>] En plaçant le texte de la note entre crochets.</p>
+
+</div>
+<div id='nb23'>
+
+<p>[<a href='#nh23' class='spip_note' title='Notes 23' rev='footnote'>23</a>]  En indiquant le numéro de la note entre les symboles &#171;&nbsp;<&nbsp;&#187; et &#171;&nbsp;>&nbsp;&#187;.</p>
+
+</div>
+<div id='nb_2A'>
+
+<p>[<a href='#nh_2A' class='spip_note' title='Notes _2A' rev='footnote'>*</a>]  En plaçant simplement une astérisque entre les symboles &#171;&nbsp;<&nbsp;&#187; et &#171;&nbsp;>&nbsp;&#187;.</p>
+
+</div>
+<div id='nb'>
+
+<p> En n&#8217;indiquant rien entre les symboles &#171;&nbsp;<&nbsp;&#187; et &#171;&nbsp;>&nbsp;&#187;.</p>
+
+</div>
+<div id='nbRab'>
+
+<p>[<a href='#nhRab' class='spip_note' title='Notes Rab' rev='footnote'>Rab</a>]  François Rabelais.</p>
+
+</div></small></div>
+<h2>arttitre/Titre, surtitre, soustitre</h2>
+
+<h3 class="spip">Titre, surtitre, soustitre</h3>
+
+<p>- &nbsp;Le <i>titre</i> est obligatoire.</p>
+
+<p>- &nbsp;Le <i>surtitre</i> et le <i>soustitre</i> sont totalement optionnels. Si vous 
+n&#8217;en avez pas besoin, laissez-les vides, la présentation du 
+site s&#8217;adaptera automatiquement à leur présence ou 
+absence.</p>
+
+<p><i>Les administrateurs du site peuvent, s&#8217;ils le désirent, 
+totalement supprimer l&#8217;utilisation du surtitre et/ou du soustitre, 
+via la page &#171;&nbsp;<A HREF="./?exec=aide_index&amp;aide=confart" 
+TARGET="_top">Configuration précise</A>&nbsp;&#187;.</i></p>
+
+<h2>artrub/Choisir la rubrique</h2>
+
+<h3 class="spip">Choisir la rubrique</h3>
+
+<p>Le menu indique toute la <a HREF="./?exec=aide_index&amp;aide=rubhier" 
+target="_top">hiérarchie des rubriques</a> (telles qu&#8217;elles 
+ont été créées par les administrateurs du 
+site)&nbsp;: sélectionnez celle dans laquelle vous voulez placer 
+l&#8217;article.</p>
+
+<p>Beaucoup d&#8217;utilisateurs débutants semblent ignorer 
+complètement cette fonction pourtant simple, et laissent leur 
+article &#171;&nbsp;n&#8217;importe où&nbsp;&#187; dans la structure du site. 
+Il est donc conseillé aux administrateurs, avant validation 
+d&#8217;un article, de toujours vérifier que celui-ci se trouve dans 
+la bonne rubrique.</p>
+
+<h2>artdesc/Descriptif rapide</h2>
+
+<h3 class="spip">Le descriptif rapide</h3>
+
+<p>Le <i>descriptif rapide</i> est utilisé pour la navigation à 
+l&#8217;intérieur du site&nbsp;: il permet d&#8217;indiquer brièvement, 
+dans les sommaires par exemple, le thème de l&#8217;article.</p>
+
+<p>Ce descriptif est optionnel&nbsp;; de même, on peut le rédiger 
+de la longueur que l&#8217;on veut. Cependant, il a été 
+prévu à l&#8217;origine pour des textes très courts 
+(une ou deux phrases), qui figureront dans les listes d&#8217;articles 
+(sommaires, listes des articles de tel auteur, tri d&#8217;articles par 
+mot-clé, réponses du moteur de recherche, etc.).</p>
+
+<p><i>Les administrateurs du site peuvent, via l&#8217;interface de &#171;&nbsp;<a 
+HREF="./?exec=aide_index&amp;aide=confart" TARGET="_top">Configuration 
+précise</a>&nbsp;&#187;, désactiver totalement l&#8217;affichage 
+du descriptif.</i></p>
+
+<h2>artchap/Chapeau</h2>
+
+<h3 class="spip">Le chapeau</h3>
+
+<p>Le <i>chapeau</i>, dans le jargon de la presse, désigne le court 
+texte qui &#171;&nbsp;chapeaute&nbsp;&#187; l&#8217;article. Son utilisation est 
+optionnelle.</p>
+
+<p><i>Les administrateurs peuvent, via l&#8217;interface de &#171;&nbsp;<a 
+HREF="./?exec=aide_index&amp;aide=confart" TARGET="_top">Configuration 
+précise</a>&nbsp;&#187;, désactiver totalement l&#8217;utilisation 
+du chapeau.</i></p>
+
+<h2>artvirt/Redirection d&#8217;article</h2>
+
+<h3 class="spip">Redirection d&#8217;article</h3>
+
+<p>Cette option permet de créer un &#171;&nbsp;article virtuel&nbsp;&#187;&nbsp;: il s&#8217;agit d&#8217;un article dont le titre, la date et les auteurs sont enregistrés dans votre site sous SPIP, mais qui pointe vers une autre adresse.</p>
+
+<p>Cette fonctionnalité vous permet de référencer dans votre système SPIP des articles qui ne sont pas réalisés avec SPIP (par exemple pour intégrer à la navigation de votre site sous SPIP des pages réalisées antérieurement à l&#8217;installation de SPIP).</p>
+
+<p>Pour indiquer que votre article est un &#171;&nbsp;article virtuel&nbsp;&#187;, il suffit d’indiquer, dans la case correspondante, l’URL de l’article-cible (dans le cas d&#8217;une référence externe à votre site) ou le raccourci SPIP vers l&#8217;article, la rubrique, la brève etc. de votre site (<tt>art123</tt>, <tt>br5</tt>, <tt>doc28</tt>, ...)</p>
+
+<p>Pour supprimer la redirection, il suffit de &#171;&nbsp;vider&nbsp;&#187; la case de redirection (effacer l&#8217;adresse de l&#8217;article-cible).</p>
+
+<h2>arttexte/Texte</h2>
+
+<h3 class="spip">Le texte de l&#8217;article</h3>
+
+<p>Rien de bien compliqué&nbsp;: il s&#8217;agit du <i>texte</i> de votre article, 
+comme son nom l&#8217;indique.</p>
+
+<p>- &nbsp;Il y a cependant un point qui peut parfois poser problème&nbsp;: 
+la longueur des textes. Pour certains textes très longs (dans 
+notre expérience, à partir de 32&nbsp;ko), il arrive que ce 
+texte soit tronqué ou carrément refusé lors du 
+transfert dans SPIP. Ce problème n&#8217;est pas dû à 
+SPIP, mais aux navigateur Web que vous utilisez. Lorsque vous 
+êtes confronté à un texte &#171;&nbsp;trop long&nbsp;&#187; 
+pour un navigateur, essayez avec un autre logiciel.</p>
+
+<p>- &nbsp;Le texte de l&#8217;article se prête particulièrement bien 
+à l&#8217;utilisation des <a HREF="./?exec=aide_index&amp;aide=raccourcis" 
+TARGET='_top'>raccourcis typographiques</a> de SPIP.</p>
+
+<h2>artdate/Date</h2>
+
+<h3 class="spip">La date de publication en ligne</h3>
+
+<p>La <i>date</i> de l&#8217;article correspond, en général, à 
+la date de sa <i>mise en ligne</i> (ou publication sur le site Web).</p>
+
+<p>- &nbsp;Cette date est fixée automatiquement au moment où 
+l&#8217;article est <i>validé</i> par un administrateur (donc au moment 
+où il apparaît sur le site public).</p>
+
+<p>- &nbsp;Après validation, toutefois, l&#8217;administrateur peut modifier 
+cette date.</p>
+
+<h2>artdate_redac/Date de rédaction antérieure</h2>
+
+<h3 class="spip">La date de rédaction antérieure</h3>
+
+<p>Cette fonction a été ajoutée pour des cas 
+très spécifiques, lorsque SPIP est utilisé pour 
+installer des archives <i>et</i> que ces archives doivent avoir une date 
+de publication différente de la date de mise en ligne.</p>
+
+<p>Il s&#8217;agit de pouvoir indiquer qu&#8217;un document a déjà 
+fait l&#8217;objet d&#8217;une précédente publication&nbsp;: article de journal, 
+livre... ou d&#8217;une publication future (parution de cet article dans le prochain numéro).</p>
+
+<p>- &nbsp;Par défaut, cette date ne s&#8217;affiche pas&nbsp;: le bouton &#171;&nbsp;Ne 
+pas afficher de date de rédaction antérieure&nbsp;&#187; est 
+sélectionné lors de la création de l&#8217;article.</p>
+
+<p>- &nbsp;Si l&#8217;on veut indiquer une telle date, il faut à la fois 
+sélectionner l&#8217;option &#171;&nbsp;Afficher la date&nbsp;&#187; et 
+utiliser les menus déroulants pour la fixer.</p>
+
+<p>Cette date, contrairement à la &#171;&nbsp;date de 
+publication&nbsp;&#187; de l&#8217;article, n&#8217;est pas calculée 
+automatiquement lors de la validation de l&#8217;article. C&#8217;est pourquoi 
+elle peut être modifiée à tout moment.</p>
+
+<p><i>Les administrateurs peuvent, via l&#8217;interface de &#171;&nbsp;<a 
+HREF="./?exec=aide_index&amp;aide=confart" TARGET="_top">Configuration 
+précise</a>&nbsp;&#187;, désactiver l&#8217;utilisation de la date 
+de rédaction antérieure.</i></p>
+
+<h2>artauteurs/Les auteurs</h2>
+
+<h3 class="spip">Les auteurs</h3>
+
+<p>Lorsqu&#8217;un administrateur ou un rédacteur crée un 
+article, il est considéré automatiquement comme 
+l&#8217;auteur de cet article. Dans bien des cas il faudra changer les 
+auteurs (quand on intègre au site le texte d&#8217;une autre 
+personne, quand un texte ne doit pas être signé, ou 
+encore quand on l&#8217;édite à plusieurs...)</p>
+
+<p>- &nbsp;<strong>Ajouter un auteur</strong></p>
+
+<p>Un menu déroulant proposant la liste de tous les 
+rédacteurs du site permet de sélectionner et d&#8217;ajouter 
+un nouvel auteur.</p>
+
+<p><i>Si plus de 50 rédacteurs participent au site, il est 
+difficile de les présenter sous forme de menu déroulant 
+(temps de chargement interminable)&nbsp;; dans ce cas, le menu 
+déroulant est remplacé par une case de recherche&nbsp;: 
+indiquez le nom de l&#8217;auteur que vous voulez ajouter, et cliquez sur 
+&#171;&nbsp;Chercher&nbsp;&#187;. Si plusieurs rédacteurs correspondent 
+à cette recherche, le système vous proposera de 
+sélectionner celui qui vous convient.</i></p>
+
+<p>- &nbsp;<strong>Retirer un auteur</strong></p>
+
+<p>A la suite de chaque auteur de l&#8217;article, un lien &#171;&nbsp;Retirer 
+l&#8217;auteur&nbsp;&#187; permet de simplement effacer cet auteur.</p>
+
+<p><i>C&#8217;est uniquement en tant qu&#8217;auteur de cet article précis que 
+le rédacteur est supprimé&nbsp;; il reste bien entendu 
+présent dans la liste des rédacteurs du site.</i></p>
+
+<p>- &nbsp;<strong>Remplacer un auteur par un autre</strong></p>
+
+<p>Cela se fait en deux étapes&nbsp;: il faut simplement ajouter le 
+nouvel auteur, et retirer le précédent (voir ci-dessus).</p>
+
+<p>- &nbsp;Notez finalement que les administrateurs ont beaucoup plus de 
+possibilités sur cette liste d&#8217;auteurs que les 
+rédacteurs. Les rédacteurs ne peuvent pas, en 
+particulier, se retirer eux-mêmes d&#8217;un article. Si un 
+rédacteur veut publier un article anonyme (sans auteur), il 
+doit demander à un administrateur d&#8217;effectuer cette 
+opération.</p>
+
+<h2>logoart/Logo de l&#8217;article</h2>
+
+<h3 class="spip">Logo de l&#8217;article</h3>
+
+<p>SPIP vous permet d&#8217;installer un logo correspondant à 
+l&#8217;article. De cette façon, dans l&#8217;interface de navigation du 
+site public, il sera possible d&#8217;afficher un bouton graphique menant 
+à l&#8217;article.</p>
+
+<p>Pour un article, il est possible&nbsp;:
+<br />- &nbsp;de ne pas utiliser de logo&nbsp;;
+<br />- &nbsp;d&#8217;installer un logo graphique simple&nbsp;;
+<br />- &nbsp;d&#8217;utiliser un logo animé gérant le 
+&#171;&nbsp;survol&nbsp;&#187; (logo &#171;&nbsp;2 positions&nbsp;&#187;&nbsp;: le logo change 
+lorsque que la souris le survole).</p>
+
+<p>- &nbsp;<strong>Formats d&#8217;images</strong></p>
+
+<p>Lorsque vous créez vos images (avec votre logiciel habituel), 
+vous devez les créer à l&#8217;un des formats suivants&nbsp;:
+<br />- &nbsp;GIF (le fichier GIF peut être un &#171;&nbsp;GIF animé&nbsp;&#187;)&nbsp;;
+<br />- &nbsp;JPEG&nbsp;;
+<br />- &nbsp;PNG (déconseillé, de nombreux butineurs ne permettant 
+pas de les afficher correctement).</p>
+
+<p><i>Afin d&#8217;éviter les erreurs graves de manipulation, SPIP 
+rejette les fichiers-image d&#8217;une taille supérieure à 
+256&nbsp;ko.</i> Conseil&nbsp;: puisque ces &#171;&nbsp;boutons&nbsp;&#187; sont des 
+éléments de l&#8217;interface graphique, veillez à ce 
+que leur <i>poids</i> (nombre de kilo-octets) ne soit pas trop 
+élevé (en général, moins de 10&nbsp;ko) si 
+vous voulez que la navigation sur votre site reste fluide.</p>
+
+<p>Veillez particulièrement à ce que le nom de vos 
+fichiers ait une <i>terminaison</i> indiquant leur format&nbsp;: <strong>.gif</strong>, 
+<strong>.jpg</strong> ou <strong>.png</strong>. Le nom du fichier n&#8217;a aucune importance, 
+à condition de <i>ne pas oublier cette terminaison</i>.</p>
+
+<p><i>Si vous créez un bouton gérant le 
+&#171;&nbsp;survol&nbsp;&#187;, créez deux fichiers graphiques 
+différents (un pour le bouton &#171;&nbsp;normal&nbsp;&#187;, et un 
+autre fichier s&#8217;affichant lorsque le bouton est survolé par la 
+souris)&nbsp;: il convient alors que ces deux fichiers aient exactement la 
+même taille (en pixels).</i></p>
+
+<p>- &nbsp;<strong>Logo simple</strong> (pas de survol)</p>
+
+<p><img src="./?exec=aide_index&amp;img=0:AIDE-fr-logoart-1.gif" alt=" "  
+border="0" align="right">Pour ajouter un bouton, une interface est 
+disponible dans la colonne de gauche de l&#8217;article, sous la mention 
+&#171;&nbsp;LOGO DE L&#8217;ARTICLE&nbsp;&#187;.</p>
+
+<p>Selon la version de votre navigateur, cliquez sur le bouton 
+&#171;&nbsp;Browse&nbsp;&#187;, &#171;&nbsp;Sélectionner&nbsp;&#187;, 
+&#171;&nbsp;File&nbsp;&#187;, &#171;&nbsp;Fichier&nbsp;&#187;... ce qui déclenche 
+l&#8217;ouverture d&#8217;une interface permettant de sélectionner, sur 
+votre disque dur, le fichier graphique correspondant à votre 
+bouton.</p>
+
+<p>Une fois ce fichier sélectionné, cliquez sur le bouton 
+&#171;&nbsp;Télécharger&nbsp;&#187;. Votre logo s&#8217;affiche alors. 
+Il est suivi d&#8217;un bouton &#171;&nbsp;Supprimer le logo&nbsp;&#187;, qui vous 
+permet, simplement, de supprimer ce logo.</p>
+
+<p>Si vous ne comptez pas obtenir un logo gérant le survol, 
+aucune autre opération n&#8217;est nécessaire.</p>
+
+<p>- &nbsp;<strong>Remplacer le logo</strong></p>
+
+<p><img src="./?exec=aide_index&amp;img=0:AIDE-fr-logoart-2.gif" alt=" "  
+border="0" align="left">Il peut arriver que vous vouliez remplacer le 
+logo par un autre fichier. Cela se fait en deux étapes&nbsp;:
+<br />- &nbsp;commencez par &#171;&nbsp;Supprimer le logo&nbsp;&#187;&nbsp;: l&#8217;interface 
+précédente, dotée du bouton 
+&#171;&nbsp;Télécharger&nbsp;&#187;, apparaît à 
+nouveau&nbsp;;
+<br />- &nbsp;téléchargez le nouveau fichier, selon la 
+procédure déjà décrite.</p>
+
+<p>Du fait du fonctionnement des butineurs, l&#8217;image qui s&#8217;affiche alors 
+est erronée, puisqu&#8217;il s&#8217;agit encore de la version 
+précédente (l&#8217;image est &#171;&nbsp;en cache&nbsp;&#187; de votre 
+navigateur). Cliquez sur cette image (avec le bouton droit de votre 
+souris, ou en maintenant la touche &#171;&nbsp;ctrl&nbsp;&#187; sur Macintosh) 
+afin de faire apparaître un menu déroulant local&nbsp;: 
+sélectionnez l&#8217;option &#171;&nbsp;Recharger cette image&nbsp;&#187; (ou, 
+en anglais, &#171;&nbsp;Reload image&nbsp;&#187;). La nouvelle version de votre 
+logo devrait alors s&#8217;afficher.</p>
+
+<p>- &nbsp;<strong>Logo pour le survol</strong></p>
+
+<p><img src="./?exec=aide_index&amp;img=0:AIDE-fr-logoart-3.gif" alt=" "  
+border="0" align="right">Après l&#8217;installation du premier 
+fichier (logo simple), l&#8217;interface affiche non seulement le logo que 
+vous avez installé sur le serveur, mais ajoute une seconde 
+interface, sous le titre &#171;&nbsp;LOGO POUR LE SURVOL&nbsp;&#187;. C&#8217;est par 
+cette interface que vous pouvez indiquer le second fichier 
+nécessaire à la gestion du survol.</p>
+
+<p><i>Si, lorsque vous avez installé les deux fichiers, vous 
+supprimez le premier (le bouton &#171;&nbsp;simple&nbsp;&#187;), l&#8217;interface du 
+second logo ne s&#8217;affiche plus. En effet, en l&#8217;absence du premier 
+logo, il n&#8217;y a plus de raison de gérer un quelconque 
+&#171;&nbsp;survol&nbsp;&#187;&nbsp;!</i></p>
+
+<p>Aucune intervention dans le &#171;&nbsp;texte&nbsp;&#187; de votre article 
+n&#8217;est nécessaire. Lors de l&#8217;affichage sur le site public, la 
+gestion des logos des rubriques est entièrement automatique. 
+Le code HTML sera généré en fonction de la 
+taille du logo, et la fonction de survol en JavaScript sera 
+également créée automatiquement.</p>
+
+<h2>artstatut/Le statut de l&#8217;article</h2>
+
+<h3 class="spip">Le statut de l&#8217;article</h3>
+
+<p>Le <i>statut</i> de l&#8217;article correspond à sa situation 
+éditoriale sur le site. L&#8217;article peut être&nbsp;:
+<br />- &nbsp;en cours de rédaction&nbsp;;
+<br />- &nbsp;proposé à l&#8217;évaluation&nbsp;;
+<br />- &nbsp;publié en ligne&nbsp;;
+<br />- &nbsp;à la poubelle&nbsp;;
+<br />- &nbsp;refusé.</p>
+
+<p>Ces étapes, que seuls les administrateurs peuvent modifier, 
+permettent la gestion du site.</p>
+
+<p><strong>N.B.</strong> Le statut des articles est symbolisé par des puces 
+colorées.</p>
+
+<p><IMG SRC="../prive/images/puce-blanche.gif">  <strong>Article en cours de rédaction</strong></p>
+
+<p>Lorsqu&#8217;il est créé, un article est naturellement 
+considéré comme étant &#171;&nbsp;en cours de 
+rédaction&nbsp;&#187;&nbsp;: ses auteurs sont en train de le 
+rédiger, de le modifier...</p>
+
+<p><i>L&#8217;article &#171;&nbsp;en cours de rédaction&nbsp;&#187; n&#8217;est visible 
+que par les auteurs de l&#8217;article et par les administrateurs. Les 
+autres rédacteurs du site n&#8217;y ont pas accès.</i></p>
+
+<p><IMG SRC="../prive/images/puce-orange.gif">  <strong>Article proposé à 
+l&#8217;évaluation</strong></p>
+
+<p>Lorsque l&#8217;auteur juge que son article est prêt, il le 
+&#171;&nbsp;propose&nbsp;&#187; aux autres participants, afin qu&#8217;il soit 
+éventuellement discuté collectivement, avant 
+d&#8217;être validé (publié en ligne) ou refusé.</p>
+
+<p><i>Lorsque l&#8217;article est &#171;&nbsp;proposé à 
+l&#8217;évaluation&nbsp;&#187;, il est indiqué sur la page 
+&#171;&nbsp;à suivre&nbsp;&#187; de tous les utilisateurs de l&#8217;espace 
+privé, qui sont ainsi invités à venir le 
+discuter par l&#8217;intermédiaire du forum de discussion interne 
+placé à la suite de l&#8217;article.</p>
+
+<p>Un tel article est alors visible par tous les rédacteurs. En 
+revanche, il ne peut être modifié que par son auteur ou 
+un administrateur.</i></p>
+
+<p><IMG SRC="../prive/images/puce-verte.gif"> <strong>Article publié en ligne</strong></p>
+
+<p>Après avoir été éventuellement 
+discuté par les rédacteurs (pendant la phase de 
+&#171;&nbsp;proposition&nbsp;&#187;), un article peut être 
+&#171;&nbsp;validé&nbsp;&#187;, c&#8217;est-à-dire publié en 
+ligne par un administrateur. Dès lors, tous les visiteurs du 
+site public y ont accès.</p>
+
+<p><i>Lorsqu&#8217;un article est publié en ligne, seuls les 
+administrateurs peuvent le modifier. Son auteur doit donc demander
+à un administrateur s&#8217;il veut y porter des corrections.</i></p>
+
+<p><IMG SRC="../prive/images/puce-rouge.gif">  <strong>Article refusé</strong></p>
+
+<p>Un article &#171;&nbsp;proposé&nbsp;&#187; qui ne conviendrait pas 
+à la ligne éditoriale du site peut être 
+&#171;&nbsp;refusé&nbsp;&#187; si les administrateurs refusent de le 
+publier en ligne.</p>
+
+<p><i>Un article &#171;&nbsp;refusé&nbsp;&#187; n&#8217;est plus visible que par 
+son auteur et par les administrateurs.</i></p>
+
+<p><i>Un article &#171;&nbsp;refusé&nbsp;&#187; ne peut cependant plus 
+être modifié par son auteur, qui ne pourra donc pas non plus 
+le reproposer à la publication. Dans le cas d&#8217;un article qui 
+demanderait des retouches, on préférera donc repasser 
+l&#8217;article &#171;&nbsp;en cours de rédaction&nbsp;&#187; au lieu de le 
+&#171;&nbsp;refuser&nbsp;&#187; purement et simplement, afin que son auteur 
+puisse le modifier et le représenter ultérieurement.</i></p>
+
+<p><IMG SRC="../prive/images/puce-poubelle.gif">  <strong>Article à la poubelle</strong></p>
+
+<p>Un article peut être mis à la poubelle, uniquement par 
+un administrateur.</p>
+
+<p><i>Un article &#171;&nbsp;à la poubelle&nbsp;&#187; n&#8217;est plus visible 
+dans l&#8217;espace privé, même par les administrateurs. 
+Attention donc, cette option est &#171;&nbsp;violente&nbsp;&#187;&nbsp;: l&#8217;article 
+disparaît complètement.</p>
+
+<p>En réalité, l&#8217;article est toujours stocké dans 
+la base de données, mais devient très difficilement 
+accessible avec les outils de SPIP.</i></p>
+
+<p>Cette option est donc réservée aux articles 
+créés par erreur, que l&#8217;on veut totalement 
+détruire. On préférera, le plus souvent, 
+l&#8217;option &#171;&nbsp;Article refusé&nbsp;&#187;, qui est moins 
+définitive.</p>
+
+<p>- &nbsp;Notez enfin que les administrateurs peuvent à tout moment 
+modifier le <i>statut</i> d&#8217;un article. Un article publié peut 
+ainsi être repassé en &#171;&nbsp;rédaction&nbsp;&#187;. 
+Cependant, une fois un article publié en ligne, n&#8217;abusez pas 
+de ces changements de statut&nbsp;: vous obtiendriez en effet un site 
+&#171;&nbsp;à trou&nbsp;&#187;, avec des pages qui apparaissent et 
+disparaissent, ce qui est très pénalisant pour le 
+visiteur.</p>
+
+<h2>artprop/Proposer son article</h2>
+
+<h3 class="spip">Proposer un article</h3>
+
+<p>Lorsque l&#8217;article est &#171;&nbsp;en cours de rédaction&nbsp;&#187; 
+(voir la rubrique &#171;&nbsp;<A HREF="./?exec=aide_index&amp;aide=artstatut" 
+target="_top">Le statut de l&#8217;article</A>&nbsp;&#187;), il est suivi d&#8217;un 
+bouton &#171;&nbsp;Demander la publication de cet article&nbsp;&#187;.</p>
+
+<p><i>Seul l&#8217;auteur de l&#8217;article peut effectuer cette opération.</i></p>
+
+<p>Cela signifie que l&#8217;article est alors &#171;&nbsp;Proposé à 
+l&#8217;évaluation&nbsp;&#187;, c&#8217;est-à-dire 
+présenté à tous les autres rédacteurs, 
+qui seront invités à le commenter, dans l&#8217;attente d&#8217;une 
+validation (publication) ou d&#8217;un refus de la part des administrateurs.</p>
+
+<p>Attention&nbsp;: une fois l&#8217;article &#171;&nbsp;proposé à 
+l&#8217;évaluation&nbsp;&#187;, il n&#8217;est plus possible à l&#8217;auteur 
+de revenir sur sa décision et de repasser le texte &#171;&nbsp;en 
+cours de rédaction&nbsp;&#187;. Donc l&#8217;opération 
+&#171;&nbsp;Demander la publication de cet article&nbsp;&#187; ne doit 
+être effectuée par l&#8217;auteur qu&#8217;une fois qu&#8217;il 
+considère son texte comme complet et définitif. Seul un 
+administrateur peut alors remettre le texte &#171;&nbsp;en cours de 
+rédaction&nbsp;&#187;.</p>
+
+<h1>Les rubriques</h1>
+<h2>rubhier/Une structure hiérarchisée</h2>
+
+<h3 class="spip">La structure hiérarchique des rubriques</h3>
+
+<p>La structure des rubriques constitue l&#8217;ossature de votre site&nbsp;; c&#8217;est 
+elle qui va déterminer son interface, le mode de navigation, 
+les relations entre  articles et entre brèves...</p>
+
+<p>Dans SPIP, cette structure est de type <i>hiérarchique</i>&nbsp;: une 
+rubrique peut contenir des sous-rubriques qui, elles-mêmes, 
+contiennent des sous-rubriques, etc.</p>
+
+<CENTER><IMG SRC="./?exec=aide_index&amp;img=0:AIDE-fr-rubhier-1.gif" BORDER=0 ></CENTER>
+
+<p>Dans l&#8217;exemple ci-dessus, on comprend bien que la rubrique&nbsp;222 
+dépend de la rubrique&nbsp;22, qui elle-même dépend de 
+la rubrique&nbsp;2, laquelle ne dépend d&#8217;aucune autre rubrique 
+(dans ce cas, on considérera que la rubrique&nbsp;2 se trouve 
+<i>à la racine du site</i>).</p>
+
+<p><i>Par structure hiérarchisée, on entend le fait qu&#8217;une 
+rubrique ne dépend que d&#8217;une seule autre rubrique (et non de 
+plusieurs), et qu&#8217;une rubrique ne peut dépendre d&#8217;une de ses 
+propres sous-rubriques (c&#8217;est-à-dire&nbsp;: SPIP n&#8217;autorise pas les 
+structures circulaires). Cette structure, très classique, a 
+été retenue en raison de sa simplicité 
+d&#8217;utilisation.</i></p>
+
+<p><strong>Seuls les administrateurs peuvent créer, modifier ou 
+supprimer des rubriques.</strong></p>
+
+<h2>rubrub/Choisir la rubrique</h2>
+
+<h3 class="spip">Choisir la rubrique</h3>
+
+<p>Le fonctionnement de ce menu déroulant est très simple&nbsp;: 
+le menu indique toute la hiérarchie des rubriques (telles 
+qu&#8217;elles sont créées par les administrateurs du site), 
+il suffit de sélectionner celle dans laquelle on veut placer 
+la sous-rubrique.</p>
+
+<p>- &nbsp;<strong>Déplacer une rubrique</strong></p>
+
+<CENTER><img src="./?exec=aide_index&amp;img=0:AIDE-fr-rubrub.gif"  
+border="0"></CENTER>
+
+<p>Vous pouvez, par l&#8217;intermédiaire de ce menu déroulant, 
+faire dépendre la présente rubrique d&#8217;une autre 
+rubrique. Dans ce cas, il faut comprendre que l&#8217;ensemble des 
+sous-rubriques contenues dans la présente rubrique se 
+&#171;&nbsp;déplacent&nbsp;&#187; avec elle dans la hiérarchie du 
+site. De la même façon, les articles contenus dans cette 
+rubrique et ses sous-rubriques se déplacent avec elle.</p>
+
+<h2>rublogo/Logo de la rubrique</h2>
+
+<h3 class="spip">Logo de la rubrique</h3>
+
+<p><A HREF="./?exec=aide_index&amp;aide=logoart" TARGET="_top"><img 
+src="./?exec=aide_index&amp;img=0:AIDE-fr-logoart-2.gif" alt=" "  border="0" 
+align="right"></A>
+Vous pouvez installer sur votre site un logo pour chaque rubrique. Ce 
+logo peut être soit un logo unique (image fixe), soit un logo 
+à deux positions gérant le survol de la souris.</p>
+
+<p>L&#8217;installation d&#8217;images pour ce logo de rubrique se déroule 
+exactement de la même façon que pour le <A 
+HREF="./?exec=aide_index&amp;aide=logoart" TARGET="_top">logo d&#8217;un 
+article</A>.</p>
+
+<p><strong>N.B.</strong> Les logos des rubriques ont un fonctionnement 
+<i>récursif</i>&nbsp;: en l&#8217;absence d&#8217;un logo pour une rubrique 
+donnée, SPIP va tenter de lui substituer le logo d&#8217;une 
+rubrique dont elle dépend.</p>
+
+<CENTER><IMG SRC="./?exec=aide_index&amp;img=0:AIDE-fr-rubhier-1.gif" BORDER=0 ></CENTER>
+
+<p>Dans la hiérarchie ci-dessus, en l&#8217;absence d&#8217;un logo pour la 
+rubrique&nbsp;221, SPIP lui substituera (uniquement pour la visite du site 
+public) le logo de la rubrique&nbsp;22 ou encore, s&#8217;il n&#8217;y a pas de logo 
+pour cette rubrique, celui de la rubrique&nbsp;2. Sinon, SPIP affichera le 
+logo installé à la racine du site.</p>
+
+<p>Notez encore que, si le webmestre l&#8217;a programmé ainsi, le logo 
+d&#8217;une rubrique pourra être utilisé comme logo de 
+substitution pour les articles qu&#8217;elle contient.</p>
+
+<h1>Les brèves</h1>
+<h2>breves/Les brèves</h2>
+
+<h3 class="spip">Les brèves</h3>
+
+<p>Les brèves constituent une méthode simple et rapide de 
+publication dans SPIP. Contrairement aux articles, les brèves 
+sont constituées d&#8217;un nombre très réduit 
+d&#8217;informations&nbsp;: un titre, un texte et un lien hypertexte. Ainsi, le 
+système de brève est-il idéal pour un suivi de 
+l&#8217;actualité, une revue de presse en ligne, etc.</p>
+
+<h2>brevesrub/Choisir la rubrique</h2>
+
+<h3 class="spip">Position des brèves dans la structure du site</h3>
+
+<p>Afin de simplifier leur utilisation (et pour éviter que les 
+brèves ne fassent double-emploi avec les articles), 
+l&#8217;intégration des brèves dans la hiérarchie des 
+rubriques est réduite au strict minimum&nbsp;: les brèves 
+dépendent uniquement des rubriques situées à la 
+racine du site.</p>
+
+<CENTER><img src="./?exec=aide_index&amp;img=0:AIDE-fr-rubhier-1.gif" alt="Rubriques" border="0"></CENTER>
+
+<p>Dans notre exemple, on pourra placer des brèves dans les 
+rubriques 1 et 2, mais pas dans leurs sous-rubriques (contrairement 
+aux articles, que l&#8217;on peut placer n&#8217;importe où). De ce fait, 
+la présentation de la page des brèves se fait 
+directement en fonction de ces grandes rubriques, et le menu 
+déroulant permettant d&#8217;indiquer la position des brèves 
+est très court.</p>
+
+<h2>breveslien/Le lien hypertexte</h2>
+
+<h3 class="spip">Le lien hypertexte des brèves</h3>
+
+<p>Afin de faciliter l&#8217;utilisation des brèves dans le cadre d&#8217;une 
+revue de presse en ligne, chaque brève peut recevoir 
+l&#8217;indication d&#8217;un lien hypertexte. Il suffit d&#8217;indiquer le titre du 
+site ou de l&#8217;article référencé, et son adresse 
+(URL).</p>
+
+<p>Ces informations sont bien entendu optionnelles.</p>
+
+<p><i>N. B.</i> Ce système de lien n&#8217;empêche pas 
+d&#8217;intégrer des liens hypertextes dans le corps du texte de la 
+brève, mais le lien hypertexte <i>séparé</i> permet 
+au webmestre du site de lui appliquer un traitement graphique 
+spécifique.</p>
+
+<h2>brevesstatut/Le statut de la brève</h2>
+
+<h3 class="spip">Le statut de la brève</h3>
+
+<p>La gestion d&#8217;une brève est plus simple que celle d&#8217;un article. 
+Une brève n&#8217;a pas d&#8217;auteur. Son statut est soit 
+&#171;&nbsp;Proposée&nbsp;&#187;, &#171;&nbsp;Validée&nbsp;&#187; ou 
+&#171;&nbsp;Refusée&nbsp;&#187;. Seuls les administrateurs peuvent en 
+modifier le statut.</p>
+
+<p>- &nbsp;<strong>Brève proposée</strong></p>
+
+<p>Les brèves &#171;&nbsp;proposées&nbsp;&#187; sont 
+signalées sur la page &#171;&nbsp;A suivre&nbsp;&#187;&nbsp;: tous les 
+rédacteurs peuvent les consulter et les modifier. Les 
+administrateurs se voient proposer deux boutons - permettant de les 
+valider ou de les refuser.</p>
+
+<p>- &nbsp;<strong>Brève validée</strong></p>
+
+<p>Les brèves &#171;&nbsp;validées&nbsp;&#187; sont celles qui 
+apparaissent sur le site public. Seuls les administrateurs peuvent 
+dès lors les modifier.</p>
+
+<p>- &nbsp;<strong>Brève refusée</strong></p>
+
+<p>Une brève &#171;&nbsp;refusée&nbsp;&#187; n&#8217;est pas 
+publiée sur le site public, et seuls les administrateurs 
+peuvent y accéder dans le site privé.</p>
+
+<h2>breveslogo/Le logo de la brève</h2>
+
+<h3 class="spip">Logo de la brève</h3>
+
+<p><img src="./?exec=aide_index&amp;img=0:AIDE-fr-logoart-2.gif" alt="Formulaire de logo"  border="0" align="right">
+Vous pouvez installer sur votre site un logo pour chaque
+brève. Ce logo peut être soit un logo unique (image 
+fixe), soit un logo à deux positions gérant le survol 
+de la souris.</p>
+
+<p>L&#8217;installation d&#8217;images pour ce logo de brève se 
+déroule exactement de la même façon que pour le 
+<A HREF="./?exec=aide_index&amp;aide=logoart" TARGET="_top">logo d&#8217;un 
+article</A>.</p>
+
+<h1>Images et documents</h1>
+<h2>ins_img/Insérer des images</h2>
+
+<h3 class="spip">Insérer des images dans le texte</h3>
+
+<p>SPIP vous offre la possibilité d&#8217;illustrer vos articles et vos brèves avec des images. Cela s&#8217;effectue en plusieurs étapes&nbsp;: vous devez envoyer le fichier de votre image vers le site, puis insérer l&#8217;image à l&#8217;intérieur du texte.</p>
+
+<hr class="spip" />
+
+<p>Préparation&nbsp;: <strong>Formats d&#8217;images</strong></p>
+
+<p>Lorsque vous créez vos images (avec votre logiciel habituel), 
+vous devez les créer à l&#8217;un des formats suivants&nbsp;:
+<br />- &nbsp;GIF (extension <strong>.gif</strong>),
+<br />- &nbsp;JPEG (extension <strong>.jpg</strong>),
+<br />- &nbsp;PNG (extension <strong>.png</strong>).</p>
+
+<p>Veillez particulièrement à ce que le nom de vos 
+fichiers ait une <i>terminaison</i> indiquant leur format&nbsp;: <strong>.gif</strong>, 
+<strong>.jpg</strong> ou <strong>.png</strong>. Si vous installez un fichier dont le nom
+ne contient pas cette extension, le système ne saura pas
+utiliser l&#8217;image.</p>
+
+<hr class="spip" />
+
+<p>Étape 1&nbsp;: <strong>Installation des images sur le serveur</strong></p>
+
+<p><img src="./?exec=aide_index&amp;img=0:AIDE-fr-ins_img1.gif" alt=" "  
+border="0" align="right">Avant de pouvoir insérer vos images 
+à l&#8217;intérieur du texte, il faut bien entendu installer 
+ces images sur le serveur. Cela se fait, dans SPIP, par l&#8217;interface 
+graphique.</p>
+
+<p>Lorsque vous &#171;&nbsp;modifiez&nbsp;&#187; un article ou une brève, la colonne de gauche 
+vous propose une interface intitulée&nbsp;: 
+&#171;&nbsp;Ajouter une image&nbsp;&#187;. Cela 
+se présente sous la forme d&#8217;un <i>champ</i> suivi d&#8217;un bouton 
+nommé, suivant les navigateurs, 
+&#171;&nbsp;parcourir&nbsp;&#187;, &#171;&nbsp;Browse&nbsp;&#187;, &#171;&nbsp;Sélectionner&nbsp;&#187;, 
+&#171;&nbsp;File&nbsp;&#187;, &#171;&nbsp;Fichier&nbsp;&#187;...</p>
+
+<p>Lorsque vous cliquez sur ce bouton, une interface s&#8217;ouvre, vous 
+permettant de visiter votre disque dur et d&#8217;indiquer quel fichier 
+graphique vous voulez sélectionner.</p>
+
+<p>Cela fait, cliquez sur le bouton intitulé 
+&#171;&nbsp;Télécharger&nbsp;&#187;.</p>
+
+<p>Si l&#8217;opération a 
+réussi, votre image apparaît dans la colonne de gauche, complétée de plusieurs indications...</p>
+
+<hr class="spip" />
+
+<p>Étape 2&nbsp;: <strong>Les informations liées à votre image</strong></p>
+
+<p><img src="./?exec=aide_index&amp;img=0:AIDE-fr-ins_img2.gif" alt=" "  
+border="0" align="right">Une fois votre image envoyée au serveur, une case apparaît sur la gauche de l&#8217;écran. Il y a là toutes les informations nécessaires qui la concernent. (Une partie de ces informations apparaît masquée, cliquer sur le triangle pour &#171;&nbsp;déplier&nbsp;&#187; la boîte d&#8217;information.)</p>
+
+<p>- &nbsp;<i>Affichage sous forme de vignette</i>. Une prévisualisation de votre image apparaît. Si l&#8217;image est de grande taille (plus de 200 pixels de large), c&#8217;est une version de taille réduite qui est affichée.</p>
+
+<p>- &nbsp;<i>Raccourcis SPIP</i>. Voir ci-après&nbsp;: SPIP vous rappelle les 3 
+&#171;&nbsp;raccourcis&nbsp;&#187; qui vous permettent d&#8217;insérer cette 
+image à l&#8217;intérieur de votre texte. Notez que chaque 
+image est &#171;&nbsp;numérotée&nbsp;&#187; ainsi&nbsp;: 
+&#171;&nbsp;IMG1&nbsp;&#187;, &#171;&nbsp;IMG2&nbsp;&#187;... Ces &#171;&nbsp;raccourcis&nbsp;&#187; sont utilisés dans la troisième étape.</p>
+
+<p>- &nbsp;<i>Taille de l&#8217;image.</i> Juste au-dessus de l&#8217;image, la largeur et la 
+hauteur de votre image (en pixels - ou &#171;&nbsp;points&nbsp;&#187;) sont 
+rappelées.</p>
+
+<p>- &nbsp;<i>Titre et description de l&#8217;image.</i> Vous pouvez, si vous le désirez, indiquer un nom et une description pour chaque image. Par exemple une explication, ou une mention du copyright du photographe...</p>
+
+<p>- &nbsp;<i>Supprimer cette image.</i> Comme son nom l&#8217;indique, le bouton &#171;&nbsp;Supprimer cette image&nbsp;&#187; permet d&#8217;effacer ce fichier, si vous avez fait une erreur de manipulation, ou si vous décidez finalement de ne pas utiliser l&#8217;image dans ce texte. Il est conseillé d&#8217;effacer les images inutilisées, afin d&#8217;éviter d&#8217;encombrer votre serveur avec des fichiers inutiles.</p>
+
+<p>Vous pouvez recommencer l&#8217;opération avec autant d&#8217;images que 
+vous le désirez (un article ou une brève peuvent contenir autant d&#8217;images que nécessaire).</p>
+
+<hr class="spip" />
+
+<p>Étape 3&nbsp;: <strong>Insérer une image à l&#8217;intérieur du texte</strong></p>
+
+<p>A ce stade, les fichiers graphiques sont bien présents sur le 
+serveur, mais il reste à indiquer à quel endroit de 
+votre texte vous voulez les insérer. Pour cela, inutile de 
+faire du HTML, SPIP vous propose un &#171;&nbsp;raccourci&nbsp;&#187; 
+permettant d&#8217;insérer votre image simplement.</p>
+
+<p>- &nbsp;<i>Images sans commentaire</i></p>
+
+<p>Pour chaque image, voyez la mention des 3 raccourcis&nbsp;:
+<br />- &nbsp;&lt;img1|left>
+<br />- &nbsp;&lt;img1|center>
+<br />- &nbsp;&lt;img1|right></p>
+
+<p>Recopiez l&#8217;un de ces raccourcis (le nombre correspond au numéro de l&#8217;image, il change donc pour chaque fichier), et recopiez-le à 
+l&#8217;intérieur de la case &#171;&nbsp;Texte&nbsp;&#187;, là vous 
+désirez le situer dans votre article. &#171;&nbsp;left&nbsp;&#187; 
+aligne l&#8217;image à gauche, &#171;&nbsp;right&nbsp;&#187; à droite, 
+et &#171;&nbsp;center&nbsp;&#187; place votre image au centre du texte.</p>
+
+<p>Lors de l&#8217;affichage à l&#8217;écran, SPIP remplacera ces 
+raccourcis par le code HTML correspondant, en calculant 
+automatiquement la taille des images.</p>
+
+<p>- &nbsp;<i>Images avec titre et description</i></p>
+
+<p>Si vous avez indiqué un titre et/ou une description, les mentions <img...> sont remplacées par&nbsp;:
+<br />- &nbsp;&lt;doc1|left>
+<br />- &nbsp;&lt;doc1|center>
+<br />- &nbsp;&lt;doc1|right></p>
+
+<p>Elles s&#8217;utilisent de la même façon que ci-dessus&nbsp;; cependant, lorsque vous insérez un &#171;&nbsp;raccourci&nbsp;&#187; de ce type, SPIP insère dans votre texte non seulement l&#8217;image, mais le titre et la description que vous lui avez donnée. Votre image apparaît ainsi avec, éventuellement, une explication et des mentions de copyright, le nom de l&#8217;artiste, etc.</p>
+
+<h2>ins_doc/Joindre des documents</h2>
+
+<h3 class="spip">Joindre des documents multimédia</h3>
+
+<p>L&#8217;interface de SPIP vous permet de proposer sur votre site des fichiers multimédia (son, vidéo, textes...).</p>
+
+<p>Les rédacteurs peuvent joindre des documents aux articles. Ces documents peuvent être soit présentés à la suite du texte (à la façon de &#171;&nbsp;pièces jointes&nbsp;&#187;), soit présentés à l&#8217;intérieur du texte sous la forme d&#8217;une vignette de prévisualisation.</p>
+
+<p>Les administrateurs du site peuvent, de plus, installer des documents directement dans les rubriques.</p>
+
+<p>Notez bien la différence importante entre ces deux utilisations&nbsp;: joints aux articles, les documents sont des &#171;&nbsp;pièces jointes&nbsp;&#187;, qui n&#8217;ont pas d&#8217;intérêt sans l&#8217;article auquel ils sont associés (dans la navigation dans le site, on peut consulter de tels fichiers à partir des articles)&nbsp;; lorsqu&#8217;ils sont installés directement dans les rubriques, les documents deviennent des éléments du site comparables aux articles et aux brèves, et non plus des compléments d&#8217;information.</p>
+
+<hr class="spip" />
+
+<p>Étape 1&nbsp;: <strong>Installation des documents sur le serveur</strong></p>
+
+<p><img src="./?exec=aide_index&amp;img=0:AIDE-fr-ins_doc1.gif" alt=" "  
+border="0" align="right">L&#8217;installation des fichiers sur le serveur se fait au travers de l&#8217;interface &#171;&nbsp;Joindre un document&nbsp;&#187; pour les articles, et &#171;&nbsp;Publier un document dans cette rubrique&nbsp;&#187; pour les rubriques.</p>
+
+<p>Vous remarquerez que, pour les articles, cette interface apparaît à deux endroits différents&nbsp;: en bas de la page de chaque article, et dans la colonne de gauche (sous les images) lorsque vous modifiez un article. Ces interfaces ont exactement la même fonction, mais vous utiliserez l&#8217;une ou l&#8217;autre en fonction de vos besoins. Pour les rubriques, l&#8217;installation des documents se fait sur la page de la rubrique concernée.</p>
+
+<p>Avant d&#8217;installer vos fichiers, vous devez les créer sur votre ordinateur. L&#8217;interface d&#8217;envoi des documents vous rappelle la liste des formats autorisés sur ce système. <i>Veillez absolument à nommer vos fichiers avec la terminaison correcte (par exemple, </i>&#171;&nbsp;xxxxxx.mp3&nbsp;&#187;<i> pour un fichier au format MP3.</i></p>
+
+<p>L&#8217;interface est la même que pour les images&nbsp;: le bouton &#171;&nbsp;Fichier&nbsp;&#187;, ou &#171;&nbsp;File&nbsp;&#187;, ou &#171;&nbsp;Parcourir&nbsp;&#187;, &#171;&nbsp;Browse&nbsp;&#187; (selon les navigateurs) ouvre une fenêtre qui vous permet de sélectionner le fichier sur votre disque dur. Une fois ce fichier sélectionné, cliquez sur &#171;&nbsp;Télécharger&nbsp;&#187; pour envoyer le fichier. <i>Attention&nbsp;: selon la taille de votre fichier, cette opération peut prendre du temps. Notez aussi que, selon les réglages de l&#8217;hébergeur de votre site, les fichiers trop gros pourront être refusés&nbsp;; dans ce cas, vous pourrez contourner cette limitation en</i> 
+<a href="http://www.spip.net/ecrire/?exec=aide_index&amp;aide=ins_upload&amp;var_lang=fr" class='spip_out' rel='external' target="_blank">installant vos fichiers par FTP</a>.</p>
+
+<hr class="spip" />
+
+<p>Étape 2&nbsp;: <strong>Informations et vignette</strong></p>
+
+<p><img src="./?exec=aide_index&amp;img=0:AIDE-fr-ins_doc2.gif" alt=" "  
+border="0" align="right">Une fois le fichier transféré sur le serveur, une boîte d&#8217;information apparaît. Plusieurs opérations peuvent y être réalisées.</p>
+
+<p>- &nbsp;<i>Vignette de prévisualisation</i></p>
+
+<p>Cette notion est très importante&nbsp;: contrairement aux images, que l&#8217;on insère dans le corps du texte, les documents n&#8217;apparaissent pas directement. Une vignette de prévisualisation est présentée au visiteur, sur laquelle il pourra cliquer pour obtenir le document correspondant.</p>
+
+<p>La partie supérieure de la boîte d&#8217;information vous permet de choisir la vignette de prévisualisation. Vous pouvez opter pour une <i>vignette par défaut</i>, ou installer un <i>logo personnalisé</i>.</p>
+
+<p>La vignette par défaut est installée automatiquement par le système, en fonction du format du document. L&#8217;avantage de laisser une telle vignette est que la présentation des documents d&#8217;un même type sur l&#8217;ensemble de votre site sera uniforme.</p>
+
+<p>Si vous préférez, vous pouvez installer un logo (de taille réduite de préférence, et au format GIF, JPG ou PNG), qui apparaîtra à la place de la vignette par défaut. Une fois un tel logo installé, un lien &#171;&nbsp;Supprimer la vignette personnalisée&nbsp;&#187; vous permettra de revenir à la vignette par défaut si nécessaire.</p>
+
+<p>- &nbsp;Dans la page de modification des articles, les &#171;&nbsp;raccourcis&nbsp;&#187; vous permettant d&#8217;insérer le document dans le corps du texte sont présentés, identiques à ceux des images.</p>
+
+<p>- &nbsp;La partie inférieure vous permet de donner un titre et de fournir un descriptif pour votre document. Inutile d&#8217;indiquer ici le format et le poids du fichier multimédia, cette information sera fournie automatiquement par le système de publication.</p>
+
+<p>- &nbsp;Enfin, le bouton &#171;&nbsp;Supprimer ce document&nbsp;&#187; permet d&#8217;effacer les documents inutiles. <i>Notez bien&nbsp;: il est impératif de supprimer les documents non désirés, faute de quoi ils apparaîtront sur le site public.</i></p>
+
+<p>- &nbsp;<strong>Dans le cas des documents installés dans les rubriques,</strong> vous pouvez de plus modifier la date de mise en ligne du document (sur le même principe que vous modifiez la date de publication d&#8217;un article ou d&#8217;une brève). Une fois ces réglages effectués, les documents des rubriques sont immédiatement disponibles sur le site public (il n&#8217;est pas nécessaire de les &#171;&nbsp;valider&nbsp;&#187; comme les brèves ou les articles).</p>
+
+<hr class="spip" />
+
+<p>Étape 3&nbsp;: <strong>Insérer les documents dans le texte des articles</strong></p>
+
+<p>Pour les documents associés aux articles, vous pouvez vous contenter de les installer et de préciser les informations (étapes 1 et 2 ci-dessus). Lorsque vous publierez l&#8217;article, ces documents apparaîtront à la suite du texte sous la forme d&#8217;une liste de <i>documents joints</i>.</p>
+
+<p>Cependant, vous pouvez également décider d&#8217;insérer les vignettes de prévisualisation à l&#8217;intérieur du texte. Vous obtiendrez ainsi des images cliquables à l&#8217;intérieur de l&#8217;article.</p>
+
+<p>Ici, la procédure est exactement la même que pour les images, à la différence près que les vignettes seront des éléments cliquables. Insérez un raccourci de la forme &lt;imgxx|yy> ou &lt;docxx|yy> selon que vous voulez afficher uniquement la vignette, ou bien le titre et le descriptif.</p>
+
+<p><i>Notez bien&nbsp;:</i> les documents que vous aurez installé à l&#8217;intérieur du texte n&#8217;appaîtront plus <i>sous l&#8217;article</i>. Pour les articles, il y a donc deux emplacements où apparaissent les documents&nbsp;: à l&#8217;intérieur du texte (vignette cliquable), ou à la suite de l&#8217;article sous la mention &#171;&nbsp;Document joint&nbsp;&#187;.</p>
+
+<hr class="spip" />
+
+<p>Cas particulier&nbsp;: <strong>Les documents vidéo et sonores</strong></p>
+
+<p>Certains formats de fichiers multimédia sont conçus pour être affichés directement dans une page Web (par exemple une vidéo insérée directement dans l&#8217;article).</p>
+
+<p>Pour pouvoir insérer de tels documents dans le corps de l&#8217;article, non plus sous forme de vignette cliquable, mais en tant qu&#8217;animation multimédia, vous devez indiquer ses dimensions&nbsp;: largeur et hauteur absolument supérieures à zéro (pour les fichiers audio, on choisira pour largeur la dimension que l&#8217;on souhaite attribuer au curseur de défilement, et une hauteur réduite, par exemple 25&nbsp;pixels).</p>
+
+<p><i>Notez bien&nbsp;:</i> les cases vous permettant d&#8217;indiquer les dimensions n&#8217;apparaissent que pour les documents dont le fichier correspond à certains formats acceptés par SPIP pour l&#8217;intégration à l&#8217;intérieur des articles (notamment&nbsp;: avi, quicktime, real, flash).</p>
+
+<p>Une fois ces dimensions fixées, un raccourci&nbsp;SPIP supplémentaire vous sera proposé, de la forme &lt;embxx|yy> (pour mémoire&nbsp;: &#171;&nbsp;<strong>emb</strong>ed&nbsp;&#187;).</p>
+
+<p>Si vous connaissez bien le fonctionnement de ces types d&#8217;inclusion, sachez que vous pouvez ajouter des paramètres supplémentaires, par exemple&nbsp;:</p>
+
+<form action=''  method='get'><div>
+<input type='hidden' name='exec' value='' />
+<textarea readonly='readonly' cols='40' rows='2' class='spip_cadre' dir='ltr'>&lt;emb54|center|autostart=true|quality=high&gt;</textarea></div></form><h2>ins_upload/Installer des fichiers par FTP ou SSH</h2>
+
+<h3 class="spip">Installer des fichiers par FTP ou SCP</h3>
+
+<p>Certains serveurs interdisent l&#8217;envoi de fichiers au travers d&#8217;une interface Web, ou en limitent la taille. Et même quand cela est possible,
+il peut être pénible d&#8217;envoyer des fichiers lourds de cette façon. SPIP permet de contourner ces limitations en installant directement les fichiers que vous souhaitez utiliser comme images ou comme documents par FTP ou SCP.</p>
+
+<p>Cette opération est donc évidemment réservée aux personnes qui possèdent de tels droits de connexion vers les disques du serveurs HTTP.</p>
+
+<p>- &nbsp;<strong>Le dossier de transfert</strong></p>
+
+<p>L&#8217;emplacement du dossier où déposer vos fichiers  dépend de votre statut sur  le site et de la version de SPIP installée. Avant <a href="fr_article3368.html" class='spip_in'><span style='color: darkviolet;'>S</span><span style='color: blue;'>P</span><span style='color: green;'>I</span><span style='color: salmon;'>P</span> <span style='color: green;'>1</span><span style='color: blue;'>.</span><span style='color: darkviolet;'>9</span></a> ce dossier était le  sous-dossier <code class='spip_code' dir='ltr'>upload</code> de <code class='spip_code' dir='ltr'>ecrire</code>,  et SPIP ne faisait apparaître son contenu
+ qu&#8217;aux seuls  administrateurs  principaux du site. Depuis  <a href="fr_article3368.html" class='spip_in'><span style='color: darkviolet;'>S</span><span style='color: blue;'>P</span><span style='color: green;'>I</span><span style='color: salmon;'>P</span> <span style='color: green;'>1</span><span style='color: blue;'>.</span><span style='color: darkviolet;'>9</span></a>, le dossier de transfert est un sous-dossier de <code class='spip_code' dir='ltr'>tmp</code>, il se nomme toujours  <code class='spip_code' dir='ltr'>upload</code> et SPIP ne fait apparaître
+l&#8217;<i>intégralité</i>
+de  son contenu 
+qu&#8217;aux seuls  administrateurs  principaux du site.
+Mais de plus, il est prévu pour avoir autant de sous-dossiers que d&#8217;administrateurs restreints, le nom de ces dossiers  étant le <i>login</i>&nbsp;de ces administrateurs.  Pour un administrateur restreint, SPIP ne fera apparaître que le contenu du dossier à son nom.</p>
+
+<p>Après installation de vos fichiers par FTP ou SCP, pensez à vérifier qu&#8217;ils sont bien accessibles en lecture par le serveur HTTP (tant les fichiers eux-mêmes que le répertoire qui les contient).</p>
+
+<p>- &nbsp;<strong>Le menu déroulant des fichiers</strong></p>
+
+<p>Cela fait, un menu déroulant apparaîtra automatiquement après l&#8217;interface de téléchargement des fichiers par le Web, vous proposant la liste des fichiers contenus dans ce dossier.  Noter que SPIP n&#8217;affichera en fait que les fichiers réputés sans danger, ce qui exclut les fichiers non répertoriés dans la nomenclature MIME, en particulier les fichiers sans extension. On peut contourner l&#8217;interdiction en prenant une extension autorisée (par exemple renommer <code class='spip_code' dir='ltr'>x.php</code> en <code class='spip_code' dir='ltr'>x.txt</code>), ce qui permettra de charger le fichier tout en empêchant son utilisation abusive sur le site. On pourra utiliser le formulaire de description du document pour préciser quel était son nom d&#8217;origine.</p>
+
+<p>Grâce à ce menu, vous pourrez  sélectionner le fichier qui vous intéresse, et valider votre choix.
+Si l&#8217;opération est réussie, pensez à  nettoyer votre dossier de transfert en supprimant ce fichier (le système en a créé une copie à un autre endroit du serveur, votre fichier d&#8217;origine n&#8217;est donc plus utile), afin de ne pas allonger indéfiniment la liste du menu déroulant et la place occupée sur le disque.</p>
+
+<p>- &nbsp;<strong>Tous les fichiers à la fois</strong></p>
+
+<p>Si vous installez plusieurs fichiers à la fois dans votre dossier de transfert, une fonctionnalité supplémentaire vous est proposée dans l&#8217;interface du site&nbsp;: vous pourrez installer tous ces fichiers en une seule opération. Cela peut se révéler pratique pour créer rapidement des portfolios.</p>
+
+<h3 class="spip">Collection d&#8217;images et de documents</h3>
+
+<p>On peut facilement ajouter d&#8217;un coup une collection d&#8217;images ou de documents en
+téléchargeant une archive au format <i>zip</i> les contenant tous.</p>
+
+<p>SPIP proposera alors d&#8217;ajouter l&#8217;archive telle quelle à l&#8217;article, ou de déballer  celle-ci pour associer à l&#8217;article tous les documents et images qu&#8217;elle contient,  ou encore les deux à la fois.  En cas de déballage,
+seront   bien entendu appliquées les mêmes règles d&#8217;exclusion que ci-dessus en ce qui concerne les fichiers potentiellement dangereux.
+On  pourra de plus demander que le nom de chaque fichier soit automatiquement recopié comme nom de la pièce ainsi jointe.</p>
+
+<h1>Les mots-clés</h1>
+<h2>mots/Principe des mots-clés</h2>
+
+<h3 class="spip">Les mots-clés</h3>
+
+<p>L&#8217;une des limitations importantes de SPIP est sa structure 
+hiérarchique&nbsp;: chaque article ne peut se trouver que dans une 
+seule rubrique, ce qui pose parfois des difficultés de 
+classement.</p>
+
+<p>Les mots-clés offrent un moyen de navigation transversal 
+à l&#8217;intérieur du site. En associant un ou plusieurs 
+mots-clés à un article, on dispose en effet d&#8217;un moyen 
+de créer des liens avec d&#8217;autres articles aux thèmes 
+similaires, mais situés dans d&#8217;autres rubriques.</p>
+
+<p>Les mots-clés n&#8217;ont réellement d&#8217;intérêt 
+que si chaque mot est associé à plusieurs articles, 
+afin de pouvoir relier ces différents articles entre eux.</p>
+
+<p><i>Seuls les administrateurs peuvent créer et modifier les 
+mots-clés.</i></p>
+
+<p><i>Fréquemment, la structure des rubriques, si elle est bien 
+conçue, permet de se passer des mots-clés&nbsp;: les articles 
+de thèmes similaires se trouvent simplement dans les 
+mêmes rubriques, il est alors inutile d&#8217;ajouter des 
+mots-clés pour indiquer le thème de chacun. Les 
+administrateurs peuvent donc, dans la page de <A 
+HREF="./?exec=aide_index&amp;aide=confart" TARGET="_top">Configuration 
+précise</A>, désactiver totalement l&#8217;utilisation des 
+mots-clés.</i></p>
+
+<h2>artmots/Les mots-clés</h2>
+
+<h3 class="spip">Les mots-clés</h3>
+
+<p>Afin de diversifier la navigation dans le site, il est possible 
+d&#8217;associer des <A HREF="./?exec=aide_index&amp;aide=mots" 
+TARGET="_top">mots-clés</A> aux articles, aux brèves et aux sites référencés. Ainsi le visiteur du 
+site pourra non seulement naviguer de rubrique en rubrique, mais 
+également d&#8217;un article traitant d&#8217;un thème 
+(indiqué par un mot clé) à un autre article 
+associé au même mot-clé.</p>
+
+<p>Il est possible d&#8217;indiquer, pour chaque article, brève ou site, autant de 
+mots-clés que nécessaire.</p>
+
+<p>Un menu déroulant indique la totalité des 
+mots-clés du site. Son utilisation est très simple. 
+<i>Attention&nbsp;: lorsqu&#8217;il existe plus de 50 mots-clés, ce menu 
+déroulant est remplacé par un moteur de recherche&nbsp;: 
+indiquez le mot désiré, et cliquez sur 
+&#171;&nbsp;Recherche&nbsp;&#187;.</i></p>
+
+<p><strong>N. B.</strong> Seuls les administrateurs peuvent créer des 
+mots-clés, à partir de la page qui est consacrée 
+à leur gestion (bouton &#171;&nbsp;Les mots-clés&nbsp;&#187; dans 
+l&#8217;interface de navigation supérieure).</p>
+
+<p><i>Les administrateurs peuvent désactiver l&#8217;utilisation des 
+mots-clés pour l&#8217;ensemble du site, via l&#8217;interface &#171;&nbsp;<A 
+HREF="./?exec=aide_index&amp;aide=confart" TARGET="_top">Configuration 
+précise</A>&nbsp;&#187;.</i></p>
+
+<h2>motsgroupes/Les groupes de mots</h2>
+
+<h3 class="spip">Les groupes de mots</h3>
+
+<p>Lorsque l&#8217;on utilise beaucoup de mots-clés, il peut devenir 
+difficile de les manipuler rapidement. C&#8217;est pourquoi on peut 
+créer des groupes réunissant ces mots. L&#8217;interface 
+devient alors plus claire (par exemple, un groupe &#171;&nbsp;Pays&nbsp;&#187; 
+regroupera &#171;&nbsp;Namibie&nbsp;&#187;, &#171;&nbsp;Allemagne&nbsp;&#187;, 
+&#171;&nbsp;Pérou&nbsp;&#187;, tandis qu&#8217;un  groupe 
+&#171;&nbsp;Thèmes&nbsp;&#187; regroupera &#171;&nbsp;Chômage&nbsp;&#187;, 
+&#171;&nbsp;Poésie&nbsp;&#187;, &#171;&nbsp;Animaux&nbsp;&#187;...).</p>
+
+<h1>Les sites référencés</h1>
+<h2>reference/Référencer un site</h2>
+
+<h3 class="spip">Sites référencés</h3>
+
+<p>SPIP propose un système complet permettant de gérer des listes de liens vers d&#8217;autres sites. Ce système est très complet et permet notamment&nbsp;:
+<br />- &nbsp;de regrouper ces listes dans des rubriques (dans les mêmes rubriques que des articles, ou des rubriques spécifiques dédiées à cet usage, à la façon d&#8217;un annuaire de liens)&nbsp;;
+<br />- &nbsp;d&#8217;attribuer un logo à chaque site&nbsp;;
+<br />- &nbsp;d&#8217;attribuer des mots-clés pour chaque site référencé&nbsp;;
+<br />- &nbsp;d&#8217;ajouter un descriptif personnalisé pour chaque site.</p>
+
+<p>On peut de plus, pour les sites qui l&#8217;autorisent, récupérer automatiquement les derniers articles publiés (voir &#171;&nbsp;<a 
+href="./?exec=aide_index&amp;aide=rubsyn" target="_top">Les sites syndiqués</a>&nbsp;&#187;).</p>
+
+<p><strong>Référencer un nouveau site</strong></p>
+
+<p>Un bouton &#171;&nbsp;référencer un nouveau site&nbsp;&#187; dans la page de chaque rubrique de votre site vous permet d&#8217;indiquer un nouveau site.</p>
+
+<p>La méthode &#171;&nbsp;traditionnelle&nbsp;&#187; consiste à indiquer le nom du site, l&#8217;URL de cette page, puis d&#8217;insérer une description. Il est également possible de choisir la rubrique dans laquelle ce référencement sera inséré dans votre propre site.</p>
+
+<p>Un cadre en bas de page vous permet de gérer, éventuellement, la syndication de contenu. Pour plus de précisions sur ce sujet, voyez l&#8217;explication sur <a 
+href="./?aide_index&amp;aide=rubsyn" target="_top">les sites syndiqués</a>. Pour un référencement simple, il suffit de laisser l&#8217;option &#171;&nbsp;Pas de syndication&nbsp;&#187;.</p>
+
+<p><strong>Référencement rapide</strong></p>
+
+<p>Lors de la création d&#8217;un nouveau référencement de site, un cadre apparaît en haut de page vous permettant de référencer rapidement un site, sans indiquer vous-même son titre et son descriptif. Pour cela, il vous suffit d&#8217;indiquer l&#8217;URL de la page à référencer et de valider. Dans la mesure du possible, SPIP va récupérer automatiquement à cette adresse le titre de la page et un descriptif. Vous pourrez ultérieurement modifier ces informations.</p>
+
+<p><strong>Qui peut proposer des sites référencés&nbsp;?</strong></p>
+
+<p>Dans la page de &#171;&nbsp;Configuration précise du site&nbsp;&#187;, les administrateurs peuvent indiquer que seuls les administrateurs peuvent proposer des sites, ou les rédacteurs, ou même les visiteurs du site (dans ce cas, un formulaire sur le site public permettra aux visiteurs de proposer des sites).</p>
+
+<p>Dans tous les cas, seuls les administrateurs pourront valider ces propositions de référencement. Lorsqu&#8217;un référencement de site est proposé, tous les participants à l&#8217;espace privé peuvent discuter dans un forum lié à chaque site de la pertinence du référencement.</p>
+
+<h2>rubsyn/Sites syndiqués</h2>
+
+<h3 class="spip">Sites syndiqués</h3>
+
+<p>Les sites fabriqués à l&#8217;aide d&#8217;un système de 
+publication automatique (tel SPIP ou phpNuke) peuvent facilement 
+créer un fichier indiquant en permanence la liste de leurs 
+dernières publications. Il existe en particulier un format 
+standardisé pour un tel fichier, intitulé &#171;&nbsp;fichier backend&nbsp;&#187;.</p>
+
+<p>Ce fichier peut être facilement analysé de 
+manière automatique, afin de récupérer en 
+permanence la liste des nouveautés de tels sites. De cette 
+manière, SPIP vous permet d&#8217;afficher sur votre propre site la 
+liste des derniers articles publiés sur d&#8217;autres sites.</p>
+
+<p>Pour chaque <a 
+href="./?exec=aide_index&amp;aide=reference" target="_top">site référencé</a> dans vos propres rubriques, vous avez la possibilité d&#8217;indiquer qu&#8217;il faut récupérer la liste des derniers articles publiés sur ce site. Cela, évidemment, si le site référencé propose un fichier <i>backend</i>.</p>
+
+<p>- &nbsp;<strong>Comment trouver ces fichiers &#171;&nbsp;backend.php3&nbsp;&#187;&nbsp;?</strong></p>
+
+<p>Pour les sites gérés sous SPIP ou phpNuke, ces fichiers <i>backend</i> sont 
+faciles à localiser&nbsp;: il s&#8217;agit tout simplement du fichier 
+situé à la racine du site, et portant le nom 
+&#171;&nbsp;backend.php3&nbsp;&#187; (éventuellement, 
+&#171;&nbsp;backend.php&nbsp;&#187; ou
+&#171;&nbsp;spip.php&nbsp;?page=backend&nbsp;&#187;). Par exemple, pour uZine 
+(<code class='spip_code' dir='ltr'>http://www.minirezo.net</code>), l&#8217;adresse du fichier backend est&nbsp;:</p>
+
+<LI> <code class='spip_code' dir='ltr'>http://www.minirezo.net/backend.php</code>
+
+<p>Autres exemples de fichiers de backend&nbsp;:</p>
+
+<LI> <code class='spip_code' dir='ltr'>http://www.davduf.net/backend.php</code></LI>
+<LI> <code class='spip_code' dir='ltr'>http://www.vacarme.eu.org/backend.php</code></LI>
+<LI> <code class='spip_code' dir='ltr'>http://www.vakooler.com/backend.php</code></LI>
+
+<p>Notez enfin que <i><a href="http://rezo.net/backend" 
+TARGET="autre" target="_blank">L&#8217;autre portail</a></i> fournit de tels fichiers pour les 
+sites qu&#8217;il référence, même si ces sites ne 
+comportent pas leur propre système de backend. Vous trouverez 
+sur cette page une trentaine de fichiers backend pour les sites 
+référencés par <i>L&#8217;autre portail</i>, ainsi qu&#8217;une 
+poignée de fichiers thématiques.</p>
+
+<p>- &nbsp;<strong>Ajouter un site syndiqué à votre propre système</strong></p>
+
+<p>Lorsque vous référencez un site dans une de vos rubriques, en plus d&#8217;indiquer le nom du site, l&#8217;URL de sa page d&#8217;accueil et une description, vous pouvez choisir de le syndiquer (un site syndiqué est donc avant tout un site référencé, pour lequel on demande à SPIP de récupérer la liste des dernières publications).</p>
+
+<p>Pour cela, sélectionnez l&#8217;option &#171;&nbsp;Syndication&nbsp;&#187; et indiquez l&#8217;adresse du fichier <i>backend</i> du site désiré. Après validation, un message vous indiquera immédiatement si la syndication a fonctionné correctement.</p>
+
+<p>Si la syndication a échoué&nbsp;:
+<br />- &nbsp;vérifiez l&#8217;URL que vous avez indiquée pour ce site&nbsp;; 
+<br />- &nbsp;vérifiez que le site que vous souhaitez syndiquer est actuellement accessible en ligne.</p>
+
+<p>- &nbsp;<strong>Référencement rapide</strong></p>
+
+<p>La fonction de référencement rapide d&#8217;un site (indiquer directement l&#8217;URL d&#8217;un site, SPIP se chargeant de récupérer automatiquement les informations nécessaires) est particulièrement adaptée aux sites syndiqués. En effet, au lieu d&#8217;indiquer lors du référencement rapide l&#8217;URL de la page d&#8217;accueil, préférez alors indiquer l&#8217;URL du fichier <i>backend</i> de ce site&nbsp;: SPIP récupérera automatiquement un grand nombre d&#8217;informations et procédera directement à la syndication.</p>
+
+<p>- &nbsp;<strong>Les articles syndiqués</strong></p>
+
+<p>Lorsque la syndication fonctionne, SPIP affiche la liste des derniers articles publiés par ce site. Voyez la page de l&#8217;aide consacrée <a 
+href="./?exec=aide_index&amp;aide=artsyn" target="_top">à la gestion de ces liens</a>.</p>
+
+<p>- &nbsp;<strong>Le fichier backend de votre propre site</strong></p>
+
+<p>SPIP fabrique automatiquement le fichier backend de votre propre 
+site. Cependant, n&#8217;oubliez pas de paramétrer le nom et 
+l&#8217;adresse de votre site sur la page de <a
+href="./?exec=aide_index&amp;aide=confnom" TARGET="_top">configuration 
+précise</a>.</p>
+
+<h2>artsyn/Articles syndiqués</h2>
+
+<h3 class="spip">Les articles syndiqués</h3>
+
+<p>Lorsque vous réclamez la <a
+href="./?exec=aide_index&amp;aide=rubsyn" TARGET="_top">syndication d&#8217;un site</a>, SPIP affiche la liste des derniers articles publiés sur ce site, sous la mention &#171;&nbsp;Articles syndiqués tirés de ce site&nbsp;&#187;.</p>
+
+<p>Pour chaque article, SPIP indique&nbsp;:
+<br />- &nbsp;le titre de l&#8217;article (il suffit de cliquer sur ce titre pour accéder à l&#8217;article sur son site d&#8217;origine)&nbsp;;
+<br />- &nbsp;éventuellement les auteurs des articles&nbsp;;
+<br />- &nbsp;éventuellement un descriptif de l&#8217;article.</p>
+
+<p>Ces informations, tirées automatiquement du site référencé, ne peuvent pas être modifiées.</p>
+
+<p>De plus, pour chaque article, un bouton &#171;&nbsp;bloquer ce lien&nbsp;&#187; vous permet d&#8217;en bloquer l&#8217;affichage sur votre propre site (parce qu&#8217;un article ne vous convient pas, parce qu&#8217;une erreur rend ce lien inopérant...). Vous pourrez à tout moment rétablir l&#8217;affichage de cet article sur votre site.</p>
+
+<p>Il est possible de demander que chacun des futurs liens en provenance du site soit a priori bloqué. Les articles ainsi récupérés ne s&#8217;afficheront qu&#8217;une fois que vous les aurez, un par un, validés &#171;&nbsp;à la main&nbsp;&#187;.</p>
+
+<h2>confhttpproxy/Utiliser un proxy</h2>
+
+<h3 class="spip">Utiliser un proxy HTTP</h3>
+
+<p>Si votre site se situe derrière un pare-feu (<i>firewall</i>), il peut
+être nécessaire de configurer un proxy HTTP pour aller chercher
+sur Internet les nouveautés de sites syndiqués.</p>
+
+<p>Ce proxy doit autoriser les requêtes vers l&#8217;extérieur sans
+authentification aucune.</p>
+
+<p>Indiquez, dans la configuration de votre site (section
+&#171;&nbsp;fonctionnalités de SPIP&nbsp;&#187;), le proxy au format suivant&nbsp;:</p>
+
+<p><code class='spip_code' dir='ltr'>http://nomproxy:port/</code></p>
+
+<p>où <i>nomproxy</i> est le nom du serveur faisant office de proxy, et
+<i>port</i> le numéro de port TCP (le plus souvent 3128, 8080, voire 80)
+sur lequel envoyer les requêtes.</p>
+
+<p>Attention&nbsp;: ce réglage est global&nbsp;: SPIP ira chercher tous les sites
+syndiqués à travers ce proxy. Depuis <a href="fr_article3368.html" class='spip_in'><span style='color: darkviolet;'>S</span><span style='color: blue;'>P</span><span style='color: green;'>I</span><span style='color: salmon;'>P</span> <span style='color: green;'>1</span><span style='color: blue;'>.</span><span style='color: darkviolet;'>9</span></a>, il est possible de préciser que certains hôtes ne doivent pas utiliser ce proxy. Mais pour les versions antérieures ou pour des réglages encore
+plus fins, il faudra impérativement vous tourner vers l&#8217;administrateur
+de votre réseau.</p>
+
+<h1>La messagerie interne</h1>
+<h2>messut/<img src='../prive/images/m_envoi.gif' border=0> Les messages entre utilisateurs</h2>
+
+<h3 class="spip">Les messages entre utilisateurs</h3>
+
+<p>SPIP facilite l&#8217;envoi de messages entre utilisateurs du site, sans passer par l&#8217;échange d&#8217;emails.</p>
+
+<p>Lorsqu&#8217;un message est &#171;&nbsp;envoyé&nbsp;&#187; par un utilisateur à un ou plusieurs autres utilisateurs, il devient un forum de discussion privé. Ainsi, une fois un message envoyé, une discussion peut avoir lieu, sous la forme d&#8217;un forum placé sous le texte de ce message. Dans SPIP, on peut donc considérer qu&#8217;un message est également un forum privé (c&#8217;est-à-dire qu&#8217;il est inutile de s&#8217;envoyer une multitude de messages pour discuter, il suffit de &#171;&nbsp;rester&nbsp;&#187; dans un même message avec son correspondant pour &#171;&nbsp;discuter&nbsp;&#187; grâce au forum privé qui lui est associé).</p>
+
+<p><i>Note&nbsp;:</i> Les messages entre utilisateurs et les forums qui y sont associés sont privés, c&#8217;est-à-dire que SPIP n&#8217;offre pas d&#8217;interface permettant aux administrateurs du site de voir ces messages. Cependant, nous attirons votre attention sur le caractère très relatif de cette confidentialité&nbsp;: un administrateur du site, doté d&#8217;un outil d&#8217;accès direct à la base de données, pourra toujours consulter ces messages.</p>
+
+<p>- &nbsp;<strong>Créer un message/discussion</strong></p>
+
+<p>La méthode la plus simple pour envoyer un message consiste à cliquer sur le logo vert (un petit &#171;&nbsp;M&nbsp;&#187; complété d&#8217;un triangle) qui est affiché à côté du nom de votre destinataire. Cela ouvre immédiatement un nouveau message.</p>
+
+<p>La seconde méthode consiste à utiliser le bouton &#171;&nbsp;Nouveau message&nbsp;&#187; présent sur chaque page de SPIP. Cela créé un nouveau message sans destinataire. Avant de pouvoir envoyer ce message, vous devrez évidemment indiquer à qui il est destiné.</p>
+
+<p>L&#8217;interface de rédaction de ces messages est très simple.</p>
+
+<p>La seule erreur courante consiste à oublier d&#8217;&#171;&nbsp;envoyer&nbsp;&#187; ce message&nbsp;: tant que le message est indiqué &#171;&nbsp;en cours de rédaction&nbsp;&#187;, seul son auteur peut y accéder. Il faut donc l&#8217;envoyer pour qu&#8217;il soit présenté à ses destinataires (attention&nbsp;: une fois un message envoyé, il ne peut plus être modifié).</p>
+
+<p>- &nbsp;<strong>Ajouter/supprimer un destinataire</strong></p>
+
+<p>À tout moment il est possible d&#8217;ajouter un destinataire&nbsp;: soit pendant la rédaction du message, soit lorsqu&#8217;il est déjà envoyé (par exemple pour inscrire un nouveau participant à une discussion dans un forum qui l&#8217;intéresse).</p>
+
+<p>De la même façon, on peut retirer un participant à tout moment. Un bouton &#171;&nbsp;Ne plus participer à cette discussion&nbsp;&#187; permet d&#8217;ailleurs à l&#8217;un des participants de s&#8217;exclure de lui-même d&#8217;une discussion.</p>
+
+<p>- &nbsp;<strong>Fixer un rendez-vous</strong></p>
+
+<p>N&#8217;importe quel message peut être transformé en rendez-vous&nbsp;: c&#8217;est-à-dire qu&#8217;il est lié à une date et affiché dans le calendrier de SPIP.</p>
+
+<p>- &nbsp;<strong>Peut-on écrire à n&#8217;importe quel utilisateur du site&nbsp;?</strong></p>
+
+<p>Certains rédacteurs ne peuvent pas être joints (ils n&#8217;apparaissent pas dans la liste &#171;&nbsp;Ajouter un participant&nbsp;&#187;, et leur nom n&#8217;est pas accompagné d&#8217;un logo de messagerie)&nbsp;:
+<br />- &nbsp;les rédacteurs qui ont décidé individuellement de ne pas utiliser la messagerie interne&nbsp;;
+<br />- &nbsp;les rédacteurs qui ne se sont pas connectés à l&#8217;espace privé du site depuis plus de 15 jours ne sont pas joignables (pour ces utilisateurs qui se connectent peu souvent, il est préférable d&#8217;utiliser un email classique).</p>
+
+<h2>messpense/<img src='../prive/images/m_envoi_bleu.gif' border=0> Les pense-bête</h2>
+
+<h3 class="spip">Les pense-bête</h3>
+
+<p>Un pense-bête est, dans sa forme, similaire à un message&nbsp;: mais il ne comporte aucun destinataire. Il est uniquement accessible à son auteur.</p>
+
+<p>Comme son nom l&#8217;indique, le pense-bête est destiné à noter des éléments que l&#8217;on souhaite conserver.</p>
+
+<p>- &nbsp;<strong>Placer un pense-bête dans le calendrier</strong></p>
+
+<p>L&#8217;utilisation la plus pratique du pense-bête consiste à lui fixer une date. De cette façon, le pense-bête est rappelé à son auteur jusqu&#8217;à cette date (et pendant les 24 heures qui suivent), et il apparaît dans le calendrier de SPIP.</p>
+
+<p><i>Note&nbsp;:</i> Comme pour les messages entre utilisateurs, nous attirons votre attention sur la confidentialité toute relative de ces pense-bête. SPIP n&#8217;offre aucune possibilité aux administrateurs du site de voir vos messages&nbsp;; cependant, d&#8217;autres outils d&#8217;accès direct à la base de données le permettent.</p>
+
+<h2>messcalen/Le calendrier</h2>
+
+<h3 class="spip">Le calendrier</h3>
+
+<p>Le calendrier de SPIP présente deux sortes d&#8217;informations&nbsp;:</p>
+
+<p>- &nbsp;<strong>des informations communes à l&#8217;ensemble du site&nbsp;;</strong> il s&#8217;agit des articles et des brèves publiés - de cette façon le calendrier permet de retrouver des articles en fonction de leur date de mise en ligne&nbsp;;</p>
+
+<p>- &nbsp;<strong>des informations privées&nbsp;;</strong> il s&#8217;agit des messages entre utilisateurs et des pense-bête dotés d&#8217;une date de &#171;&nbsp;rendez-vous&nbsp;&#187;. Ce calendrier permet ainsi de rappeler et de noter des rendez-vous.</p>
+
+<p>Notez que chaque jour du calendrier est accompagné d&#8217;un petit logo bleu&nbsp;: ce logo permet de créer un pense-bête directement associé à cette date (on pourra régler plus précisément l&#8217;heure d&#8217;un rendez-vous grâce à l&#8217;interface d&#8217;édition de ce pense-bête).</p>
+
+<h2>messconf/Configuration personnelle de la messagerie</h2>
+
+<h3 class="spip">Configuration personnelle de la messagerie interne</h3>
+
+<p>Chaque utilisateur du site peut configurer individuellement l&#8217;utilisation qu&#8217;il souhaite faire de la messagerie interne.</p>
+
+<p><i>Notez bien&nbsp;:</i> Les administrateurs du site peuvent décider de ne pas utiliser la messagerie sur leur site.</p>
+
+<p>- &nbsp;<strong>Ne pas utiliser la messagerie interne</strong></p>
+
+<p>Si la messagerie interne est disponible pour l&#8217;ensemble du site (option réservée aux administrateurs), chaque utilisateur peut décider individuellement de ne pas l&#8217;utiliser (c&#8217;est-à-dire qu&#8217;il ne souhaite tout simplement pas échanger de messages avec d&#8217;autres utilisateurs par ce biais).</p>
+
+<p>- &nbsp;<strong>Ne pas utiliser la liste des rédacteurs connectés</strong></p>
+
+<p>Lorsque cette fonction est disponible (choix des administrateurs), et lorsqu&#8217;il utilise la messagerie interne, un rédacteur peut décider de ne pas participer à la &#171;&nbsp;liste des rédacteurs connectés&nbsp;&#187;.</p>
+
+<p>Cette fonction affiche en permanence la liste des rédacteurs connectés en direct, facilitant ainsi les dicussions rapides entre utilisateurs. Certains utilisateurs trouvent que cette fonction est intrusive et/ou ne veulent pas être &#171;&nbsp;dérangés&nbsp;&#187; lorsqu&#8217;ils se connectent. Il leur suffit alors de désactiver cette option&nbsp;: ils n&#8217;apparaîtront plus dans la liste des rédacteurs connectés, et cette liste ne s&#8217;affichera plus sur leurs pages.</p>
+
+<p><i>Note&nbsp;:</i> Lorsqu&#8217;un administrateur indique qu&#8217;il ne souhaite pas apparaître dans la liste des rédacteurs connectés, la liste est cependant toujours affichée&nbsp;: il &#171;&nbsp;voit&nbsp;&#187; les autres, mais les autres ne le &#171;&nbsp;voient&nbsp;&#187; pas.</p>
+
+<h1>Suivi des forums</h1>
+<h2>suiviforum/Suivi des forums</h2>
+
+<h3 class="spip">Le suivi des forums</h3>
+
+<p>La page de suivi des forums est un élément important de 
+votre site, si vous autorisez l&#8217;utilisation des forums publics 
+(à ce sujet, voir la documentation sur <A 
+HREF="./?exec=aide_index&amp;aide=confforums" TARGET="_top">la configuration 
+des forums publics</A>). C&#8217;est là, en effet, que se 
+déroule la modération de ces forums.</p>
+
+<p>- &nbsp;<strong>Présentation des messages</strong></p>
+
+<p>Les messages ne sont pas ici présentés selon leur 
+structure hiérarchique (par <i>thread</i>), mais les uns à 
+la suite des autres, dans l&#8217;ordre chronologique inversé (les 
+plus récents en haut). En revanche, chaque message est 
+accompagné du nom de l&#8217;article auquel il se 
+réfère.</p>
+
+<p>- &nbsp;<strong>Supprimer un message</strong></p>
+
+<p>La principale possibilité consiste à <i>supprimer</i> les 
+contributions. <strong>Attention&nbsp;:</strong> cette opération est 
+irréversible. Un message supprimé ne peut plus 
+être remis en ligne. Un message supprimé n&#8217;est cependant 
+pas effacé de la base de données&nbsp;: il apparaît sur 
+cette page encadré de rouge, avec l&#8217;indication de la date 
+d&#8217;envoi du message et l&#8217;adresse IP de l&#8217;expéditeur.</p>
+
+<p>- &nbsp;Si vous avez configuré les forums publics pour fonctionner 
+avec une modération <i>a priori</i>, les messages en attente sont 
+encadrés de jaune, et vous proposent deux boutons&nbsp;: <i>Supprimer 
+ce message</i> et <i>Valider ce message</i>.</p>
+
+<h1>Configuration du site</h1>
+<h2>confnom/Nom et adresse de votre site</h2>
+
+<h3 class="spip">Nom et adresse de votre site</h3>
+
+<p>Le nom et l&#8217;adresse (URL) de votre site sont, en particulier, 
+utilisés pour la génération du fichier 
+&#171;&nbsp;backend&nbsp;&#187; qui permet la syndication de votre site 
+(c&#8217;est-à-dire l&#8217;affichage sur un site extérieur des 10 
+derniers articles publiés sur votre site).</p>
+
+<p>L&#8217;adresse de votre site doit être celle du <i>dossier</i> de la page 
+d&#8217;accueil, et non celle du fichier HTML correspondant&nbsp;; elle doit donc 
+se terminer par le caractère &#171;&nbsp;/&nbsp;&#187;. Si l&#8217;adresse de 
+votre page d&#8217;accueil est&nbsp;:</p>
+
+<p><code class='spip_code' dir='ltr'>http://www.monsite.net/index.html</code></p>
+
+<p>l&#8217;URL de votre site doit être indiquée, ici, de la 
+manière suivante&nbsp;:</p>
+
+<p><code class='spip_code' dir='ltr'>http://www.monsite.net/</code></p>
+
+<h2>confart/Contenu des articles</h2>
+
+<h3 class="spip">Contenu des articles</h3>
+
+<p>Les articles sont constitués d&#8217;un certain nombre 
+d&#8217;éléments&nbsp;: le titre, le surtitre, le soustitre, le 
+descriptif, le chapeau, un post-scriptum... Certains sites, 
+cependant, n&#8217;ont pas besoin de tous ces éléments&nbsp;: les 
+rédacteurs n&#8217;en ont aucun usage, ou l&#8217;interface graphique du 
+site public ne les intègre pas.</p>
+
+<p>Afin d&#8217;alléger l&#8217;interface de gestion du site et/ou 
+d&#8217;empêcher purement et simplement les rédacteurs 
+d&#8217;utiliser certains éléments que le webmestre ne 
+souhaite pas intégrer, la page de &#171;&nbsp;Configuration 
+précise&nbsp;&#187; permet de désactiver totalement 
+l&#8217;utilisation de ces éléments.</p>
+
+<p><strong>N. B.</strong> Il est important de comprendre que, par rapport au choix <A 
+HREF="./?exec=aide_index&amp;aide=intersimple" target="_top"><i>interface 
+simplifiée / interface complète</i></A>, qui n&#8217;influe que 
+sur l&#8217;interface de chaque utilisateur, le choix des options de la 
+&#171;&nbsp;configuration précise&nbsp;&#187; influe sur l&#8217;ensemble des 
+utilisateurs. Ainsi, si vous décidez de désactiver 
+l&#8217;utilisation du surtitre, plus aucun rédacteur ni aucun 
+administrateur ne pourra utiliser de surtitre dans ses articles.</p>
+
+<p>L&#8217;interface  s&#8217;adapte à la présence ou l&#8217;absence de ces 
+éléments. Si vous désactivez l&#8217;utilisation des 
+mots-clés, le bouton correspondant dans la barre de navigation 
+supérieure disparaît carrément.</p>
+
+<h2>confdates/Articles post-datés</h2>
+
+<h3 class="spip">Publication des articles post-datés</h3>
+
+<p>Les administrateurs ont la possibilité de modifier la <A 
+HREF="./?exec=aide_index&amp;aide=artdate" TARGET="_top">date de publication 
+en ligne</A> d&#8217;un article (lorsque celui-ci est déclaré 
+&#171;&nbsp;publié en ligne&nbsp;&#187;).</p>
+
+<p>Comment SPIP doit-il se comporter lorsque l&#8217;on fixe cette date de 
+publication en ligne à une date future&nbsp;? SPIP doit-il publier 
+tous les articles, quelque soit la date de publication fixée 
+(au risque d&#8217;un affichage farfelu, un article indiquant &#171;&nbsp;31 mai 
+2001&nbsp;&#187; alors qu&#8217;on n&#8217;est encore que le 21&nbsp;mai), ou doit-il 
+attendre l&#8217;échéance fixée (ici le 31 mai) avant 
+d&#8217;afficher cet article sur le site public&nbsp;?</p>
+
+<p>- &nbsp;L&#8217;intérêt principal de cette manœuvre est de 
+pouvoir échelonner à l&#8217;avance la publication d&#8217;une 
+série d&#8217;articles. Cas pratique&nbsp;: le webmestre part en vacances 
+pendant un mois&nbsp;; s&#8217;il a déjà rédigé 
+quelques articles, il peut les passer, dans l&#8217;espace privé, 
+dans l&#8217;état &#171;&nbsp;publié en ligne&nbsp;&#187;, mais leur 
+fixer des dates de publication réparties pendant le mois de 
+son absence. De cette façon, plutôt que de mettre en 
+ligne un <i>paquet</i> d&#8217;articles d&#8217;un seul coup, puis plus aucun pendant 
+un mois, le site publie régulièrement de 
+&#171;&nbsp;nouveaux&nbsp;&#187; articles, malgré l&#8217;absence de leur 
+auteur.</p>
+
+<p>- &nbsp;Un site de science-fiction qui publierait des <i>chroniques 
+martiennes</i> aurait, pour sa part, intérêt à 
+désactiver cette fonction, sauf à vouloir attendre 
+l&#8217;année 2030. Même remarque pour un mensuel dont le 
+numéro d&#8217;avril est publié le 20 mars.</p>
+
+<h2>confforums/Fonctionnement des forums</h2>
+
+<h3 class="spip">Fonctionnement des forums publics</h3>
+
+<p>La façon de gérer les forums publics d&#8217;un site varie 
+énormément d&#8217;un webmestre à l&#8217;autre, en fonction 
+notamment des besoins réels du site. Certains webmestres ne 
+veulent pas de forums, d&#8217;autres veulent des forums d&#8217;accès 
+libre, d&#8217;autres encore préfèrent modérer les 
+forums <i>à priori</i>, ne publiant les messages qu&#8217;une fois qu&#8217;ils 
+ont été validés par un administrateur.</p>
+
+<p>SPIP vous permet de déterminer le fonctionnement de vos forums 
+publics (les forums internes à la gestion du site sont 
+toujours gérés comme des forums ouverts à tous 
+les rédacteurs, et modérés <i>a posteriori</i>).</p>
+
+<p>- &nbsp;<strong>Désactiver les forums publics</strong></p>
+
+<p>Lorsque les forums sont désactivés, l&#8217;interface d&#8217;envoi 
+de contributions disparaît, et les anciennes contributions ne 
+sont plus affichées (elles ne sont pas effacées de la 
+base, mais leur affichage est interrompu). Cette option suspend le 
+fonctionnement des forums, même si l&#8217;affichage des forums est 
+prévu dans la mise en page (squelettes) du site.</p>
+
+<p>Vous pouvez l&#8217;utiliser en permanence (le site n&#8217;offre jamais de 
+forums de discussion), ou temporairement (suspendre l&#8217;activité 
+des forums, le temps de calmer un spammeur fou ou de partir en 
+vacances à la chasse au troll... ou encore lors d&#8217;un 
+éventuel transfert de votre site sur un nouveau serveur).</p>
+
+<p>- &nbsp;<strong>Forums modérés a posteriori</strong></p>
+
+<p>Lorsque les forums sont modérés <i>a posteriori</i>, les 
+contributions s&#8217;affichent dès qu&#8217;elles sont postées par 
+les utilisateurs. Libre à vous, ensuite, d&#8217;utiliser la page de 
+suivi des forums de SPIP pour modérer plus ou moins 
+sévèrement ces messages. <i>La modération <i>a 
+posteriori</i> est le mode par défaut de SPIP.</i></p>
+
+<p>- &nbsp;<strong>Forums modérés a priori</strong></p>
+
+<p>Dans les forums modérés <i>a priori</i>, les contributions 
+des utilisateurs sont stockées, mais pas affichées. Les 
+administrateurs doivent utiliser la page de suivi des forums de SPIP 
+pour valider (ou refuser) chaque message.</p>
+
+<p>- &nbsp;<strong>Forums accessibles sur abonnement</strong></p>
+
+<p>Si les forums sont <i>accessibles sur abonnement</i>, les utilisateurs 
+désirant participer doivent s&#8217;inscrire en fournissant leur 
+adresse email. Ils reçoivent alors leur identifiant par email. 
+Pour les rédacteurs qui ont déjà accès au 
+site privé, cet identifiant correspond à leur login 
+habituel.</p>
+
+<p>Ce mode est un compromis entre le besoin de responsabilisation (les 
+participants doivent fournir une adresse email valide), et l&#8217;absence 
+de modération a priori (une fois inscrits, ces utilisateurs 
+peuvent poster leurs contributions directement).</p>
+
+<p>Ce mode permet de plus d&#8217;exclure les utilisateurs qui abuseraient des 
+forums (<i>black-list</i>). En effet, lorsque vous supprimez (via la page 
+&#171;&nbsp;Suivre les forums&nbsp;&#187;) une contribution postée dans 
+le mode &#171;&nbsp;sur abonnement&nbsp;&#187;, vous avez accès à 
+la &#171;&nbsp;fiche&nbsp;&#187; (extrêmement réduite) de l&#8217;auteur 
+de cette contribution. Vous pouvez alors simplement placer cet auteur 
+&#171;&nbsp;à la poubelle&nbsp;&#187;&nbsp;: son identifiant ne 
+&#171;&nbsp;fonctionnera&nbsp;&#187; plus, et il ne pourra en obtenir d&#8217;autre 
+avec cette adresse email.</p>
+
+<p><span style='color: red;'>Attention&nbsp;: le mode &#171;&nbsp;forum sur 
+abonnement&nbsp;&#187; suppose que votre hébergeur supporte la 
+fonction d&#8217;envoi de mail automatique. Si ce n&#8217;est pas le cas, changez 
+d&#8217;hébergeur&nbsp;;)</span></p>
+
+<h2>confbreves/Système de brèves</h2>
+
+<h3 class="spip">Activer/désactiver le système de brèves</h3>
+
+<p>Certains sites n&#8217;utilisent pas les <i>brèves</i>, ces courts 
+articles sans auteur. Il se peut notamment que le webmestre du site 
+ne les ait pas incluses dans l&#8217;interface de navigation du site public.</p>
+
+<p>Dans ce cas, vous pouvez purement et simplement décider de les 
+désactiver. Les rédacteurs ne pourront pas plus en 
+créer. L&#8217;interface s&#8217;en trouvera d&#8217;autant 
+allégée.</p>
+
+<h2>confmessagerie/Messagerie interne</h2>
+
+<h3 class="spip">Messagerie interne</h3>
+
+<p>SPIP propose un système de messagerie interne (une rubrique de la présente documentation est consacrée aux <a href="./?exec=aide_index&amp;aide=messut" target="_top">messages entre utilisateurs</a>, aux <a href="./?exec=aide_index&amp;aide=messpense" target="_top">pense-bête</a> et au <a href="./?exec=aide_index&amp;aide=messcalen" target="_top">calendrier</a>).</p>
+
+<p>Vous pouvez décider d&#8217;utiliser tout ou partie de ce système.</p>
+
+<p>- &nbsp;<strong>Activer/désactiver la messagerie interne</strong></p>
+
+<p>Une raison pour décider de ne pas utiliser la messagerie interne est la place que les messages occupent dans la base de données&nbsp;: ces messages (comme par exemple les messages des forums liés à vos articles) sont conservés dans la base de données, et ainsi occupent de l&#8217;espace chez votre hébergeur. De plus, les fonctions de messagerie interne provoquent un travail supplémentaire sur la machine qui vous héberge (interrogations de la base de données)&nbsp;: sur une machine peu puissante (et/ou très lente), vous pouvez préférer alléger le travail de la machine en désactivant la messagerie.</p>
+
+<p>- &nbsp;<strong>Activer/désactiver la liste des rédacteurs connectés</strong></p>
+
+<p>Si vous activez cette fonctionnalité, la liste des utilisateurs connectés à l&#8217;espace privé de votre site apparaît en permanence. Cela facilite notamment l&#8217;échange de messages instantanés entre utilisateurs.</p>
+
+<p>Cette fonction provoque des appels supplémentaires à la base de données&nbsp;; sur une machine peu puissante, vous pouvez préférer la désactiver. Notez également que certains utilisateurs trouvent cette fonctionnalité intrusive.</p>
+
+<p><i>Notez bien&nbsp;:</i> Lorsque vous activez pour l&#8217;ensemble du site les fonctionnalités ci-dessus, il reste possible, pour chaque utilisateur, de <a href="./?exec=aide_index&amp;aide=messconf" target="_top">désactiver ces fonctions pour lui-même</a>. De cette façon, si un utilisateur trouve inutiles ou intrusives les fonctionnalités de la messagerie interne, il peut simplement désactiver cette fonction pour son usage propre.</p>
+
+<h2>confstat/Statistiques des visites</h2>
+
+<h3 class="spip">Les statistiques des visites</h3>
+
+<p>SPIP intègre un système simple vous permettant de compter et suivre le nombre de visites pour le site et pour chaque article. Il permet aussi de connaître quels sont les autres sites qui ont mené des visiteurs vers votre site et vers chaque article.</p>
+
+<p>- &nbsp;<strong>Le nombre de visites</strong></p>
+
+<p>SPIP identifie chaque jour les &#171;&nbsp;visiteurs uniques&nbsp;&#187; de votre site en fonction de leur adresse IP. Le système est rapide et <i>relativement</i> fiable (il s&#8217;agit d&#8217;une estimation <i>relativement</i> correcte du nombre de visiteurs du site, et non des simples &#171;&nbsp;hits&nbsp;&#187; ou des &#171;&nbsp;pages vues&nbsp;&#187;&nbsp;; un visiteur qui visite plusieurs fois la même page est bien compté pour un unique &#171;&nbsp;visiteur unique&nbsp;&#187;).</p>
+
+<p>- &nbsp;<strong>Les entrées directes, ou referers</strong></p>
+
+<p>On nomme &#171;&nbsp;entrée directe&nbsp;&#187; une arrivée sur le site ou sur la page d&#8217;un article depuis un autre site Web qui affiche un lien hypertexte vers votre propre site (ce site étant lui-même considéré comme un &#171;&nbsp;referer&nbsp;&#187;).</p>
+
+<p>Pour l&#8217;intégralité du site et pour chaque article, SPIP  affiche la liste des principaux &#171;&nbsp;referers&nbsp;&#187; (les pages qui affichent un lien hypertexte vers votre site), accompagnés du nombre d&#8217;&#171;&nbsp;entrées directes&nbsp;&#187; (le nombre de visiteurs qui ont suivi ce lien).</p>
+
+<hr class="spip" />
+
+<p>- &nbsp;<strong>Un système &#171;&nbsp;relativement&nbsp;&#187; fiable</strong></p>
+
+<p>Un système complet d&#8217;analyse du trafic d&#8217;un site est un logiciel très gourmand en puissance et en mémoire&nbsp;; le système de SPIP est donc très simplifié, afin d&#8217;être le plus rapide possible, et d&#8217;occuper peu d&#8217;espace disque sur le serveur. De plus, le comptage des &#171;&nbsp;visiteurs uniques&nbsp;&#187; se base sur l&#8217;adresse IP des visiteurs chaque jour, ce qui ne constitue pas la méthode la plus précise dans l&#8217;absolue&nbsp;; on considère cependant que cela fournit une information <i>relativement</i> fiable.</p>
+
+<p>Pour une information absolument complète sur le trafic du site, on pourra donc préférer se tourner vers un système d&#8217;analyse des statistiques plus spécialisé.</p>
+
+<p>- &nbsp;<strong>Un calcul quotidien</strong></p>
+
+<p>Le système de suivi du trafic intégré à SPIP effectue un calcul du nombre de visiteurs et des referers chaque jour (et non en temps réel). Certaines informations pourront ainsi vous sembler parfois incohérentes, car elles ne prennent pas en compte les visites de la journée en cours&nbsp;; en cas de doute, la page spécifique affichant les statistiques est la plus fiable et la plus détaillée. Dans cette logique, la page des statistiques d&#8217;un article n&#8217;est disponible qu&#8217;après le premier jour de parution d&#8217;un article (les chiffres ne sont pas connus auparavant, car SPIP ne les a pas encore analysés).</p>
+
+<p>- &nbsp;<strong>Activer/désactiver les statistiques et les referers</strong></p>
+
+<p>Le comptage du nombre de visiteurs uniques ne devrait pas occuper beaucoup de place, ni utiliser beaucoup de puissance machine. Il n&#8217;y a donc d&#8217;intérêt à le désactiver que pour des serveurs très lents.</p>
+
+<p>Le système de comptage des referers et des entrées directes est, lui, nettement plus gourmand. Il est donc désactivé par défaut. Il est conseillé de ne l&#8217;activer que sur les serveurs ne posant aucun problème de puissance de calcul (les serveurs qui ont déjà du mal à calculer les articles très longs ne pourront certainement pas, en plus, calculer les referers).</p>
+
+<p><strong>N.B.</strong> L&#8217;espace disque occupé et le temps de calcul utilisé pour le suivi des visites et des referers augmentent avec le trafic de votre site. Plus un site est visité, plus les besoins techniques pour effectuer ces tâches augmentent.</p>
+
+<h2>confmails/Envoi automatique de mails</h2>
+
+<h3 class="spip">Envoi automatique de mails</h3>
+
+<p>Les rédacteurs et les administrateurs ne passent pas 
+forcément leur vie dans l&#8217;espace de gestion de leur site. Afin 
+de faciliter le travail coopératif et le suivi de la vie du 
+site, le système peut vous prévenir par email de 
+certains événements du site...</p>
+
+<p><span style='color: red;'>Attention&nbsp;: certains hébergeurs 
+désactivent la fonction qui permet l&#8217;envoi automatique de 
+mails. Si vous êtes dans cette situation, les options suivantes 
+ne pourront pas être activées.</span></p>
+
+<p>- &nbsp;<strong>Suivi des messages des forums publics</strong></p>
+
+<p>Afin de permettre aux auteurs de suivre les discussions 
+provoquées par leurs articles, cette option permet de faire 
+suivre automatiquement, à l&#8217;auteur d&#8217;un article, chaque 
+message posté à la suite de son article.</p>
+
+<p>Si cette option est activée, lorsqu&#8217;un message est 
+posté dans le site public à la suite d&#8217;un article, le 
+(ou les) auteur(s) de l&#8217;article reçoivent par mail le texte de 
+la contribution, et le rappel de l&#8217;adresse (URL) de cet article&nbsp;; d&#8217;un 
+clic il(s) peut (peuvent) donc se rendre sur la page de l&#8217;article et 
+éventuellement répondre aux commentaires.</p>
+
+<p>- &nbsp;<strong>Suivi de l&#8217;activité éditoriale du site</strong></p>
+
+<p>Lorsqu&#8217;un article est proposé pour la validation ou 
+publié, vous pouvez demander à SPIP de le signaler par 
+mail. De cette façon, les participants à la vie du site 
+sont informés en temps réel des évolutions 
+importantes du site.</p>
+
+<p>Pour un site coopératif (plusieurs rédacteurs), nous 
+vous conseillons de créer une liste de diffusion des 
+rédacteurs (la fonction de liste de diffusion n&#8217;est pas 
+fournie par SPIP), vers laquelle envoyer de tels messages.</p>
+
+<p>- &nbsp;<strong>Annonce des nouveautés</strong></p>
+
+<p>Cette fonctionnalité de SPIP permet de créer des emails 
+du type &#171;&nbsp;Quoi de neuf&nbsp;?&nbsp;&#187;&nbsp;: si vous l&#8217;activez, et 
+après avoir fixé l&#8217;intervalle de temps entre les 
+différentes annonces, un mail est envoyé 
+régulièrement à l&#8217;adresse indiquée, 
+récapitulant les derniers articles et brèves 
+publiés.</p>
+
+<p>Le fonctionnement est très simple&nbsp;: si vous activez cette 
+option en indiquant un intervalle de 7 jours, SPIP enverra à 
+l&#8217;adresse désirée, tous les 7 jours, la liste des 
+articles et brèves publiés depuis 7 jours.</p>
+
+<p>Un bouton &#171;&nbsp;Envoyer maintenant&nbsp;&#187; provoque l&#8217;envoi 
+immédiat de ce mail récapitulatif (et relance un 
+nouveau délai avant l&#8217;envoi du prochain mail).</p>
+
+<p>Vous pouvez envoyer ce mail d&#8217;annonce des nouveautés vers 
+l&#8217;adresse du webmestre principal (qui fera suivre), ou, si vous aimez 
+les sites qui se gèrent entièrement tous seuls, 
+directement à la liste de vos abonnés (la fonction de 
+liste de diffusion n&#8217;est pas fournie par SPIP).</p>
+
+<h2>confmoteur/Moteur de recherche intégré</h2>
+
+<h3 class="spip">Activer/désactiver le moteur de recherche</h3>
+
+<p>SPIP intègre un moteur de recherche. Lorsque celui-ci est 
+activé, un système d&#8217;indexation des articles analyse le 
+contenu de tous les articles. Cette opération, si elle permet 
+ensuite des recherches extrêmement rapides, nécessite 
+beaucoup de travail de la part du serveur qui héberge le site. 
+Dans le cas d&#8217;un hébergeur lent, cela peut poser quelques 
+difficultés.</p>
+
+<p>Pour cette raison, vous pouvez activer ou désactiver le 
+système d&#8217;indexation.</p>
+
+<p>Les données générées par le moteur de 
+recherche intégré à SPIP <strong>triplent</strong> environ 
+l&#8217;espace disque occupé par la base de données. D&#8217;autre 
+part, sur des systèmes lents ou chargés, l&#8217;indexation 
+risque de donner lieu à une légère
+dégradation des performances, voire des erreurs 
+d&#8217;exécution (cas extrême).</p>
+
+<p>D&#8217;une manière générale, si votre site est 
+très gros, nous vous conseillons de ne pas utiliser le moteur 
+de recherche intégré à SPIP, et de vous orienter 
+vers des produits spécialisés, tels que <A 
+HREF='http://www.htdig.org/' target="_blank">ht://Dig</A>.</p>
+
+<p>Notez aussi que le moteur de recherche n&#8217;indexe pas toutes les pages 
+d&#8217;un coup. Si vous l&#8217;activez alors que votre site contient 
+déjà un grand nombre d&#8217;articles, il faudra attendre que 
+votre site enregistre un nombre de connexions <i>grosso modo</i> 
+égal au nombre de textes à indexer pour que le moteur 
+soit à jour.</p>
+
+<h1>Configuration de l&#8217;interface personnelle</h1>
+<h2>intersimple/Interface simplifiée / complète</h2>
+
+<h3 class="spip">Interface simplifiée / interface complète</h3>
+
+<p>Chaque utilisateur de SPIP peut modifier son propre affichage (sans 
+influer, à l&#8217;inverse de la page de &#171;&nbsp;<A 
+HREF="./?exec=aide_index&amp;aide=confart" TARGET="_top">Configuration 
+précise</A>&nbsp;&#187;, sur l&#8217;affichage pour les autres 
+utilisateurs.)</p>
+
+<p>De nombreuses fonctions de SPIP sont rarement (ou pas du tout) 
+utilisées par certains rédacteurs. Passer en mode 
+&#171;&nbsp;interface simplifiée&nbsp;&#187; permet donc 
+d&#8217;alléger l&#8217;interface et de faciliter sa compréhension. 
+Dans ce mode, seuls les éléments réellement 
+indispensables à la gestion du site sont affichés. Par 
+exemple, peu d&#8217;utilisateurs faisant appel à la &#171;&nbsp;<A 
+HREF="./?exec=aide_index&amp;aide=artdate_redac" TARGET="_top">date de 
+rédaction antérieure</A>&nbsp;&#187;, celle-ci 
+n&#8217;apparaît donc pas en &#171;&nbsp;affichage simplifié&nbsp;&#187;.</p>
+
+<p><strong>N.B.</strong> Les différences d&#8217;affichage sont beaucoup plus 
+évidentes pour les administrateurs, ceux-ci ayant en effet 
+à leur disposition beaucoup plus de fonctions que les 
+rédacteurs du site.</p>
+
+<p><i>Pour que ces modifications soient appliquées, vous devez 
+accepter l&#8217;utilisation des cookies.</i></p>
+
+<h2>cookie/Le cookie de correspondance</h2>
+
+<h3 class="spip">Le cookie d&#8217;administration</h3>
+
+<p>Les administrateurs peuvent activer un cookie qui provoquera 
+l&#8217;affichage d&#8217;informations supplémentaires lors de la visite 
+du site public. Ces informations facilitent la gestion du site.</p>
+
+<p>- &nbsp;<strong>Recalculer cette page</strong></p>
+
+<p>Sur toutes les pages du site public apparaît un bouton 
+&#171;&nbsp;Recalculer cette page&nbsp;&#187;. SPIP intégrant un 
+système de <i>cache</i>, certaines modifications peuvent ne pas 
+apparaître immédiatement en ligne. (Les pages 
+affichées sur le site public ne sont pas directement 
+tirées de la base de données&nbsp;: elles sont 
+calculées à intervalle régulier et 
+stockées dans le cache.)</p>
+
+<p>En <i>recalculant</i> une page, l&#8217;administrateur provoque l&#8217;affichage de 
+la page en fonction des éléments contenus dans la base 
+de données, sans attendre la prochaine mise à jour du 
+cache.</p>
+
+<p>- &nbsp;<strong>Modifier...</strong></p>
+
+<p>Les pages des articles, des rubriques et des brèves 
+contiennent un bouton &#171;&nbsp;Modifier cet article&nbsp;&#187; (ou 
+&#171;&nbsp;rubrique&nbsp;&#187;...). Ce bouton mène directement du site 
+public à la page de l&#8217;espace privé correspondant 
+à cet article (ou rubrique...). Ce bouton facilite donc la 
+correction des erreurs repérées en ligne, ou la mise 
+à jour de tout élément du site.</p>
+
+<p>- &nbsp;<strong>Nombre de visites</strong></p>
+
+<p>Si le système de statistiques intégré à 
+SPIP est activé, les pages des articles sont 
+complétées de l&#8217;information suivante&nbsp;: nombre de visites 
+(estimation) et nombre de <i>referers</i> différents.</p>
+
+<p>Les referers sont les liens vers cet article précis depuis 
+l&#8217;extérieur du site (c&#8217;est-à-dire&nbsp;: lorsqu&#8217;un autre site 
+a fait un lien directement vers cet article, ou lorsque l&#8217;adresse de 
+cet article a été communiqué par email).</p>
+
+<p>- &nbsp;<strong>Identifiant de connexion</strong></p>
+
+<p>Le cookie d&#8217;admin permet aussi à SPIP de reconnaître votre navigateur
+lorsque vous vous reconnectez&nbsp;: vous n&#8217;avez donc qu&#8217;à entrer votre mot
+de passe pour entrer dans l&#8217;espace privé.</p>
+
+<p>(NB&nbsp;: Si la connexion se fait par cookie - c&#8217;est le cas le plus courant&nbsp;-,
+ce cookie est posé dès votre arrivée dans l&#8217;espace privé.)</p>
+
+<h2>deconnect/Se déconnecter</h2>
+
+<h3 class="spip">Se déconnecter</h3>
+
+<p>Le bouton &#171;&nbsp;Se déconnecter&nbsp;&#187; sert à annuler votre identification à l&#8217;espace privé. Lorsque vous effectuez cette opération, les informations d&#8217;identification que vous aviez indiquées pour accéder à l&#8217;espace privé du site sont &#171;&nbsp;oubliées&nbsp;&#187; par le système&nbsp;; SPIP vous propose d&#8217;entrer à nouveau ces informations, ou de revenir à l&#8217;espace public du site.</p>
+
+<p><i>L&#8217;intérêt principal de cette fonction est d&#8217;interdire qu&#8217;une autre personne, utilisant la même machine que vous, puisse accéder à l&#8217;espace privé du site en exploitant vos propres informations d&#8217;identification.</i></p>
+
+<p>- &nbsp;<strong>Vous vous connectez depuis chez vous et vous êtes la seule personne à accéder à votre ordinateur</strong></p>
+
+<p>Dans ce cas, le fait de vous déconnecter avec cette fonction lorsque vous avez fini de travailler sur l&#8217;espace privé du site peut sembler une opération superflue. L&#8217;opération de déconnexion est évidemment conseillée, mais si vous oubliez de l&#8217;effectuer, ça n&#8217;est pas très grave.</p>
+
+<p>- &nbsp;<strong>Vous accédez au site privé depuis une machine commune à plusieurs utilisateurs</strong> (machine au travail, dans un cyber-café...)</p>
+
+<p>Dans ce cas, il est vivement conseillé de vous déconnecter systématiquement en utilisant cette fonction lorsque vous avez terminé d&#8217;utiliser l&#8217;ordinateur. Cela interdit totalement à toute personne qui utiliserait cette machine après vous de pouvoir accéder à l&#8217;espace privé en se faisant passer pour vous.</p>
+
+<p>- &nbsp;<strong>Utiliser plusieurs identifications sur un même site</strong></p>
+
+<p>Certains utilisateurs peuvent avoir besoin de se connecter à l&#8217;espace privé sous plusieurs identités. Dans ce cas, en utilisant cette fonction de déconnexion, ils peuvent se reconnecter immédiatement au site avec de nouvelles informations d&#8217;identification.</p>
+
+<h1>Usages avancés</h1>
+<h2>artmodif/Articles en cours de modification</h2>
+
+<h3 class="spip">Articles en cours d&#8217;édition</h3>
+
+<p>Lorsqu&#8217;un rédacteur intervient sur un article pour le modifier, les autres participants au site qui se rendent sur la page de cet article sont prévenus et il leur est déconseillé d&#8217;intervenir à leur tour sur l&#8217;article.</p>
+
+<p>En effet, si deux rédacteurs interviennent en même temps sur le même article, les modifications de l&#8217;un risquent d&#8217;&#171;&nbsp;écraser&nbsp;&#187; les modifications de l&#8217;autre.</p>
+
+<p>Si vous voyez la mention &#171;&nbsp;Attention, un rédacteur est intervenu sur cet article&nbsp;&#187;, il est donc fortement déconseillé de le modifier à ce moment. Revenez plus tard sur cet article, pour intervenir lorsque l&#8217;autre rédacteur aura effectué et enregistré ses modifications.</p>
+
+<p>À l&#8217;inverse, lorsque vous-mêmes intervenez pour modifier un article, les autres participants au site qui visiteraient cette page seraient prévenus de votre intervention. Tant que vous modifiez l&#8217;article, et pendant une durée d&#8217;<strong>une heure</strong>, les autres rédacteurs sont invités à ne pas intervenir sur ce texte. Lorsque vous considérez que vous avez terminé de travailler sur cet article, et que d&#8217;autres peuvent à leur tour intervenir dessus, vous pouvez &#171;&nbsp;libérer&nbsp;&#187; cet article. L&#8217;avertissement aux autres participants disparaîtra, et ils pourront si nécessaire effectuer leurs propres modifications.</p>
+
+<h2>suivimodif/Suivi des révisions</h2>
+
+<h3 class="spip">Suivi des révisions</h3>
+
+<p><strong>Liste des modifications</strong></p>
+
+<p>Le suivi des révisions des articles permet de voir les modifications
+qui ont été apportées aux articles au cours de leur édition.</p>
+
+<p>Seul les articles déjà  publiés ou en cours de validation sont visibles
+dans cette liste. En cliquant sur le titre d&#8217;un article dans la liste
+on arrive sur une page affichant les différences entre la dernière
+version et la version précédente.</p>
+
+<p><strong>Affichage des modifications</strong></p>
+
+<p>On peut comparer la version actuelle avec une version antérieure en
+cliquant sur le lien &#171;&nbsp;comparaison&nbsp;&#187; correspondant.
+<br />On peut aussi changer la version affichée en cliquant sur la date
+de la version qu&#8217;on veut consulter.</p>
+
+<p>Un code de couleur simple permet de voir les modifications apportées&nbsp;:</p>
+
+<ul class="spip"><li> les parties de texte surlignées en <span style="background: #d0ffc0;"
+  title="Texte ajouté">vert</span> sont les parties ajoutées,</li><li> les parties de texte surlignées en <span style="background: #e8e8ff;"
+  title="Texte déplacé">bleu</span> sont les parties déplacées,</li><li> les parties de texte surlignées en <span style="background: #ffd0c0;color: #802020;text-decoration: line-through"
+  title="Texte supprimé">rouge et barrées</span> sont les parties
+  enlevées.</li></ul><h2>corrortho/Correction orthographique</h2>
+
+<h3 class="spip">Correction orthographique</h3>
+
+<p>Le vérificateur d&#8217;orthographe envoie le texte à  un serveur, fourni par des membres de la communauté utilisatrice de SPIP, pour comparer les mots avec ceux d&#8217;un dictionnaire. Le serveur renvoie la liste des mots non reconnus.</p>
+
+<p>On voit alors apparaître une nouvelle fenêtre qui contient le texte de l&#8217;article et une boîte sur la droite.</p>
+
+<p>Dans le texte, les mots soulignés en rouge sont ceux qui n&#8217;ont pas été reconnus par le serveur. (Si l&#8217;on ajoute des mots au dictionnaire local, ils seront soulignés en vert.)</p>
+
+<p>La boîte de droite affiche dans un menu tous les mots non reconnus du texte. Quand on en sélectionne un, une liste de corrections est proposée. On peut, si on le souhaite, ajouter ce mot au dictionnaire local.</p>
+
+<p>Il suffit alors, dans la fenêtre de départ, de cliquer sur &#171;&nbsp;modifier
+cet article&nbsp;&#187; et d&#8217;aller modifier les mots indiqués par le correcteur.</p>
+
+<h2>previsu/La prévisualisation</h2>
+
+<h3 class="spip">La prévisualisation</h3>
+
+<p>Quand un article est &#171;&nbsp;proposé à  l&#8217;évaluation&nbsp;&#187;, les administrateurs et/ou
+les rédacteurs (en fonction de la configuration) peuvent prévisualiser
+celui-ci dans la maquette graphique du site.</p>
+
+<p>Cela permet de vérifier la bonne mise en page de l&#8217;article. La prévisualisation fonctionne aussi pour les brèves, les rubriques etc.</p>
+
+<h2>latex/Formules mathématiques</h2>
+
+<h3 class="spip">Formules mathématiques</h3>
+
+<p>SPIP permet d&#8217;insérer des formules mathématiques grâce à  la notation
+<a href="http://fr.wikipedia.org/wiki/LaTeX" target="_blank" target="_blank">LaTeX</a> qui sera automatiquement transformée en une image insérée dans
+le texte.</p>
+
+<p>On placera un texte qui contient des formules entre les balises
+<tt><b>&lt;math&gt;</b></tt> et
+<tt><b>&lt;/math&gt;</b></tt>. Le code LaTeX d&#8217;une
+formule sera placé entre des caractères dollar &#171;&nbsp;$&nbsp;&#187;.</p>
+
+<p>Ainsi le texte&nbsp;:</p>
+
+<blockquote class="spip">
+<div style='text-align: left;' class='spip_code' dir='ltr'><code>&lt;math&gt;la formule $a = \sqrt{b^{2} + c^{2}}$ est une<br />
+reformulation de la formule de Pythagore: $a^{2} = b^{2} +<br />
+c^{2}$&lt;/math&gt;</code></div>
+</blockquote>
+
+<p>sera affiché&nbsp;:</p>
+
+<blockquote class="spip">
+
+<p>
+la formule <img src="http://www.spip.net/AIDE/local-cache-TeX-2116f89d10912f6a1d7450bdedb515e3.png" style="vertical-align:middle;" width="85" height="38" alt="a = \sqrt{b^{2} + c^{2}}" title="a = \sqrt{b^{2} + c^{2}}" /> est une
+reformulation de la formule de Pythagore&nbsp;: <img src="http://www.spip.net/AIDE/local-cache-TeX-b5be338b1b71604c69ec54c361247c66.png" style="vertical-align:middle;" width="78" height="35" alt="a^{2} = b^{2} +
+c^{2}" title="a^{2} = b^{2} +
+c^{2}" /></p>
+
+</blockquote>
+
+<p>Un <a href="http://www.spip.net/fr_article3016.html" target="_blank" target="_blank">article de la documentation</a> explique cette fonctionnalité plus en détails.</p>
+
+<h2>confurl/Type d&#8217;adresses URL</h2>
+
+<h3 class="spip">Choisir un jeu d&#8217;URLs</h3>
+
+<p>SPIP offre la possibilité, dans ce tableau affiché sur la page de configuration, de choisir <strong>le jeu d’URLs</strong> que vous souhaitez utiliser (<i>Vous devez évacuer &mdash;commenter ou supprimer&mdash; la variable <code class='spip_code' dir='ltr'>$type_urls</code> de votre fichier <code class='spip_code' dir='ltr'>mes_options.php</code>, pour voir apparaître ce tableau de configuration.</i>).</p>
+
+<p>Pour que votre choix du type d&#8217;URL soit pris en compte, il est, le plus souvent et sur la plupart des installations, nécessaire d&#8217;utiliser <strong>un fichier htaccess</strong>&nbsp;:
+<br />Inspirez-vous du fichier <strong>htaccess.txt</strong> fourni avec SPIP à titre d’exemple, et qui fonctionne chez la plupart des hébergeurs avec les types d’URLs proposées.</p>
+
+<p>Pour l’activer il faut le recopier à la racine du site sous le nom <code class='spip_code' dir='ltr'>.htaccess</code>. Il est fortement conseillé de l’ouvrir au préalable pour vérifier quelques aspects de configuration (<i> <strong>attention</strong>&nbsp;: toute modification du fichier <code class='spip_code' dir='ltr'>.htaccess</code> peut fortement impacter le fonctionnement de votre site web.</i>)</p>
+
+<p>Vous devrez ensuite tester la validité de ces adresses, en appelant la page &#171;&nbsp;<i>Voir en ligne</i>&nbsp;&#187; sur un article, un auteur, une brève, une rubrique, etc.</p>
+
+<p>Retrouvez plus d&#8217;informations sur &#171;&nbsp;<i>comment utiliser des URLs personnalisées</i>&nbsp;&#187; dans <a href="http://www.spip.net/fr_article765.html" target="_blank" title="urls personnalisées - documentation officielle" target="_blank">cet article de la documentation</a>.</p>
+
+<h1>SPIP, un logiciel libre</h1>
+<h2>licence/Licence et conditions d&#8217;utilisation </h2>
+
+
+<p><font face="Verdana,Arial,Sans,sans-serif" size="4" color="#970038"><b>Licence et conditions d&#8217;utilisation</b></font></p>
+
+<p><font face="Verdana,Arial,Sans,sans-serif" size="3"><b>SPIP, Système de publication pour l&#8217;internet</b></font></p>
+
+<p><strong>Copyright © 2001-2008, Arnaud Martin, Antoine Pitrou, Philippe Rivière et Emmanuel Saint-James.</strong></p>
+
+<p>Ce programme est un logiciel libre&nbsp;; vous pouvez le redistribuer et/ou le modifier conformément aux dispositions de la Licence Publique Générale GNU, telle que publiée par la Free Software Foundation
+&nbsp;; version 2 de la licence, ou encore (à votre choix) toute version ultérieure.</p>
+
+<p>Ce programme est distribué dans l&#8217;espoir qu&#8217;il sera utile, mais SANS AUCUNE GARANTIE&nbsp;; sans même la garantie implicite de COMMERCIALISATION ou D&#8217;ADAPTATION A UN OBJET PARTICULIER. Pour plus de détails, voir la Licence Publique Générale GNU.</p>
+
+<p>Un exemplaire de la Licence Publique Générale GNU doit être fourni avec ce programme&nbsp;; si ce n&#8217;est pas le cas, écrivez à la Free Software Foundation Inc., 675 Mass Ave, Cambridge, MA 02139, Etats-Unis.</p>
+
+<p><strong> Ce logiciel est téléchargeable à l&#8217;adresse <a href="http://www.spip.net/" class='spip_url spip_out' rel='external' target="_blank">http://www.spip.net/</a>&nbsp;; vous trouverez également, sur ce site, un mode d&#8217;emploi complet et des informations supplémentaires. </strong></p>
+
+<p>En droit français, SPIP est régi par les dispositions du code de la propriété intellectuelle (CPI). Le noyau de SPIP est une œuvre de collaboration entre ses auteurs, désignés ci-dessus (article L&nbsp;113-1 du CPI). L&#8217;ensemble du projet SPIP forme une œuvre collective au sens des articles L&nbsp;113-2 et L&nbsp;113-5 du CPI. Les auteurs mettent l&#8217;œuvre à disposition de tous selon les droits et obligations définis par la licence publique générale GNU.</p>
+
+<hr class="spip" />
+
+<p><strong>Les icones de l&#8217;interface sont de <a href="http://diala.rezo.net/" class='spip_out' rel='external' target="_blank">Diala Aschkar</a> et de <a href="http://jimmac.musichall.cz/" class='spip_out' rel='external' target="_blank">Jakub &#171;&nbsp;Jimmac&nbsp;&#187; Steiner</a>.</strong></p>
+
+<hr class="spip" />
+
+<p><strong>Les traductions de l&#8217;interface sont le fruit du travail réalisé par une équipe de traducteurs <a href="http://www.spip.net/rubrique4.html" class='spip_out' rel='external' target="_blank">réunis sur le site spip.net</a>.</strong></p>
+
+<hr class="spip" />
+
+<p>GNU General Public License&nbsp;:
+<br />&mdash;&nbsp;<a href="../COPYING.txt" class='spip_out'>version texte</a>&nbsp;;
+<br />&mdash;&nbsp;<a href="http://www.gnu.org/copyleft/gpl.html" class='spip_out' rel='external' target="_blank">version HTML</a>&nbsp;;
+<br />&mdash;&nbsp;<a href="http://www.april.org/gnu/gpl_french2.html" class='spip_out' rel='external' target="_blank">version française, non officielle</a>.</p>
+
+</div></body>

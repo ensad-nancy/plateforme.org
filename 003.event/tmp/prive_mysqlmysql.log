@@ -1,0 +1,2 @@
+Dec 05 11:09:56 193.51.201.248 (pid 871333) Erreur 1044 de mysql: Access denied for user 'dcfvgfr_platefor'@'localhost' to database 'spip'
+CREATE DATABASE `spip`

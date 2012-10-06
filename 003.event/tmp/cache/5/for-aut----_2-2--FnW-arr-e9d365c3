@@ -1,0 +1,43 @@
+a:11:{s:5:"texte";s:1745:"<div class="formulaire_spip formulaire_ecrire_auteur ajax" id="formulaire_ecrire_auteur_2">
+<br class='bugajaxie' />
+
+
+ 
+<form method='post' action='/spip.php?auteur2#formulaire_ecrire_auteur_2' enctype='multipart/form-data'>
+	
+	<div><input name="id_auteur" value="2" type="hidden" />
+<input name="page" value="auteur" type="hidden" /><input name='formulaire_action' type='hidden'
+		value='ecrire_auteur' /><input name='formulaire_action_args' type='hidden'
+		value='FnWhRmSGQB8irocVwtQ1eILLmORz+gisM9gG9dPVaPeWRWmAi2U+n9fhUpg/29RPBaY0desYSaLvaDDMAWeYUPVBKdJ6h2TmQuWsSdxPO1TMWR1Woikv2iUeZglClHvNBkRr/PLPvoASgsCK+PaF' /></div>
+	
+	
+	<fieldset>
+		<legend>Envoyer un message</legend>
+		<ul>
+			<li class='saisie_email_message_auteur obligatoire'>
+				<label for="email_message_auteur_2">Votre adresse email</label>
+				
+				<input type="text" class="text" name="email_message_auteur" id="email_message_auteur_2" value="" size="30" />
+			</li>
+			<li class='saisie_sujet_message_auteur obligatoire'>
+				<label for="sujet_message_auteur_2">Sujet</label>
+				
+				<input type="text" class="text" name="sujet_message_auteur" id="sujet_message_auteur_2" value="" size="30" />
+			</li>
+			<li class='saisie_texte_message_auteur obligatoire'>
+				<label for="texte_message_auteur_2">Texte de votre message :</label>
+				
+				<textarea name="texte_message_auteur" id="texte_message_auteur_2" rows="8" cols="60"></textarea>
+			</li>
+		</ul>
+	</fieldset>
+	
+	<p style="display: none;">
+		<label for="nobot">Veuillez laisser ce champ vide&nbsp;:</label>
+		<input type="text" class="text" name="nobot" id="nobot" value="" size="10" />
+	</p>
+	<p class="boutons"><input type="submit" class="submit" name="valide" value="Envoyer un message" /></p>
+</form>
+
+</div>
+";s:9:"squelette";s:37:"html_330fe4717b7f88930749d182d77c2ffb";s:6:"source";s:46:"squelettes-dist/formulaires/ecrire_auteur.html";s:11:"process_ins";s:4:"html";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"5/for-aut----_2-2--FnW-arr-e9d365c3";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";i:3600;}s:5:"duree";i:0;s:5:"notes";s:0:"";s:8:"contexte";a:16:{s:20:"sujet_message_auteur";s:0:"";s:20:"texte_message_auteur";s:0:"";s:20:"email_message_auteur";s:0:"";s:2:"id";s:2:"_2";s:9:"id_auteur";s:1:"2";s:10:"id_article";s:0:"";s:15:"formulaire_args";s:148:"FnWhRmSGQB8irocVwtQ1eILLmORz+gisM9gG9dPVaPeWRWmAi2U+n9fhUpg/29RPBaY0desYSaLvaDDMAWeYUPVBKdJ6h2TmQuWsSdxPO1TMWR1Woikv2iUeZglClHvNBkRr/PLPvoASgsCK+PaF";s:7:"erreurs";a:0:{}s:6:"action";s:17:"/spip.php?auteur2";s:4:"form";s:13:"ecrire_auteur";s:8:"editable";s:1:" ";s:4:"lang";s:2:"fr";s:4:"date";s:19:"2011-12-06 14:41:06";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2011-12-06 14:41:06";s:18:"date_redac_default";b:1;}s:12:"lastmodified";i:1323178866;s:2:"gz";b:0;}

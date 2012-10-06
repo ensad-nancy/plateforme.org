@@ -1,1 +1,55 @@
-body{background-color:#f8f8f8}a{text-decoration:none;color:royalBlue}nav#draggable{font-size:22px;cursor:move;position:absolute;top:20%;box-shadow:15px 15px 20px rgba(0,0,0,0.2);margin:20px;background:white;padding:20px}nav#draggable ol{padding-right:10px}nav#draggable ol li{list-style-type:decimal-leading-zero;margin-left:41px}nav#draggable h1{font-size:14px}.gImage{text-align:right}.gImage img{width:100%;max-width:1800px}iframe.ext{width:100%;height:100%}.issuu{margin-right:-170px;margin-left:-50px}.issuuF{margin-right:-140px;margin-left:0}.contissuu{width:100%;height:100%;overflow:hidden}
+body {
+	background-color:#BEBEBE;
+	font-family:Geneva;
+	color:#404040
+}
+
+h1 {
+	font-family:Geneva;
+	font-weight:700;
+	font-size:2em;
+	text-align:left;
+}
+
+a {
+	color:#404040;
+	text-decoration:none
+}
+
+body.capture {
+	background-repeat:no-repeat
+}
+
+
+/* CAPTURE */
+.capture {
+}
+
+.capture small {
+	font-family:Monaco,courrier,monospace;
+	font-size:10px
+}
+
+.capture .carton {
+	position:absolute;
+	bottom:0;
+	right:0;
+	padding:2%
+}
+.capture .carton:hover {
+background-color:#BEBEBE;
+}
+
+.capture .bouton {
+	position: absolute;
+	top:0;
+	left: 0;
+	
+	width: 100%;
+	height: 80%;
+	display: block;
+}
+
+/* PROFIL */
+
+.profil { padding: 10%;}

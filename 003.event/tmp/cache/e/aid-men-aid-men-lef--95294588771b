@@ -1,0 +1,55 @@
+a:11:{s:5:"texte";s:1593:"/**************************************************************************/
+/*  SPIP, Systeme de publication pour l'internet                          */
+/*                                                                        */
+/*  Copyright (c) 2001-2010                                               */
+/*  Arnaud Martin, Antoine Pitrou, Philippe Riviere, Emmanuel Saint-James */
+/*                                                                        */
+/*  Ce programme est un logiciel libre distribue sous licence GNU/GPL.    */
+/*  Pour plus de details voir le fichier COPYING.txt ou l'aide en ligne.  */ 
+/**************************************************************************/
+
+a {text-decoration: none; }
+A:Hover {text-decoration: underline;}
+
+.article-inactif {
+		float: left;
+		text-align: left;
+		width: 80%;
+		background: url(prive/images/triangle.gif) left center no-repeat;
+		margin: 2px;
+		padding: 0px;
+		padding-left: 20px;
+		font-family: Arial, Sans, sans-serif;
+		font-size: 12px;
+}
+
+.article-actif {
+		float: right;
+		text-align: right;
+		width: 80%;
+		background:  url(prive/images/triangle.gif) right center no-repeat;
+		margin: 4px;
+		padding: 0px;
+		padding-right: 20px;
+		font-family: Arial, Sans, sans-serif;
+		font-size: 12px;
+		font-weight: bold;
+		color: black;
+}
+
+.article-actif:hover {
+		text-decoration: none;
+}
+.rubrique {
+		width: 90%;
+		margin: 0px;
+		margin-top: 6px;
+		margin-bottom: 4px;
+		padding: 4px;
+		font-family: Trebuchet MS, Arial, Sans, sans-serif;
+		font-size: 14px;
+		font-weight: bold;
+		color: black;
+		background-color: #EEEECC;
+}
+";s:9:"squelette";s:37:"html_71329fd3538fe8db4752d6b75143f88e";s:6:"source";s:20:"prive/aide_menu.html";s:11:"process_ins";s:4:"html";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"e/aid-men-aid-men-lef--95294588771b";}s:7:"entetes";a:5:{s:12:"X-Spip-Cache";s:6:"360000";s:13:"Cache-Control";s:14:"max-age=360000";s:15:"X-Spip-Statique";s:3:"oui";s:12:"Content-Type";s:29:"text/css; charset=iso-8859-15";s:4:"Vary";s:15:"Accept-Encoding";}s:5:"duree";i:360000;s:5:"notes";s:0:"";s:8:"contexte";a:6:{s:4:"page";s:9:"aide_menu";s:3:"ltr";s:4:"left";s:4:"date";s:19:"2011-12-05 12:31:30";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2011-12-05 12:31:30";s:18:"date_redac_default";b:1;}s:12:"lastmodified";i:1323084690;s:2:"gz";b:0;}

@@ -1,0 +1,16 @@
+a:11:{s:5:"texte";s:1146:"<!--<div id="pied">
+	<a href="http://www.spip.net/" title="Site r&eacute;alis&eacute; avec SPIP"><img src="squelettes-dist/spip.png" alt="SPIP" width="48" height="16" /></a> | 
+	<a href="squelettes-dist/auteur.html" title="voir le squelette de cette page" rel="nofollow">squelette</a>
+	 | <a href="<?php 
+include_once("./" . _DIR_RACINE . "ecrire/balise/url_logout.php");
+if ($lang_select = "fr") $lang_select = lang_select($lang_select);
+inserer_balise_dynamique(balise_URL_LOGOUT_dyn(''), array('squelettes/inc-pied.html', 'html_2b0322f6212ab02fb205cd41fb952c47', '', 4, 'fr'));
+if ($lang_select) lang_select();
+?>" rel="nofollow">Se d&eacute;connecter</a>
+	
+	 | <a href="ecrire/">Espace priv&eacute;</a> | 
+	<a rel="contents" href="http://event.plateforme.org/spip.php?page=plan">Plan du site</a> | 
+	<a href="http://event.plateforme.org/spip.php?page=backend" rel="alternate" title="Syndiquer tout le site"><img src="squelettes-dist/feed.png" alt="Suivre la vie du site" width="16" height="16" />&nbsp;RSS&nbsp;2.0</a>
+</div>-->
+<!-- SPIP-CRON --><div style="background-image: url('http://event.plateforme.org/spip.php?action=cron');"></div>
+";s:9:"squelette";s:37:"html_2b0322f6212ab02fb205cd41fb952c47";s:6:"source";s:24:"squelettes/inc-pied.html";s:11:"process_ins";s:3:"php";s:11:"invalideurs";a:2:{s:5:"cache";s:35:"f/inc-pie-squ-dis-fr--a72302e542849";s:7:"session";s:8:"9f37ef96";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";i:86400;}s:5:"duree";i:0;s:5:"notes";s:0:"";s:8:"contexte";a:6:{s:4:"skel";s:27:"squelettes-dist/auteur.html";s:4:"lang";s:2:"fr";s:4:"date";s:19:"2011-12-06 14:40:43";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2011-12-06 14:40:43";s:18:"date_redac_default";b:1;}s:12:"lastmodified";i:1323178843;s:2:"gz";b:0;}

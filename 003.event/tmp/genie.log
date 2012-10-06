@@ -1,0 +1,299 @@
+Dec 05 11:20:31 193.51.201.248 (pid 889444) cron: debut syndic
+Dec 05 12:27:04 193.51.201.248 (pid 1014725) cron: debut syndic
+Dec 05 12:47:06 193.51.201.248 (pid 2664) cron: debut syndic
+Dec 05 14:22:23 193.51.201.248 (pid 205696) cron: debut syndic
+Dec 05 16:01:41 193.51.201.248 (pid 461141) cron: debut syndic
+Dec 05 16:01:51 193.51.201.248 (pid 461269) cron: debut invalideur
+Dec 05 16:01:51 193.51.201.248 (pid 461269) cron: invalideur (13.608 ms) 1
+Dec 05 16:02:10 193.51.201.248 (pid 461563) cron: debut maintenance
+Dec 05 16:02:12 193.51.201.248 (pid 461563) cron: maintenance (1 602.755 ms) 1
+Dec 06 11:29:49 193.51.201.248 (pid 233581) cron: debut syndic
+Dec 06 11:31:29 193.51.201.248 (pid 236116) cron: debut syndic
+Dec 06 11:38:06 193.51.201.248 (pid 248523) cron: debut syndic
+Dec 06 11:49:00 193.51.201.248 (pid 269132) cron: debut syndic
+Dec 06 12:00:07 193.51.201.248 (pid 291125) cron: debut invalideur
+Dec 06 12:00:07 193.51.201.248 (pid 291125) cron: invalideur (13.339 ms) 1
+Dec 06 12:56:04 193.51.201.248 (pid 391255) cron: debut syndic
+Dec 06 12:56:07 193.51.201.248 (pid 391297) cron: debut invalideur
+Dec 06 12:56:07 193.51.201.248 (pid 391297) cron: invalideur (28.864 ms) 1
+Dec 06 14:34:50 193.51.201.248 (pid 574309) cron: debut syndic
+Dec 06 14:34:54 193.51.201.248 (pid 574341) cron: debut invalideur
+Dec 06 14:34:54 193.51.201.248 (pid 574341) cron: invalideur (14.000 ms) 1
+Dec 06 14:35:14 193.51.201.248 (pid 575717) cron: debut maintenance
+Dec 06 14:35:14 193.51.201.248 (pid 575717) cron: maintenance (42.191 ms) 1
+Dec 06 14:36:32 193.51.201.248 (pid 577797) cron: debut syndic
+Dec 06 14:38:57 193.51.201.248 (pid 582010) cron: debut syndic
+Dec 06 14:40:30 193.51.201.248 (pid 584491) cron: debut syndic
+Dec 06 14:56:20 193.51.201.248 (pid 612796) cron: debut syndic
+Dec 06 14:56:43 193.51.201.248 (pid 613178) cron: debut invalideur
+Dec 06 14:56:43 193.51.201.248 (pid 613178) cron: invalideur (3.642 ms) 1
+Dec 06 15:08:48 193.51.201.248 (pid 636995) cron: debut syndic
+Dec 06 15:10:33 193.51.201.248 (pid 639978) cron: debut syndic
+Dec 06 15:17:55 193.51.201.248 (pid 653934) cron: debut syndic
+Dec 06 15:18:02 193.51.201.248 (pid 654035) cron: debut invalideur
+Dec 06 15:18:02 193.51.201.248 (pid 654035) cron: invalideur (4.800 ms) 1
+Dec 06 15:20:42 193.51.201.248 (pid 659692) cron: debut syndic
+Dec 06 15:35:22 193.51.201.248 (pid 684693) cron: debut syndic
+Dec 06 15:36:54 193.51.201.248 (pid 688279) cron: debut syndic
+Dec 06 15:58:35 193.51.201.248 (pid 727451) cron: debut invalideur
+Dec 06 15:58:35 193.51.201.248 (pid 727451) cron: invalideur (3.733 ms) 1
+Dec 06 16:04:54 193.51.201.248 (pid 739614) cron: debut syndic
+Dec 06 16:06:39 193.51.201.248 (pid 743618) cron: debut syndic
+Dec 06 16:09:41 193.51.201.248 (pid 748305) cron: debut syndic
+Dec 06 16:18:30 193.51.201.248 (pid 768634) cron: debut syndic
+Dec 06 16:18:36 193.51.201.248 (pid 768744) cron: debut invalideur
+Dec 06 16:18:36 193.51.201.248 (pid 768744) cron: invalideur (348.267 ms) 1
+Dec 06 16:24:10 193.51.201.248 (pid 779243) cron: debut syndic
+Dec 06 16:32:37 193.51.201.248 (pid 797407) cron: debut syndic
+Dec 06 16:40:46 193.51.201.248 (pid 815465) cron: debut syndic
+Dec 07 11:03:37 77.192.24.251 (pid 549119) cron: debut maintenance
+Dec 07 11:03:37 77.192.24.251 (pid 549119) cron: maintenance (90.233 ms) 1
+Dec 07 11:32:22 193.51.201.248 (pid 600910) cron: debut invalideur
+Dec 07 11:32:22 193.51.201.248 (pid 600910) cron: invalideur (33.389 ms) 1
+Dec 07 11:32:27 193.51.201.248 (pid 600973) cron: debut syndic
+Dec 07 11:32:39 193.51.201.248 (pid 602171) cron: debut optimiser
+Dec 07 11:32:40 193.51.201.248 (pid 602171) cron: optimiser (81.408 ms) -1323232462
+Dec 07 11:44:58 193.51.201.248 (pid 625320) cron: debut syndic
+Dec 07 11:50:55 193.51.201.248 (pid 637344) cron: debut syndic
+Dec 07 12:00:28 193.51.201.248 (pid 662088) cron: debut invalideur
+Dec 07 12:00:28 193.51.201.248 (pid 662088) cron: invalideur (4.178 ms) 1
+Dec 07 12:02:07 193.51.201.248 (pid 665744) cron: debut syndic
+Dec 07 12:07:55 193.51.201.248 (pid 686692) cron: debut syndic
+Dec 07 12:12:50 193.51.201.248 (pid 696841) cron: debut syndic
+Dec 07 12:14:23 193.51.201.248 (pid 700497) cron: debut syndic
+Dec 07 12:20:52 193.51.201.248 (pid 711571) cron: debut syndic
+Dec 07 12:20:55 193.51.201.248 (pid 711637) cron: debut invalideur
+Dec 07 12:20:55 193.51.201.248 (pid 711637) cron: invalideur (3.603 ms) 1
+Dec 07 13:47:05 193.51.201.248 (pid 878913) cron: debut syndic
+Dec 07 14:07:56 193.51.201.248 (pid 928559) cron: debut invalideur
+Dec 07 14:07:56 193.51.201.248 (pid 928559) cron: invalideur (37.205 ms) 1
+Dec 07 14:07:59 193.51.201.248 (pid 928644) cron: debut syndic
+Dec 07 14:18:12 193.51.201.248 (pid 953090) cron: debut syndic
+Dec 07 14:21:36 193.51.201.248 (pid 961047) cron: debut syndic
+Dec 07 14:23:52 193.51.201.248 (pid 965505) cron: debut syndic
+Dec 07 14:39:28 193.51.201.248 (pid 1007943) cron: debut syndic
+Dec 07 14:40:28 193.51.201.248 (pid 1010573) cron: debut invalideur
+Dec 07 14:40:28 193.51.201.248 (pid 1010573) cron: invalideur (20.052 ms) 1
+Dec 07 14:46:19 193.51.201.248 (pid 1036545) cron: debut syndic
+Dec 07 19:29:19 31.32.187.117 (pid 682545) cron: debut syndic
+Dec 07 19:29:25 31.32.187.117 (pid 682645) cron: debut invalideur
+Dec 07 19:29:25 31.32.187.117 (pid 682645) cron: invalideur (42.349 ms) 1
+Dec 07 19:29:32 31.32.187.117 (pid 682759) cron: debut maintenance
+Dec 07 19:29:32 31.32.187.117 (pid 682759) cron: maintenance (71.276 ms) 1
+Dec 08 14:55:54 193.51.201.248 (pid 680520) cron: debut syndic
+Dec 08 14:56:01 193.51.201.248 (pid 680625) cron: debut invalideur
+Dec 08 14:56:01 193.51.201.248 (pid 680625) cron: invalideur (45.988 ms) 1
+Dec 08 14:56:04 193.51.201.248 (pid 680706) cron: debut maintenance
+Dec 08 14:56:04 193.51.201.248 (pid 680706) cron: maintenance (38.321 ms) 1
+Dec 08 15:17:39 193.51.201.248 (pid 723938) cron: debut syndic
+Dec 08 15:17:42 193.51.201.248 (pid 725017) cron: debut invalideur
+Dec 08 15:17:42 193.51.201.248 (pid 725017) cron: invalideur (3.667 ms) 1
+Dec 08 16:16:21 193.51.201.248 (pid 848436) cron: debut invalideur
+Dec 08 16:16:21 193.51.201.248 (pid 848436) cron: invalideur (4.228 ms) 1
+Dec 08 16:24:27 193.51.201.248 (pid 866833) cron: debut syndic
+Dec 08 16:42:29 193.51.201.248 (pid 911841) cron: debut syndic
+Dec 08 16:45:50 193.51.201.248 (pid 920007) cron: debut syndic
+Dec 08 16:48:27 193.51.201.248 (pid 927812) cron: debut syndic
+Dec 08 16:52:05 193.51.201.248 (pid 936048) cron: debut syndic
+Dec 08 16:56:11 193.51.201.248 (pid 946446) cron: debut maintenance
+Dec 08 16:56:11 193.51.201.248 (pid 946446) cron: maintenance (17.887 ms) 1
+Dec 08 16:58:32 193.51.201.248 (pid 952803) cron: debut syndic
+Dec 08 17:04:32 193.51.201.248 (pid 968807) cron: debut invalideur
+Dec 08 17:04:32 193.51.201.248 (pid 968807) cron: invalideur (4.272 ms) 1
+Dec 08 17:04:37 193.51.201.248 (pid 968921) cron: debut syndic
+Dec 08 17:13:20 193.51.201.248 (pid 987682) cron: debut syndic
+Dec 08 17:14:52 193.51.201.248 (pid 991306) cron: debut syndic
+Dec 08 17:26:20 193.51.201.248 (pid 1014427) cron: debut invalideur
+Dec 08 17:26:20 193.51.201.248 (pid 1014427) cron: invalideur (3.727 ms) 1
+Dec 09 12:16:19 195.221.83.76 (pid 832399) cron: debut syndic
+Dec 09 12:16:32 195.221.83.76 (pid 833791) cron: debut invalideur
+Dec 09 12:16:32 195.221.83.76 (pid 833791) cron: invalideur (59.959 ms) 1
+Dec 09 12:16:36 195.221.83.76 (pid 833901) cron: debut maintenance
+Dec 09 12:16:37 195.221.83.76 (pid 833901) cron: maintenance (221.463 ms) 1
+Dec 09 12:16:59 195.221.83.76 (pid 834325) cron: debut optimiser
+Dec 09 12:16:59 195.221.83.76 (pid 834325) cron: optimiser (91.111 ms) -1323402053
+Dec 09 12:23:22 195.221.83.76 (pid 850257) cron: debut syndic
+Dec 09 12:27:46 195.221.83.76 (pid 860369) cron: debut syndic
+Dec 09 12:53:08 31.32.187.117 (pid 923862) cron: debut syndic
+Dec 09 12:53:12 31.32.187.117 (pid 923953) cron: debut invalideur
+Dec 09 12:53:12 31.32.187.117 (pid 923953) cron: invalideur (3.543 ms) 1
+Dec 09 12:55:32 31.32.187.117 (pid 928578) cron: debut syndic
+Dec 09 12:57:17 31.32.187.117 (pid 932659) cron: debut syndic
+Dec 09 12:58:51 31.32.187.117 (pid 936525) cron: debut syndic
+Dec 11 09:43:27 90.6.201.40 (pid 772659) cron: debut syndic
+Dec 11 09:43:50 90.6.201.40 (pid 772764) cron: debut invalideur
+Dec 11 09:43:50 90.6.201.40 (pid 772764) cron: invalideur (64.199 ms) 1
+Dec 11 10:13:41 90.6.201.40 (pid 818080) cron: debut maintenance
+Dec 11 10:13:41 90.6.201.40 (pid 818080) cron: maintenance (64.866 ms) 1
+Dec 11 10:14:20 90.6.201.40 (pid 819371) cron: debut optimiser
+Dec 11 10:14:20 90.6.201.40 (pid 819371) cron: optimiser (34.350 ms) -1323573083
+Dec 11 10:15:25 90.6.201.40 (pid 819882) cron: debut syndic
+Dec 11 10:15:34 90.6.201.40 (pid 819882) cron: debut invalideur
+Dec 11 10:15:34 90.6.201.40 (pid 819882) cron: invalideur (3.363 ms) 1
+Dec 11 13:56:54 31.32.187.117 (pid 2582) cron: debut syndic
+Dec 11 13:57:09 31.32.187.117 (pid 2672) cron: debut invalideur
+Dec 11 13:57:09 31.32.187.117 (pid 2672) cron: invalideur (63.224 ms) 1
+Dec 11 13:57:31 31.32.187.117 (pid 2755) cron: debut maintenance
+Dec 11 13:57:31 31.32.187.117 (pid 2755) cron: maintenance (151.121 ms) 1
+Dec 11 13:58:28 31.32.187.117 (pid 4146) cron: debut syndic
+Dec 11 14:42:54 31.32.187.117 (pid 64110) cron: debut syndic
+Dec 11 15:03:30 31.32.187.117 (pid 92613) cron: debut mise_a_jour
+Dec 11 15:03:31 31.32.187.117 (pid 92613) cron: mise_a_jour (677.329 ms) 1
+Dec 11 15:03:47 31.32.187.117 (pid 92660) cron: debut syndic
+Dec 11 15:05:45 31.32.187.117 (pid 107103) cron: debut invalideur
+Dec 11 15:05:45 31.32.187.117 (pid 107103) cron: invalideur (34.895 ms) 1
+Dec 11 15:09:50 31.32.187.117 (pid 111083) cron: debut syndic
+Dec 11 15:51:30 31.32.187.117 (pid 141427) cron: debut syndic
+Dec 11 15:51:48 31.32.187.117 (pid 141529) cron: debut invalideur
+Dec 11 15:51:49 31.32.187.117 (pid 141529) cron: invalideur (39.820 ms) 1
+Dec 11 15:54:17 31.32.187.117 (pid 143500) cron: debut syndic
+Dec 11 15:55:50 31.32.187.117 (pid 144021) cron: debut syndic
+Dec 12 09:34:59 193.51.201.248 (pid 285274) cron: debut maintenance
+Dec 12 09:34:59 193.51.201.248 (pid 285274) cron: maintenance (182.362 ms) 1
+Dec 12 09:35:16 193.51.201.248 (pid 285459) cron: debut invalideur
+Dec 12 09:35:16 193.51.201.248 (pid 285459) cron: invalideur (29.435 ms) 1
+Dec 12 09:39:40 193.51.201.248 (pid 289571) cron: debut syndic
+Dec 12 09:51:59 193.51.201.248 (pid 299771) cron: debut syndic
+Dec 12 09:53:46 193.51.201.248 (pid 301484) cron: debut syndic
+Dec 12 09:59:34 193.51.201.248 (pid 305849) cron: debut invalideur
+Dec 12 09:59:34 193.51.201.248 (pid 305849) cron: invalideur (3.302 ms) 1
+Dec 12 09:59:37 193.51.201.248 (pid 305849) cron: debut syndic
+Dec 12 10:16:43 193.51.201.248 (pid 344715) cron: debut syndic
+Dec 12 10:30:37 193.51.201.248 (pid 357036) cron: debut syndic
+Dec 12 10:34:09 193.51.201.248 (pid 361026) cron: debut syndic
+Dec 12 10:41:18 193.51.201.248 (pid 367356) cron: debut syndic
+Dec 12 14:28:34 193.51.201.248 (pid 641698) cron: debut invalideur
+Dec 12 14:28:34 193.51.201.248 (pid 641698) cron: invalideur (48.767 ms) 1
+Dec 12 14:28:40 193.51.201.248 (pid 641774) cron: debut syndic
+Dec 12 14:28:53 193.51.201.248 (pid 641864) cron: debut maintenance
+Dec 12 14:28:53 193.51.201.248 (pid 641864) cron: maintenance (148.224 ms) 1
+Dec 12 14:32:21 193.51.201.248 (pid 645444) cron: debut syndic
+Dec 12 14:37:28 193.51.201.248 (pid 649517) cron: debut syndic
+Dec 12 14:42:42 193.51.201.248 (pid 653603) cron: debut syndic
+Dec 12 14:45:55 193.51.201.248 (pid 656009) cron: debut syndic
+Dec 12 14:50:06 193.51.201.248 (pid 659676) cron: debut syndic
+Dec 12 14:51:45 193.51.201.248 (pid 660253) cron: debut syndic
+Dec 12 14:56:44 193.51.201.248 (pid 664359) cron: debut syndic
+Dec 12 15:23:05 193.51.201.248 (pid 709198) cron: debut invalideur
+Dec 12 15:23:05 193.51.201.248 (pid 709198) cron: invalideur (25.186 ms) 1
+Dec 12 15:32:54 193.51.201.248 (pid 718920) cron: debut syndic
+Dec 12 17:08:05 193.51.201.248 (pid 848336) cron: debut syndic
+Dec 12 17:11:10 193.51.201.248 (pid 850451) cron: debut invalideur
+Dec 12 17:11:10 193.51.201.248 (pid 850451) cron: invalideur (40.523 ms) 1
+Dec 12 17:11:24 193.51.201.248 (pid 850451) cron: debut syndic
+Dec 12 17:15:04 193.51.201.248 (pid 852985) cron: debut syndic
+Dec 12 17:16:35 193.51.201.248 (pid 854706) cron: debut syndic
+Dec 12 17:18:24 193.51.201.248 (pid 856485) cron: debut syndic
+Dec 12 17:25:59 193.51.201.248 (pid 862452) cron: debut syndic
+Dec 12 18:37:42 193.51.201.248 (pid 942689) cron: debut syndic
+Dec 12 20:26:04 193.51.201.248 (pid 20692) cron: debut invalideur
+Dec 12 20:26:05 193.51.201.248 (pid 20692) cron: invalideur (92.202 ms) 1
+Dec 12 20:26:13 193.51.201.248 (pid 20686) cron: debut syndic
+Dec 12 20:47:44 193.51.201.248 (pid 37522) cron: debut maintenance
+Dec 12 20:47:44 193.51.201.248 (pid 37522) cron: maintenance (96.961 ms) 1
+Dec 12 20:50:40 193.51.201.248 (pid 39619) cron: debut syndic
+Dec 12 20:52:56 193.51.201.248 (pid 41632) cron: debut invalideur
+Dec 12 20:52:56 193.51.201.248 (pid 41632) cron: invalideur (3.447 ms) 1
+Dec 14 10:25:52 81.56.97.75 (pid 1041173) cron: debut syndic
+Dec 14 10:25:58 81.56.97.75 (pid 1041161) cron: debut invalideur
+Dec 14 10:25:58 81.56.97.75 (pid 1041161) cron: invalideur (89.180 ms) 1
+Dec 14 10:26:04 81.56.97.75 (pid 1041173) cron: debut maintenance
+Dec 14 10:26:04 81.56.97.75 (pid 1041173) cron: maintenance (111.890 ms) 1
+Dec 14 10:26:29 81.56.97.75 (pid 1041358) cron: debut optimiser
+Dec 14 10:26:29 81.56.97.75 (pid 1041358) cron: optimiser (31.290 ms) -1323838281
+Dec 14 10:28:10 81.56.97.75 (pid 1043018) cron: debut syndic
+Dec 14 10:30:14 81.56.97.75 (pid 1044935) cron: debut syndic
+Dec 23 10:07:24 82.224.237.131 (pid 1047014) cron: debut syndic
+Dec 23 10:07:27 82.224.237.131 (pid 1047043) cron: debut invalideur
+Dec 23 10:07:27 82.224.237.131 (pid 1047043) cron: invalideur (48.566 ms) 1
+Dec 23 10:07:39 82.224.237.131 (pid 1047014) cron: debut maintenance
+Dec 23 10:07:39 82.224.237.131 (pid 1047014) cron: maintenance (188.278 ms) 1
+Dec 23 10:07:57 82.224.237.131 (pid 1047171) cron: debut mise_a_jour
+Dec 23 10:07:57 82.224.237.131 (pid 1047171) cron: mise_a_jour (392.581 ms) 1
+Dec 23 10:08:21 82.224.237.131 (pid 1047414) cron: debut optimiser
+Dec 23 10:08:21 82.224.237.131 (pid 1047414) cron: optimiser (44.884 ms) -1324606948
+Dec 23 10:09:09 82.224.237.131 (pid 562) cron: debut syndic
+Dec 24 18:42:42 90.24.244.16 (pid 575863) cron: debut syndic
+Jan 03 12:06:38 193.51.201.248 (pid 252780) cron: debut invalideur
+Jan 03 12:06:38 193.51.201.248 (pid 252780) cron: invalideur (42.566 ms) 1
+Jan 03 12:06:42 193.51.201.248 (pid 253975) cron: debut maintenance
+Jan 03 12:06:42 193.51.201.248 (pid 253975) cron: maintenance (95.089 ms) 1
+Jan 03 12:06:46 193.51.201.248 (pid 253975) cron: debut syndic
+Jan 03 12:06:53 193.51.201.248 (pid 252780) cron: debut optimiser
+Jan 03 12:06:53 193.51.201.248 (pid 252780) cron: optimiser (59.451 ms) -1325554497
+Jan 03 12:06:58 193.51.201.248 (pid 253975) cron: debut mise_a_jour
+Jan 03 12:06:59 193.51.201.248 (pid 253975) cron: mise_a_jour (795.470 ms) 1
+Jan 03 12:09:58 193.51.201.248 (pid 257018) cron: debut syndic
+Jan 03 12:13:02 193.51.201.248 (pid 262240) cron: debut syndic
+Jan 03 12:19:16 193.51.201.248 (pid 271193) cron: debut syndic
+Jan 03 14:16:09 193.51.201.248 (pid 403978) cron: debut syndic
+Jan 03 15:22:04 193.51.201.248 (pid 498011) cron: debut invalideur
+Jan 03 15:22:04 193.51.201.248 (pid 498011) cron: invalideur (81.935 ms) 1
+Jan 03 15:22:09 193.51.201.248 (pid 498021) cron: debut maintenance
+Jan 03 15:22:10 193.51.201.248 (pid 498021) cron: maintenance (195.457 ms) 1
+Jan 03 15:24:24 193.51.201.248 (pid 500291) cron: debut syndic
+Jan 03 15:59:56 193.51.201.248 (pid 543580) cron: debut syndic
+Jan 03 16:00:01 193.51.201.248 (pid 543580) cron: debut invalideur
+Jan 03 16:00:01 193.51.201.248 (pid 543580) cron: invalideur (3.751 ms) 1
+Jan 03 16:19:27 193.51.201.248 (pid 570076) cron: debut syndic
+Jan 03 16:20:10 193.51.201.248 (pid 571566) cron: debut invalideur
+Jan 03 16:20:10 193.51.201.248 (pid 571566) cron: invalideur (17.565 ms) 1
+Jan 03 16:21:17 193.51.201.248 (pid 572324) cron: debut syndic
+Jan 03 16:23:05 193.51.201.248 (pid 574405) cron: debut syndic
+Feb 15 18:57:10 82.224.237.131 (pid 580593) cron: debut syndic
+Mar 06 15:12:00 193.51.201.248 (pid 680226) cron: debut syndic
+Mar 06 15:12:08 193.51.201.248 (pid 680340) cron: debut invalideur
+Mar 06 15:12:08 193.51.201.248 (pid 680340) cron: invalideur (23.966 ms) 1
+Mar 06 15:12:18 193.51.201.248 (pid 680479) cron: debut maintenance
+Mar 06 15:12:20 193.51.201.248 (pid 680479) cron: maintenance (1 125.416 ms) 1
+Mar 06 15:12:27 193.51.201.248 (pid 680646) cron: debut optimiser
+Mar 06 15:12:27 193.51.201.248 (pid 680646) cron: optimiser (40.883 ms) -1331009012
+Mar 06 15:12:44 193.51.201.248 (pid 680752) cron: debut mise_a_jour
+Mar 06 15:12:45 193.51.201.248 (pid 680752) cron: mise_a_jour (538.870 ms) 1
+Mar 06 15:13:46 193.51.201.248 (pid 682575) cron: debut syndic
+Mar 08 22:21:36 88.172.204.44 (pid 442484) cron: debut syndic
+Mar 09 18:34:39 88.189.232.213 (pid 436864) cron: debut invalideur
+Mar 09 18:34:39 88.189.232.213 (pid 436864) cron: invalideur (16.266 ms) 1
+Mar 09 18:34:44 88.189.232.213 (pid 436864) cron: debut maintenance
+Mar 09 18:34:44 88.189.232.213 (pid 436864) cron: maintenance (88.748 ms) 1
+Mar 09 18:34:56 88.189.232.213 (pid 436864) cron: debut optimiser
+Mar 09 18:34:57 88.189.232.213 (pid 436864) cron: optimiser (56.799 ms) -1331254988
+Mar 09 18:35:07 88.189.232.213 (pid 436864) cron: debut syndic
+Mar 09 18:35:25 88.189.232.213 (pid 438291) cron: debut mise_a_jour
+Mar 09 18:35:26 88.189.232.213 (pid 438291) cron: mise_a_jour (894.614 ms) 1
+Mar 09 18:43:39 88.189.232.213 (pid 445040) cron: debut syndic
+Mar 15 11:13:10 194.254.227.25 (pid 754174) cron: debut syndic
+Mar 15 12:49:35 194.254.227.25 (pid 856490) cron: debut invalideur
+Mar 15 12:49:35 194.254.227.25 (pid 856490) cron: invalideur (45.198 ms) 1
+Mar 15 21:49:00 82.224.237.131 (pid 361374) cron: debut maintenance
+Mar 15 21:49:00 82.224.237.131 (pid 361374) cron: maintenance (351.988 ms) 1
+Mar 15 21:49:04 82.224.237.131 (pid 362600) cron: debut optimiser
+Mar 15 21:49:04 82.224.237.131 (pid 362600) cron: optimiser (36.276 ms) -1331780702
+Mar 15 21:49:09 82.224.237.131 (pid 362600) cron: debut mise_a_jour
+Mar 15 21:49:10 82.224.237.131 (pid 362600) cron: mise_a_jour (550.295 ms) 1
+Mar 15 21:49:13 82.224.237.131 (pid 362600) cron: debut syndic
+Mar 15 21:50:07 82.224.237.131 (pid 363115) cron: debut invalideur
+Mar 15 21:50:07 82.224.237.131 (pid 363115) cron: invalideur (15.742 ms) 1
+Mar 15 21:50:54 82.224.237.131 (pid 363433) cron: debut syndic
+Mar 20 10:13:41 193.51.201.248 (pid 561242) cron: debut syndic
+Mar 20 10:42:41 193.51.201.248 (pid 588347) cron: debut invalideur
+Mar 20 10:42:41 193.51.201.248 (pid 588347) cron: invalideur (60.266 ms) 1
+Mar 20 10:42:45 193.51.201.248 (pid 588347) cron: debut maintenance
+Mar 20 10:42:45 193.51.201.248 (pid 588347) cron: maintenance (118.101 ms) 1
+Mar 20 10:42:49 193.51.201.248 (pid 588341) cron: debut optimiser
+Mar 20 10:42:49 193.51.201.248 (pid 588341) cron: optimiser (24.892 ms) -1332208159
+Mar 20 10:42:53 193.51.201.248 (pid 588417) cron: debut mise_a_jour
+Mar 20 10:42:54 193.51.201.248 (pid 588417) cron: mise_a_jour (454.061 ms) 1
+Mar 20 10:54:39 193.51.201.248 (pid 600373) cron: debut syndic
+Mar 20 11:08:46 193.51.201.248 (pid 614884) cron: debut syndic
+Mar 20 11:59:20 193.51.201.248 (pid 666122) cron: debut invalideur
+Mar 20 11:59:20 193.51.201.248 (pid 666122) cron: invalideur (37.839 ms) 1
+Mar 20 11:59:24 193.51.201.248 (pid 666122) cron: debut syndic
+Mar 20 12:13:14 193.51.201.248 (pid 680559) cron: debut syndic
+Mar 20 16:08:00 193.51.201.248 (pid 924481) cron: debut syndic
+Mar 21 11:24:40 82.224.237.131 (pid 98333) cron: debut invalideur
+Mar 21 11:24:40 82.224.237.131 (pid 98333) cron: invalideur (141.378 ms) 1
+Mar 21 11:24:45 82.224.237.131 (pid 98333) cron: debut maintenance
+Mar 21 11:24:46 82.224.237.131 (pid 98333) cron: maintenance (1 106.356 ms) 1
+Mar 21 11:25:08 82.224.237.131 (pid 98333) cron: debut syndic
+Mar 23 21:34:41 88.189.232.213 (pid 170830) cron: debut syndic

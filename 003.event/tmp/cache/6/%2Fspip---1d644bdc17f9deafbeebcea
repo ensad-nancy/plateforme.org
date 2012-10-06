@@ -1,0 +1,170 @@
+a:11:{s:5:"texte";s:13534:"
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr" dir="ltr">
+<head>
+<title>Conférence - Event — Multimodale Graphique</title>
+<meta name="description" content="David Poullard est un dessinateur de caract&#232;res typographiques, graphiste et enseignant. Pendant le mois de Novembre, il est venu plusieurs fois (...)" />
+<?php echo recuperer_fond( 'inc-head', array('lang' => 'fr'), array("compil"=>array('squelettes/article.html','html_776b5d13ec72d3739f328574f43de380','',7,$GLOBALS['spip_lang'])), _request("connect"));
+?>
+</head>
+
+<body class="page_article">
+	    <?php echo recuperer_fond( 'inc-barrehaute', array('skel' => 'squelettes/article.html',
+	'lang' => 'fr'), array("compil"=>array('squelettes/article.html','html_776b5d13ec72d3739f328574f43de380','',11,$GLOBALS['spip_lang'])), _request("connect"));
+?>
+	    <div class="col">
+			 <div class="contenu">
+				<h1 class="entry-title">Conférence</h1>
+				<h2><span class="vcard author"><a class="url fn spip_in" href="spip.php?auteur4">David Poullard</a></span></h2>
+	            <p><small><abbr class="published" title="2011-11-14T09:00:00Z">
+	            lundi 14 novembre 2011</abbr></small></p>
+		
+				<div class="texte entry-content"><p>David Poullard est un dessinateur de caractères typographiques, graphiste et enseignant. 
+Pendant le mois de Novembre, il est venu plusieurs fois à l&#8217;école. Les étudiants en semestre 5 Communication ont pu suivre un workshop autour du thème "Toucher, tracer".</p>
+
+<p>Chacun d&#8217;entre eux était invité à explorer tactilement, mais sans voir, un objet et d&#8217;en retranscrire ce ressenti à travers le dessin de nouveaux caractères. Cet exercice a permis une découverte et une familiarisation avec les outils de création de police typographique, sous la tutelle de David Poullard. La journée du 14 Novembre s&#8217;est cloturée par une conférence de l&#8217;artiste, qui nous a, en une heure et demi, proposé un résumé de sa vie professionnelle, de la sortie de l&#8217;école Estienne à maintenant.</p>
+
+<p></br>
+<span class='spip_document_128 spip_documents spip_documents_left' style='float:left; width:500px;'>
+<img src='local/cache-vignettes/L500xH313/Image_10-e919a.jpg' width='500' height='313' alt="" style='height:313px;width:500px;' /></span>
+<span class='spip_document_129 spip_documents spip_documents_left' style='float:left; width:500px;'>
+<img src='local/cache-vignettes/L500xH313/Image_33-c6937.jpg' width='500' height='313' alt="" style='height:313px;width:500px;' /></span>
+<span class='spip_document_130 spip_documents spip_documents_left' style='float:left; width:500px;'>
+<img src='local/cache-vignettes/L500xH313/Image_5-177b1.jpg' width='500' height='313' alt="" style='height:313px;width:500px;' /></span>
+<span class='spip_document_131 spip_documents spip_documents_left' style='float:left; width:500px;'>
+<img src='local/cache-vignettes/L500xH313/Image_66-33f32.jpg' width='500' height='313' alt="" style='height:313px;width:500px;' /></span>
+<span class='spip_document_132 spip_documents spip_documents_left' style='float:left; width:500px;'>
+<img src='local/cache-vignettes/L500xH313/Image_70-71efd.jpg' width='500' height='313' alt="" style='height:313px;width:500px;' /></span>
+</br></br></br></br></br></br></br></br></br></br></br>
+</br></br></br></br></br></br></br></br></br></br></br>
+</br></br></br></br></br></br></br></br></br></br></br>
+</br></br></br></br></br></br></br></br></br></br></br>
+</br></br></br></br></br></br></br></br></br></br></br>
+</br></br></br></br></br></br></br></br></br></br></br>
+</br></br></br></br></br></br></br></br></br></br></br>
+</br></br></br></br></br></br></br></br></br></br></br>
+</br></br></br></br></br></br></br></br>
+<i>Bibliographie&nbsp;:</i>
+</br>
+</br>
+<span class='spip_document_144 spip_documents spip_documents_left' style='float:left; width:50px;'>
+<img src='local/cache-vignettes/L50xH76/precis-de-conjugaisons-ordinaires-florence-inoue-david-poullard-guillaume-rannou-9782915173161-1f483.gif' width='50' height='76' alt="" style='height:76px;width:50px;' /></span><i>Précis de conjugaisons ordinaires</i>,
+</br>Florence Inoué, David Poullard, Guillaume Rannou
+</br>La Ferme du Buisson
+</br>Editions Xavier Barrral, novembre 2006
+</br>
+</br>
+<span class='spip_document_143 spip_documents spip_documents_left' style='float:left; width:50px;'>
+<img src='local/cache-vignettes/L50xH62/56_deligny-4d5a3.jpg' width='50' height='62' alt="" style='height:62px;width:50px;' /></span><i>Fernand Deligny, Œuvres</i>, 
+</br>Fernand Deligny, Sandra Alvarez de Toledo
+</br>L’Arachnéen, 2007</p></div>
+			 </div>
+		</div>
+		<div class="col">
+			 <div class="contenu">
+				 
+				 
+				         
+				         	<h1 class="entry-title">Toucher/tracer</h1>
+							<div class="texte entry-content"><p></br></br>
+<a href="http://biotox.free.fr/event/david_poullard_workshop.pdf" class='spip_out' rel='external'>PRODUCTION_WORKSHOP</a>
+</br></br>
+<span class='spip_document_133 spip_documents spip_documents_left' style='float:left; width:500px;'>
+<img src='local/cache-vignettes/L500xH751/IMG_0034-16cfa.jpg' width='500' height='751' alt="" style='height:751px;width:500px;' /></span>
+<span class='spip_document_134 spip_documents spip_documents_left' style='float:left; width:500px;'>
+<img src='local/cache-vignettes/L500xH334/IMG_0038-35cd5.jpg' width='500' height='334' alt="" style='height:334px;width:500px;' /></span>
+<span class='spip_document_135 spip_documents spip_documents_left' style='float:left; width:500px;'>
+<img src='local/cache-vignettes/L500xH334/IMG_0071-472ca.jpg' width='500' height='334' alt="" style='height:334px;width:500px;' /></span>
+<span class='spip_document_136 spip_documents spip_documents_left' style='float:left; width:500px;'>
+<img src='local/cache-vignettes/L500xH334/IMG_0096-a64a6.jpg' width='500' height='334' alt="" style='height:334px;width:500px;' /></span>
+<span class='spip_document_137 spip_documents spip_documents_left' style='float:left; width:500px;'>
+<img src='local/cache-vignettes/L500xH334/IMG_0111-79149.jpg' width='500' height='334' alt="" style='height:334px;width:500px;' /></span>
+<span class='spip_document_138 spip_documents spip_documents_left' style='float:left; width:500px;'>
+<img src='local/cache-vignettes/L500xH281/photocartespoullard2-5fdec.jpg' width='500' height='281' alt="" style='height:281px;width:500px;' /></span>
+<span class='spip_document_139 spip_documents spip_documents_left' style='float:left; width:500px;'>
+<img src='local/cache-vignettes/L500xH334/_-0bdef.jpg' width='500' height='334' alt="" style='height:334px;width:500px;' /></span>
+<span class='spip_document_140 spip_documents spip_documents_left' style='float:left; width:500px;'>
+<img src='local/cache-vignettes/L500xH334/IMG_0119-e8268.jpg' width='500' height='334' alt="" style='height:334px;width:500px;' /></span>
+<span class='spip_document_141 spip_documents spip_documents_left' style='float:left; width:500px;'>
+<img src='local/cache-vignettes/L500xH334/IMG_0124-ab4fa.jpg' width='500' height='334' alt="" style='height:334px;width:500px;' /></span>
+<span class='spip_document_142 spip_documents spip_documents_left' style='float:left; width:500px;'>
+<img src='local/cache-vignettes/L500xH334/IMG_0129-4626b.jpg' width='500' height='334' alt="" style='height:334px;width:500px;' /></span></p>
+<dl class='spip_document_145 spip_documents spip_documents_left' style='float:left;width:350px;'>
+<dt><img src='local/cache-vignettes/L500xH298/Audrey-19b1a.jpg' width='500' height='298' alt='JPEG - 680.1 ko' style='height:298px;width:500px;' /></dt>
+<dt class='spip_doc_titre' style='width:350px;'><strong>Audrey</strong></dt>
+</dl>
+<dl class='spip_document_146 spip_documents spip_documents_left' style='float:left;width:350px;'>
+<dt><img src='local/cache-vignettes/L500xH298/Jo-Ana-78eeb.jpg' width='500' height='298' alt='JPEG - 708 ko' style='height:298px;width:500px;' /></dt>
+<dt class='spip_doc_titre' style='width:350px;'><strong>Jo Ana</strong></dt>
+</dl>
+<dl class='spip_document_147 spip_documents spip_documents_left' style='float:left;width:350px;'>
+<dt><img src='local/cache-vignettes/L500xH298/Jung_A_texte_-f5eae.jpg' width='500' height='298' alt='JPEG - 771.3 ko' style='height:298px;width:500px;' /></dt>
+<dt class='spip_doc_titre' style='width:350px;'><strong>Jung A texte </strong></dt>
+</dl>
+<dl class='spip_document_148 spip_documents spip_documents_left' style='float:left;width:350px;'>
+<dt><img src='local/cache-vignettes/L500xH298/Kirsty-900c5.jpg' width='500' height='298' alt='JPEG - 658.1 ko' style='height:298px;width:500px;' /></dt>
+<dt class='spip_doc_titre' style='width:350px;'><strong>Kirsty</strong></dt>
+</dl>
+<dl class='spip_document_149 spip_documents spip_documents_left' style='float:left;width:350px;'>
+<dt><img src='local/cache-vignettes/L500xH298/Lucie-c9a33.jpg' width='500' height='298' alt='JPEG - 665.1 ko' style='height:298px;width:500px;' /></dt>
+<dt class='spip_doc_titre' style='width:350px;'><strong>Lucie</strong></dt>
+</dl>
+<dl class='spip_document_150 spip_documents spip_documents_left' style='float:left;width:350px;'>
+<dt><img src='local/cache-vignettes/L500xH298/Lucille-6ad43.jpg' width='500' height='298' alt='JPEG - 645 ko' style='height:298px;width:500px;' /></dt>
+<dt class='spip_doc_titre' style='width:350px;'><strong>Lucille</strong></dt>
+</dl>
+<dl class='spip_document_151 spip_documents spip_documents_left' style='float:left;width:350px;'>
+<dt><img src='local/cache-vignettes/L500xH298/Mathilde_d-3faab.jpg' width='500' height='298' alt='JPEG - 659.5 ko' style='height:298px;width:500px;' /></dt>
+<dt class='spip_doc_titre' style='width:350px;'><strong>Mathilde d</strong></dt>
+</dl>
+<dl class='spip_document_152 spip_documents spip_documents_left' style='float:left;width:350px;'>
+<dt><img src='local/cache-vignettes/L500xH298/elise-bdfc3.jpg' width='500' height='298' alt='JPEG - 702 ko' style='height:298px;width:500px;' /></dt>
+<dt class='spip_doc_titre' style='width:350px;'><strong>elise</strong></dt>
+</dl>
+<dl class='spip_document_153 spip_documents spip_documents_left' style='float:left;width:350px;'>
+<dt><img src='local/cache-vignettes/L500xH298/louis-57f57.jpg' width='500' height='298' alt='JPEG - 646.6 ko' style='height:298px;width:500px;' /></dt>
+<dt class='spip_doc_titre' style='width:350px;'><strong>louis</strong></dt>
+</dl>
+<dl class='spip_document_154 spip_documents spip_documents_left' style='float:left;width:350px;'>
+<dt><img src='local/cache-vignettes/L500xH298/marine-7f8bb.jpg' width='500' height='298' alt='JPEG - 628 ko' style='height:298px;width:500px;' /></dt>
+<dt class='spip_doc_titre' style='width:350px;'><strong>marine</strong></dt>
+</dl>
+<dl class='spip_document_155 spip_documents spip_documents_left' style='float:left;width:350px;'>
+<dt><img src='local/cache-vignettes/L500xH298/masssimo-0f0df.jpg' width='500' height='298' alt='JPEG - 694.4 ko' style='height:298px;width:500px;' /></dt>
+<dt class='spip_doc_titre' style='width:350px;'><strong>masssimo</strong></dt>
+</dl>
+<dl class='spip_document_156 spip_documents spip_documents_left' style='float:left;width:350px;'>
+<dt><img src='local/cache-vignettes/L500xH298/mathilde_N-72b31.jpg' width='500' height='298' alt='JPEG - 643.1 ko' style='height:298px;width:500px;' /></dt>
+<dt class='spip_doc_titre' style='width:350px;'><strong>mathilde N</strong></dt>
+</dl>
+<dl class='spip_document_157 spip_documents spip_documents_left' style='float:left;width:350px;'>
+<dt><img src='local/cache-vignettes/L500xH298/merle1-53a4c.jpg' width='500' height='298' alt='JPEG - 657 ko' style='height:298px;width:500px;' /></dt>
+<dt class='spip_doc_titre' style='width:350px;'><strong>merle1</strong></dt>
+</dl>
+<dl class='spip_document_158 spip_documents spip_documents_left' style='float:left;width:350px;'>
+<dt><img src='local/cache-vignettes/L500xH298/merle2-75ee9.jpg' width='500' height='298' alt='JPEG - 675 ko' style='height:298px;width:500px;' /></dt>
+<dt class='spip_doc_titre' style='width:350px;'><strong>merle2</strong></dt>
+</dl>
+<dl class='spip_document_159 spip_documents spip_documents_left' style='float:left;width:350px;'>
+<dt><img src='local/cache-vignettes/L500xH298/pre_sentation_workshop-45a7d.jpg' width='500' height='298' alt='JPEG - 692.8 ko' style='height:298px;width:500px;' /></dt>
+<dt class='spip_doc_titre' style='width:350px;'><strong>présentation workshop</strong></dt>
+</dl>
+<dl class='spip_document_160 spip_documents spip_documents_left' style='float:left;width:350px;'>
+<dt><img src='local/cache-vignettes/L500xH298/sophie-7b73e.jpg' width='500' height='298' alt='JPEG - 628.6 ko' style='height:298px;width:500px;' /></dt>
+<dt class='spip_doc_titre' style='width:350px;'><strong>sophie</strong></dt>
+</dl>
+<dl class='spip_document_161 spip_documents spip_documents_left' style='float:left;width:350px;'>
+<dt><img src='local/cache-vignettes/L500xH298/zoe_-2fbed.jpg' width='500' height='298' alt='JPEG - 720.2 ko' style='height:298px;width:500px;' /></dt>
+<dt class='spip_doc_titre' style='width:350px;'><strong>zoé</strong></dt>
+</dl></div>
+				         
+				 
+				 
+			 </div>
+		</div>
+		<?php echo recuperer_fond( 'inc-pied', array('skel' => 'squelettes/article.html',
+	'lang' => 'fr'), array("compil"=>array('squelettes/article.html','html_776b5d13ec72d3739f328574f43de380','',34,$GLOBALS['spip_lang'])), _request("connect"));
+?>
+</body>
+</html>
+";s:9:"squelette";s:37:"html_776b5d13ec72d3739f328574f43de380";s:6:"source";s:23:"squelettes/article.html";s:11:"process_ins";s:3:"php";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"6/%2Fspip---1d644bdc17f9deafbeebcea";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";i:86400;}s:5:"duree";i:0;s:5:"notes";s:0:"";s:8:"contexte";a:6:{s:8:"article6";s:0:"";s:10:"id_article";s:1:"6";s:4:"date";s:19:"2012-03-20 10:13:45";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2012-03-20 10:13:45";s:18:"date_redac_default";b:1;}s:12:"lastmodified";i:1332234825;s:2:"gz";b:0;}

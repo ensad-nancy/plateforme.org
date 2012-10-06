@@ -1,0 +1,37 @@
+<BOUCLE_principale(ARTICLES) {id_article}>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="#LANG" lang="#LANG" dir="#LANG_DIR">
+<head>
+<title>[(#TITRE|textebrut) - ][(#NOM_SITE_SPIP|textebrut)]</title>
+[<meta name="description" content="(#INTRODUCTION{150}|attribut_html)" />]
+<INCLURE{fond=inc-head}>
+</head>
+
+<body class="page_article">
+	    <INCLURE{fond=inc-barrehaute}{skel=#SQUELETTE}>
+	    <div class="col">
+			 <div class="contenu">
+				<h1 class="#EDIT{titre} entry-title">#TITRE</h1>
+				<h2>[(#LESAUTEURS)]</h2>
+	            <p><small><abbr class="published" title="[(#DATE|date_iso)]">
+	            [(#DATE|nom_jour) ][(#DATE|affdate)]</abbr></small></p>
+		
+				[<div class="#EDIT{texte} texte entry-content">(#TEXTE|image_reduire{500,0})</div>]
+			 </div>
+		</div>
+		<div class="col">
+			 <div class="contenu">
+				 <B_les_articles_lies>
+				 <BOUCLE_les_articles_lies(ARTICLES_LIES){id_article}{par rang}>
+				         <BOUCLE_article_lie(ARTICLES){id_article = #ID_ARTICLE_LIE}>
+				         	<h1 class="#EDIT{titre} entry-title">#TITRE</h1>
+							[<div class="#EDIT{texte} texte entry-content">(#TEXTE|image_reduire{500,0})</div>]
+				         </BOUCLE_article_lie>
+				 </BOUCLE_les_articles_lies>
+				 </B_les_articles_lies>
+			 </div>
+		</div>
+		<INCLURE{fond=inc-pied}{skel=#SQUELETTE}>
+</body>
+</html>
+</BOUCLE_principale>

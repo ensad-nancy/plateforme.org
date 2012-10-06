@@ -1,0 +1,56 @@
+a:11:{s:5:"texte";s:2149:"
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr" dir="ltr">
+<head>
+<title>Alain Willaume - Event — Multimodale Graphique</title>
+
+<?php echo recuperer_fond( 'inc-head', array('lang' => 'fr'), array("compil"=>array('squelettes/auteur.html','html_dc158b8634dbb66f351e7538048dfe2d','',7,$GLOBALS['spip_lang'])), _request("connect"));
+?>
+
+
+<link rel="shortcut icon" href="local/cache-gd2/22b0b1f5f6957124f16856b2dfc1eed3.ico" type="image/x-icon" />
+
+
+<link rel="alternate" type="application/rss+xml" title="Alain Willaume" href="http://event.plateforme.org/spip.php?page=backend&amp;id_auteur=5" />
+</head>
+
+<body class="page_auteur">
+
+		<?php echo recuperer_fond( 'inc-barrehaute', array('skel' => 'squelettes/auteur.html',
+	'lang' => 'fr'), array("compil"=>array('squelettes/auteur.html','html_dc158b8634dbb66f351e7538048dfe2d','',18,$GLOBALS['spip_lang'])), _request("connect"));
+?>
+
+<div class="col">	
+		<div class="vcard">
+        <div class="cartouche">
+        <h1 class="fn">Alain Willaume</h1>
+            <img class='spip_logos' alt="" src="local/cache-vignettes/L200xH170/auton5-6d3f6.jpg" width='200' height='170' style='height:170px;width:200px;' />
+        </div>
+
+        
+        <p class="hyperlien">Voir en ligne : <a href="http://www.alainwillaume.com/" class="url org spip_out">http://www.alainwillaume.com/</a></p>
+		</div>
+
+</div><!--#page-->
+
+       
+        <div class="col">
+         
+                
+                
+                <p><a title="Alain Willaume&nbsp;: Portrait Fiction" href="spip.php?article9"><img class='spip_logos' alt="" src="local/cache-vignettes/L500xH751/arton9-7d6c6.jpg" width='500' height='751' style='height:751px;width:500px;' /></a></p>
+                
+        
+        </div>
+        
+
+  
+	<?php echo recuperer_fond( 'inc-pied', array('skel' => 'squelettes/auteur.html',
+	'lang' => 'fr'), array("compil"=>array('squelettes/auteur.html','html_dc158b8634dbb66f351e7538048dfe2d','',45,$GLOBALS['spip_lang'])), _request("connect"));
+?>
+
+
+</body>
+</html>
+
+";s:9:"squelette";s:37:"html_dc158b8634dbb66f351e7538048dfe2d";s:6:"source";s:22:"squelettes/auteur.html";s:11:"process_ins";s:3:"php";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"e/%2Fspip---8db54872224d93c12ea7352";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";i:86400;}s:5:"duree";i:0;s:5:"notes";s:0:"";s:8:"contexte";a:6:{s:7:"auteur5";s:0:"";s:9:"id_auteur";s:1:"5";s:4:"date";s:19:"2011-12-11 15:52:26";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2011-12-11 15:52:26";s:18:"date_redac_default";b:1;}s:12:"lastmodified";i:1323615156;s:2:"gz";b:0;}

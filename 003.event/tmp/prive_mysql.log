@@ -1,0 +1,518 @@
+Dec 05 11:09:31 193.51.201.248 (pid 870969) Echec mysql_connect. Erreur : Access denied for user ' dcfvgfr_platefo'@'localhost' (using password: NO)
+Dec 05 11:09:56 193.51.201.248 (pid 871333) Access denied for user 'dcfvgfr_platefor'@'localhost' to database 'spip' - CREATE DATABASE `spip`
+Dec 05 11:09:56 193.51.201.248 (pid 871333) Access denied for user 'dcfvgfr_platefor'@'localhost' to database 'spip' - query inconnue
+Dec 05 11:09:56 193.51.201.248 (pid 871333) Echec mysql_selectdb. Erreur : Access denied for user 'dcfvgfr_platefor'@'localhost' to database 'spip'
+Dec 05 11:09:56 193.51.201.248 (pid 871333) No database selected - SHOW TABLES LIKE 'event_meta'
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_articles' - CREATE  TABLE IF NOT EXISTS `spip`.event_articles (
+		id_article bigint(21) NOT NULL auto_increment,
+		surtitre text  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		titre text  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		soustitre text  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		id_rubrique bigint(21) DEFAULT '0' NOT NULL,
+		descriptif text  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		chapo mediumtext  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		texte longtext  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		ps mediumtext  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		date datetime DEFAULT '0000-00-00 00:00:00' NOT NULL,
+		statut varchar(10) CHARACTER SET utf8 COLLATE utf8_general_ci  DEFAULT '0' NOT NULL,
+		id_secteur bigint(21) DEFAULT '0' NOT NULL,
+		maj TIMESTAMP,
+		export VARCHAR(10) CHARACTER SET utf8 COLLATE utf8_general_ci  DEFAULT 'oui',
+		date_redac datetime DEFAULT '0000-00-00 00:00:00' NOT NULL,
+		visites integer DEFAULT '0' NOT NULL,
+		referers integer DEFAULT '0' NOT NULL,
+		popularite DOUBLE DEFAULT '0' NOT NULL,
+		accepter_forum CHAR(3) CHARACTER SET utf8 COLLATE utf8_general_ci  DEFAULT '' NOT NULL,
+		date_modif datetime DEFAULT '0000-00-00 00:00:00' NOT NULL,
+		lang VARCHAR(10) CHARACTER SET utf8 COLLATE utf8_general_ci  DEFAULT '' NOT NULL,
+		langue_choisie VARCHAR(3) CHARACTER SET utf8 COLLATE utf8_general_ci  DEFAULT 'non',
+		id_trad bigint(21) DEFAULT '0' NOT NULL,
+		extra longtext  CHARACTER SET utf8 COLLATE utf8_general_ci NULL,
+		id_version int unsigned DEFAULT '0' NOT NULL,
+		nom_site tinytext  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		url_site VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci  DEFAULT '' NOT NULL,
+		PRIMARY KEY (id_article),
+		KEY id_rubrique (id_rubrique),
+		KEY id_secteur (id_secteur),
+		KEY id_trad (id_trad),
+		KEY lang (lang),
+		KEY statut (statut, date)) DEFAULT  CHARACTER SET utf8 COLLATE utf8_general_ci
+
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_articles' - query inconnue
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_auteurs' - CREATE  TABLE IF NOT EXISTS `spip`.event_auteurs (
+		id_auteur bigint(21) NOT NULL auto_increment,
+		nom text  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		bio text  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		email tinytext  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		nom_site tinytext  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		url_site text  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		login VARCHAR(255) BINARY,
+		pass tinytext  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		low_sec tinytext  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		statut varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci   DEFAULT '0' NOT NULL,
+		webmestre varchar(3) CHARACTER SET utf8 COLLATE utf8_general_ci   DEFAULT 'non' NOT NULL,
+		maj TIMESTAMP,
+		pgp TEXT  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		htpass tinytext  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		en_ligne datetime DEFAULT '0000-00-00 00:00:00' NOT NULL,
+		imessage VARCHAR(3) CHARACTER SET utf8 COLLATE utf8_general_ci ,
+		messagerie VARCHAR(3) CHARACTER SET utf8 COLLATE utf8_general_ci ,
+		alea_actuel tinytext CHARACTER SET utf8 COLLATE utf8_general_ci ,
+		alea_futur tinytext CHARACTER SET utf8 COLLATE utf8_general_ci ,
+		prefs tinytext CHARACTER SET utf8 COLLATE utf8_general_ci ,
+		cookie_oubli tinytext CHARACTER SET utf8 COLLATE utf8_general_ci ,
+		source VARCHAR(10) CHARACTER SET utf8 COLLATE utf8_general_ci  DEFAULT 'spip' NOT NULL,
+		lang VARCHAR(10) CHARACTER SET utf8 COLLATE utf8_general_ci  DEFAULT '' NOT NULL,
+		extra longtext  CHARACTER SET utf8 COLLATE utf8_general_ci NULL,
+		PRIMARY KEY (id_auteur),
+		KEY login (login),
+		KEY statut (statut),
+		KEY en_ligne (en_ligne)) DEFAULT  CHARACTER SET utf8 COLLATE utf8_general_ci
+
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_auteurs' - query inconnue
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_breves' - CREATE  TABLE IF NOT EXISTS `spip`.event_breves (
+		id_breve bigint(21) NOT NULL auto_increment,
+		date_heure datetime DEFAULT '0000-00-00 00:00:00' NOT NULL,
+		titre text  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		texte longtext  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		lien_titre text  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		lien_url text  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		statut varchar(6) CHARACTER SET utf8 COLLATE utf8_general_ci   DEFAULT '0' NOT NULL,
+		id_rubrique bigint(21) DEFAULT '0' NOT NULL,
+		lang VARCHAR(10) CHARACTER SET utf8 COLLATE utf8_general_ci  DEFAULT '' NOT NULL,
+		langue_choisie VARCHAR(3) CHARACTER SET utf8 COLLATE utf8_general_ci  DEFAULT 'non',
+		maj TIMESTAMP,
+		extra longtext  CHARACTER SET utf8 COLLATE utf8_general_ci NULL,
+		PRIMARY KEY (id_breve),
+		KEY id_rubrique (id_rubrique)) DEFAULT  CHARACTER SET utf8 COLLATE utf8_general_ci
+
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_breves' - query inconnue
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_messages' - CREATE  TABLE IF NOT EXISTS `spip`.event_messages (
+		id_message bigint(21) NOT NULL auto_increment,
+		titre text  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		texte longtext  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		type varchar(6) CHARACTER SET utf8 COLLATE utf8_general_ci  DEFAULT '' NOT NULL,
+		date_heure datetime DEFAULT '0000-00-00 00:00:00' NOT NULL,
+		date_fin datetime DEFAULT '0000-00-00 00:00:00' NOT NULL,
+		rv varchar(3) CHARACTER SET utf8 COLLATE utf8_general_ci  DEFAULT '' NOT NULL,
+		statut varchar(6) CHARACTER SET utf8 COLLATE utf8_general_ci   DEFAULT '0' NOT NULL,
+		id_auteur bigint(21) NOT NULL,
+		maj TIMESTAMP,
+		PRIMARY KEY (id_message),
+		KEY id_auteur (id_auteur)) DEFAULT  CHARACTER SET utf8 COLLATE utf8_general_ci
+
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_messages' - query inconnue
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_mots' - CREATE  TABLE IF NOT EXISTS `spip`.event_mots (
+		id_mot bigint(21) NOT NULL auto_increment,
+		titre text  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		descriptif text  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		texte longtext  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		id_groupe bigint(21) DEFAULT 0 NOT NULL,
+		type text  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		extra longtext  CHARACTER SET utf8 COLLATE utf8_general_ci NULL,
+		maj TIMESTAMP,
+		PRIMARY KEY (id_mot)) DEFAULT  CHARACTER SET utf8 COLLATE utf8_general_ci
+
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_mots' - query inconnue
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_groupes_mots' - CREATE  TABLE IF NOT EXISTS `spip`.event_groupes_mots (
+		id_groupe bigint(21) NOT NULL auto_increment,
+		titre text  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		descriptif text  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		texte longtext  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		unseul varchar(3) CHARACTER SET utf8 COLLATE utf8_general_ci  DEFAULT '' NOT NULL,
+		obligatoire varchar(3) CHARACTER SET utf8 COLLATE utf8_general_ci  DEFAULT '' NOT NULL,
+		tables_liees text  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		minirezo varchar(3) CHARACTER SET utf8 COLLATE utf8_general_ci  DEFAULT '' NOT NULL,
+		comite varchar(3) CHARACTER SET utf8 COLLATE utf8_general_ci  DEFAULT '' NOT NULL,
+		forum varchar(3) CHARACTER SET utf8 COLLATE utf8_general_ci  DEFAULT '' NOT NULL,
+		maj TIMESTAMP,
+		PRIMARY KEY (id_groupe)) DEFAULT  CHARACTER SET utf8 COLLATE utf8_general_ci
+
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_groupes_mots' - query inconnue
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_rubriques' - CREATE  TABLE IF NOT EXISTS `spip`.event_rubriques (
+		id_rubrique bigint(21) NOT NULL auto_increment,
+		id_parent bigint(21) DEFAULT '0' NOT NULL,
+		titre text  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		descriptif text  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		texte longtext  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		id_secteur bigint(21) DEFAULT '0' NOT NULL,
+		maj TIMESTAMP,
+		export VARCHAR(10) CHARACTER SET utf8 COLLATE utf8_general_ci  DEFAULT 'oui',
+		id_import bigint DEFAULT '0',
+		statut varchar(10) CHARACTER SET utf8 COLLATE utf8_general_ci  DEFAULT '0' NOT NULL,
+		date datetime DEFAULT '0000-00-00 00:00:00' NOT NULL,
+		lang VARCHAR(10) CHARACTER SET utf8 COLLATE utf8_general_ci  DEFAULT '' NOT NULL,
+		langue_choisie VARCHAR(3) CHARACTER SET utf8 COLLATE utf8_general_ci  DEFAULT 'non',
+		extra longtext  CHARACTER SET utf8 COLLATE utf8_general_ci NULL,
+		statut_tmp varchar(10) CHARACTER SET utf8 COLLATE utf8_general_ci  DEFAULT '0' NOT NULL,
+		date_tmp datetime DEFAULT '0000-00-00 00:00:00' NOT NULL,
+		PRIMARY KEY (id_rubrique),
+		KEY lang (lang),
+		KEY id_parent (id_parent)) DEFAULT  CHARACTER SET utf8 COLLATE utf8_general_ci
+
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_rubriques' - query inconnue
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_documents' - CREATE  TABLE IF NOT EXISTS `spip`.event_documents (
+		id_document bigint(21) NOT NULL auto_increment,
+		id_vignette bigint(21) DEFAULT '0' NOT NULL,
+		extension VARCHAR(10) CHARACTER SET utf8 COLLATE utf8_general_ci  DEFAULT '' NOT NULL,
+		titre text  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		date datetime DEFAULT '0000-00-00 00:00:00' NOT NULL,
+		descriptif text  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		fichier varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci  DEFAULT '' NOT NULL,
+		taille integer,
+		largeur integer,
+		hauteur integer,
+		mode ENUM('vignette', 'image', 'document') DEFAULT 'document' NOT NULL,
+		distant VARCHAR(3) CHARACTER SET utf8 COLLATE utf8_general_ci  DEFAULT 'non',
+		maj TIMESTAMP,
+		PRIMARY KEY (id_document),
+		KEY id_vignette (id_vignette),
+		KEY mode (mode),
+		KEY extension (extension)) DEFAULT  CHARACTER SET utf8 COLLATE utf8_general_ci
+
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_documents' - query inconnue
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_types_documents' - CREATE  TABLE IF NOT EXISTS `spip`.event_types_documents (
+		extension varchar(10) CHARACTER SET utf8 COLLATE utf8_general_ci  DEFAULT '' NOT NULL,
+		titre text  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		descriptif text  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		mime_type varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci  DEFAULT '' NOT NULL,
+		inclus ENUM('non', 'image', 'embed') NOT NULL DEFAULT 'non',
+		upload ENUM('oui', 'non') NOT NULL DEFAULT 'oui',
+		maj TIMESTAMP,
+		PRIMARY KEY (extension),
+		KEY inclus (inclus)) DEFAULT  CHARACTER SET utf8 COLLATE utf8_general_ci
+
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_types_documents' - query inconnue
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_syndic' - CREATE  TABLE IF NOT EXISTS `spip`.event_syndic (
+		id_syndic bigint(21) NOT NULL auto_increment,
+		id_rubrique bigint(21) DEFAULT '0' NOT NULL,
+		id_secteur bigint(21) DEFAULT '0' NOT NULL,
+		nom_site text  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		url_site text  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		url_syndic text  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		descriptif text  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		maj TIMESTAMP,
+		syndication VARCHAR(3) CHARACTER SET utf8 COLLATE utf8_general_ci  DEFAULT '' NOT NULL,
+		statut varchar(10) CHARACTER SET utf8 COLLATE utf8_general_ci  DEFAULT '0' NOT NULL,
+		date datetime DEFAULT '0000-00-00 00:00:00' NOT NULL,
+		date_syndic datetime DEFAULT '0000-00-00 00:00:00' NOT NULL,
+		date_index datetime DEFAULT '0000-00-00 00:00:00' NOT NULL,
+		extra longtext  CHARACTER SET utf8 COLLATE utf8_general_ci NULL,
+		moderation VARCHAR(3) CHARACTER SET utf8 COLLATE utf8_general_ci  DEFAULT 'non',
+		miroir VARCHAR(3) CHARACTER SET utf8 COLLATE utf8_general_ci  DEFAULT 'non',
+		oubli VARCHAR(3) CHARACTER SET utf8 COLLATE utf8_general_ci  DEFAULT 'non',
+		resume VARCHAR(3) CHARACTER SET utf8 COLLATE utf8_general_ci  DEFAULT 'oui',
+		PRIMARY KEY (id_syndic),
+		KEY id_rubrique (id_rubrique),
+		KEY id_secteur (id_secteur),
+		KEY statut (statut, date_syndic)) DEFAULT  CHARACTER SET utf8 COLLATE utf8_general_ci
+
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_syndic' - query inconnue
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_syndic_articles' - CREATE  TABLE IF NOT EXISTS `spip`.event_syndic_articles (
+		id_syndic_article bigint(21) NOT NULL auto_increment,
+		id_syndic bigint(21) DEFAULT '0' NOT NULL,
+		titre text  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		url VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci  DEFAULT '' NOT NULL,
+		date datetime DEFAULT '0000-00-00 00:00:00' NOT NULL,
+		lesauteurs text  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		maj TIMESTAMP,
+		statut varchar(10) CHARACTER SET utf8 COLLATE utf8_general_ci  DEFAULT '0' NOT NULL,
+		descriptif text  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		lang VARCHAR(10) CHARACTER SET utf8 COLLATE utf8_general_ci  DEFAULT '' NOT NULL,
+		url_source TINYTEXT  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		source TINYTEXT  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		tags TEXT  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		PRIMARY KEY (id_syndic_article),
+		KEY id_syndic (id_syndic),
+		KEY statut (statut),
+		KEY url (url)) DEFAULT  CHARACTER SET utf8 COLLATE utf8_general_ci
+
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_syndic_articles' - query inconnue
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_forum' - CREATE  TABLE IF NOT EXISTS `spip`.event_forum (
+		id_forum bigint(21) NOT NULL auto_increment,
+		id_parent bigint(21) DEFAULT '0' NOT NULL,
+		id_thread bigint(21) DEFAULT '0' NOT NULL,
+		id_rubrique bigint(21) DEFAULT '0' NOT NULL,
+		id_article bigint(21) DEFAULT '0' NOT NULL,
+		id_breve bigint(21) DEFAULT '0' NOT NULL,
+		date_heure datetime DEFAULT '0000-00-00 00:00:00' NOT NULL,
+		date_thread datetime DEFAULT '0000-00-00 00:00:00' NOT NULL,
+		titre text  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		texte mediumtext  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		auteur text  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		email_auteur text  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		nom_site text  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		url_site text  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		statut varchar(8) CHARACTER SET utf8 COLLATE utf8_general_ci  DEFAULT '0' NOT NULL,
+		ip varchar(40) CHARACTER SET utf8 COLLATE utf8_general_ci  DEFAULT '' NOT NULL,
+		maj TIMESTAMP,
+		id_auteur bigint DEFAULT '0' NOT NULL,
+		id_message bigint(21) DEFAULT '0' NOT NULL,
+		id_syndic bigint(21) DEFAULT '0' NOT NULL,
+		PRIMARY KEY (id_forum),
+		KEY id_auteur (id_auteur),
+		KEY id_parent (id_parent),
+		KEY id_thread (id_thread),
+		KEY optimal (statut,id_parent,id_article,date_heure,id_breve,id_syndic,id_rubrique)) DEFAULT  CHARACTER SET utf8 COLLATE utf8_general_ci
+
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_forum' - query inconnue
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_signatures' - CREATE  TABLE IF NOT EXISTS `spip`.event_signatures (
+		id_signature bigint(21) NOT NULL auto_increment,
+		id_article bigint(21) DEFAULT '0' NOT NULL,
+		date_time datetime DEFAULT '0000-00-00 00:00:00' NOT NULL,
+		nom_email text  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		ad_email text  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		nom_site text  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		url_site text  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		message mediumtext  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		statut varchar(10) CHARACTER SET utf8 COLLATE utf8_general_ci  DEFAULT '0' NOT NULL,
+		maj TIMESTAMP,
+		PRIMARY KEY (id_signature),
+		KEY id_article (id_article),
+		KEY statut (statut)) DEFAULT  CHARACTER SET utf8 COLLATE utf8_general_ci
+
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_signatures' - query inconnue
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_petitions' - CREATE  TABLE IF NOT EXISTS `spip`.event_petitions (
+		id_article bigint(21) DEFAULT '0' NOT NULL,
+		email_unique CHAR (3) CHARACTER SET utf8 COLLATE utf8_general_ci  DEFAULT '' NOT NULL,
+		site_obli CHAR (3) CHARACTER SET utf8 COLLATE utf8_general_ci  DEFAULT '' NOT NULL,
+		site_unique CHAR (3) CHARACTER SET utf8 COLLATE utf8_general_ci  DEFAULT '' NOT NULL,
+		message CHAR (3) CHARACTER SET utf8 COLLATE utf8_general_ci  DEFAULT '' NOT NULL,
+		texte LONGTEXT  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		maj TIMESTAMP,
+		PRIMARY KEY (id_article)) DEFAULT  CHARACTER SET utf8 COLLATE utf8_general_ci
+
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_petitions' - query inconnue
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_visites' - CREATE  TABLE IF NOT EXISTS `spip`.event_visites (
+		date DATE NOT NULL,
+		visites int UNSIGNED DEFAULT '0' NOT NULL,
+		maj TIMESTAMP,
+		PRIMARY KEY (date)) DEFAULT  CHARACTER SET utf8 COLLATE utf8_general_ci
+
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_visites' - query inconnue
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_visites_articles' - CREATE  TABLE IF NOT EXISTS `spip`.event_visites_articles (
+		date DATE NOT NULL,
+		id_article int UNSIGNED NOT NULL,
+		visites int UNSIGNED DEFAULT '0' NOT NULL,
+		maj TIMESTAMP,
+		PRIMARY KEY (date, id_article)) DEFAULT  CHARACTER SET utf8 COLLATE utf8_general_ci
+
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_visites_articles' - query inconnue
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_referers' - CREATE  TABLE IF NOT EXISTS `spip`.event_referers (
+		referer_md5 bigint UNSIGNED NOT NULL,
+		date DATE NOT NULL,
+		referer VARCHAR (255) CHARACTER SET utf8 COLLATE utf8_general_ci ,
+		visites int UNSIGNED NOT NULL,
+		visites_jour int UNSIGNED NOT NULL,
+		visites_veille int UNSIGNED NOT NULL,
+		maj TIMESTAMP,
+		PRIMARY KEY (referer_md5)) DEFAULT  CHARACTER SET utf8 COLLATE utf8_general_ci
+
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_referers' - query inconnue
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_referers_articles' - CREATE  TABLE IF NOT EXISTS `spip`.event_referers_articles (
+		id_article int UNSIGNED NOT NULL,
+		referer_md5 bigint UNSIGNED NOT NULL,
+		referer VARCHAR (255) CHARACTER SET utf8 COLLATE utf8_general_ci  DEFAULT '' NOT NULL,
+		visites int UNSIGNED NOT NULL,
+		maj TIMESTAMP,
+		PRIMARY KEY (id_article, referer_md5),
+		KEY referer_md5 (referer_md5)) DEFAULT  CHARACTER SET utf8 COLLATE utf8_general_ci
+
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_referers_articles' - query inconnue
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_auteurs_articles' - CREATE  TABLE IF NOT EXISTS `spip`.event_auteurs_articles (
+		id_auteur bigint(21) DEFAULT '0' NOT NULL,
+		id_article bigint(21) DEFAULT '0' NOT NULL,
+		PRIMARY KEY (id_auteur, id_article),
+		KEY id_article (id_article)) DEFAULT  CHARACTER SET utf8 COLLATE utf8_general_ci
+
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_auteurs_articles' - query inconnue
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_auteurs_rubriques' - CREATE  TABLE IF NOT EXISTS `spip`.event_auteurs_rubriques (
+		id_auteur bigint(21) DEFAULT '0' NOT NULL,
+		id_rubrique bigint(21) DEFAULT '0' NOT NULL,
+		PRIMARY KEY (id_auteur, id_rubrique),
+		KEY id_rubrique (id_rubrique)) DEFAULT  CHARACTER SET utf8 COLLATE utf8_general_ci
+
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_auteurs_rubriques' - query inconnue
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_auteurs_messages' - CREATE  TABLE IF NOT EXISTS `spip`.event_auteurs_messages (
+		id_auteur bigint(21) DEFAULT '0' NOT NULL,
+		id_message bigint(21) DEFAULT '0' NOT NULL,
+		vu CHAR (3) CHARACTER SET utf8 COLLATE utf8_general_ci ,
+		PRIMARY KEY (id_auteur, id_message),
+		KEY id_message (id_message)) DEFAULT  CHARACTER SET utf8 COLLATE utf8_general_ci
+
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_auteurs_messages' - query inconnue
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_documents_liens' - CREATE  TABLE IF NOT EXISTS `spip`.event_documents_liens (
+		id_document bigint(21) DEFAULT '0' NOT NULL,
+		id_objet bigint(21) DEFAULT '0' NOT NULL,
+		objet VARCHAR (25) CHARACTER SET utf8 COLLATE utf8_general_ci  DEFAULT '' NOT NULL,
+		vu ENUM('non', 'oui') DEFAULT 'non' NOT NULL,
+		PRIMARY KEY (id_document,id_objet,objet),
+		KEY id_document (id_document)) DEFAULT  CHARACTER SET utf8 COLLATE utf8_general_ci
+
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_documents_liens' - query inconnue
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_mots_articles' - CREATE  TABLE IF NOT EXISTS `spip`.event_mots_articles (
+		id_mot bigint(21) DEFAULT '0' NOT NULL,
+		id_article bigint(21) DEFAULT '0' NOT NULL,
+		PRIMARY KEY (id_article, id_mot),
+		KEY id_mot (id_mot)) DEFAULT  CHARACTER SET utf8 COLLATE utf8_general_ci
+
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_mots_articles' - query inconnue
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_mots_breves' - CREATE  TABLE IF NOT EXISTS `spip`.event_mots_breves (
+		id_mot bigint(21) DEFAULT '0' NOT NULL,
+		id_breve bigint(21) DEFAULT '0' NOT NULL,
+		PRIMARY KEY (id_breve, id_mot),
+		KEY id_mot (id_mot)) DEFAULT  CHARACTER SET utf8 COLLATE utf8_general_ci
+
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_mots_breves' - query inconnue
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_mots_rubriques' - CREATE  TABLE IF NOT EXISTS `spip`.event_mots_rubriques (
+		id_mot bigint(21) DEFAULT '0' NOT NULL,
+		id_rubrique bigint(21) DEFAULT '0' NOT NULL,
+		PRIMARY KEY (id_rubrique, id_mot),
+		KEY id_mot (id_mot)) DEFAULT  CHARACTER SET utf8 COLLATE utf8_general_ci
+
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_mots_rubriques' - query inconnue
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_mots_syndic' - CREATE  TABLE IF NOT EXISTS `spip`.event_mots_syndic (
+		id_mot bigint(21) DEFAULT '0' NOT NULL,
+		id_syndic bigint(21) DEFAULT '0' NOT NULL,
+		PRIMARY KEY (id_syndic, id_mot),
+		KEY id_mot (id_mot)) DEFAULT  CHARACTER SET utf8 COLLATE utf8_general_ci
+
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_mots_syndic' - query inconnue
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_mots_forum' - CREATE  TABLE IF NOT EXISTS `spip`.event_mots_forum (
+		id_mot bigint(21) DEFAULT '0' NOT NULL,
+		id_forum bigint(21) DEFAULT '0' NOT NULL,
+		PRIMARY KEY (id_forum, id_mot),
+		KEY id_mot (id_mot)) DEFAULT  CHARACTER SET utf8 COLLATE utf8_general_ci
+
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_mots_forum' - query inconnue
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_mots_documents' - CREATE  TABLE IF NOT EXISTS `spip`.event_mots_documents (
+		id_mot bigint(21) DEFAULT '0' NOT NULL,
+		id_document bigint(21) DEFAULT '0' NOT NULL,
+		PRIMARY KEY (id_document, id_mot),
+		KEY id_mot (id_mot)) DEFAULT  CHARACTER SET utf8 COLLATE utf8_general_ci
+
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_mots_documents' - query inconnue
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_meta' - CREATE  TABLE IF NOT EXISTS `spip`.event_meta (
+		nom VARCHAR (255) CHARACTER SET utf8 COLLATE utf8_general_ci  NOT NULL,
+		valeur text  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '',
+		impt ENUM('non', 'oui') DEFAULT 'oui' NOT NULL,
+		maj TIMESTAMP,
+		PRIMARY KEY (nom)) DEFAULT  CHARACTER SET utf8 COLLATE utf8_general_ci
+
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_meta' - query inconnue
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_resultats' - CREATE  TABLE IF NOT EXISTS `spip`.event_resultats (
+		recherche char(16) CHARACTER SET utf8 COLLATE utf8_general_ci  not null default '',
+		id INT UNSIGNED NOT NULL,
+		points INT UNSIGNED DEFAULT '0' NOT NULL,
+		maj TIMESTAMP) DEFAULT  CHARACTER SET utf8 COLLATE utf8_general_ci
+
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_resultats' - query inconnue
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_versions' - CREATE  TABLE IF NOT EXISTS `spip`.event_versions (
+		id_article bigint(21) NOT NULL,
+		id_version bigint(21) DEFAULT 0 NOT NULL,
+		date datetime DEFAULT '0000-00-00 00:00:00' NOT NULL,
+		id_auteur VARCHAR(23) CHARACTER SET utf8 COLLATE utf8_general_ci  DEFAULT '' NOT NULL,
+		titre_version text  CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' NOT NULL,
+		permanent char(3) CHARACTER SET utf8 COLLATE utf8_general_ci ,
+		champs text CHARACTER SET utf8 COLLATE utf8_general_ci ,
+		PRIMARY KEY (id_article, id_version)) DEFAULT  CHARACTER SET utf8 COLLATE utf8_general_ci
+
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_versions' - query inconnue
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_versions_fragments' - CREATE  TABLE IF NOT EXISTS `spip`.event_versions_fragments (
+		id_fragment int unsigned DEFAULT '0' NOT NULL,
+		version_min int unsigned DEFAULT '0' NOT NULL,
+		version_max int unsigned DEFAULT '0' NOT NULL,
+		id_article bigint(21) NOT NULL,
+		compress tinyint NOT NULL,
+		fragment longblob,
+		PRIMARY KEY (id_article, id_fragment, version_min)) DEFAULT  CHARACTER SET utf8 COLLATE utf8_general_ci
+
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_versions_fragments' - query inconnue
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_urls' - CREATE  TABLE IF NOT EXISTS `spip`.event_urls (
+		url VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci  NOT NULL,
+		type varchar(15) CHARACTER SET utf8 COLLATE utf8_general_ci  DEFAULT 'article' NOT NULL,
+		id_objet bigint(21) NOT NULL,
+		date DATETIME DEFAULT '0000-00-00 00:00:00' NOT NULL,
+		PRIMARY KEY (url),
+		KEY type (type, id_objet)) DEFAULT  CHARACTER SET utf8 COLLATE utf8_general_ci
+
+Dec 05 11:09:56 193.51.201.248 (pid 871333) CREATE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_urls' - query inconnue
+Dec 05 11:09:56 193.51.201.248 (pid 871333) INSERT,DELETE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_types_documents' - REPLACE `spip`.event_types_documents (mime_type,titre,inclus,extension,upload) VALUES ('image/jpeg','JPEG','image','jpg','oui')
+Dec 05 11:09:56 193.51.201.248 (pid 871333) INSERT,DELETE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_types_documents' - REPLACE `spip`.event_types_documents (mime_type,titre,inclus,extension,upload) VALUES ('image/png','PNG','image','png','oui')
+Dec 05 11:09:56 193.51.201.248 (pid 871333) INSERT,DELETE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_types_documents' - REPLACE `spip`.event_types_documents (mime_type,titre,inclus,extension,upload) VALUES ('image/gif','GIF','image','gif','oui')
+Dec 05 11:09:56 193.51.201.248 (pid 871333) INSERT,DELETE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_types_documents' - REPLACE `spip`.event_types_documents (mime_type,titre,inclus,extension,upload) VALUES ('image/x-ms-bmp','BMP','image','bmp','oui')
+Dec 05 11:09:56 193.51.201.248 (pid 871333) INSERT,DELETE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_types_documents' - REPLACE `spip`.event_types_documents (mime_type,titre,inclus,extension,upload) VALUES ('image/tiff','TIFF','image','tif','oui')
+Dec 05 11:09:56 193.51.201.248 (pid 871333) INSERT,DELETE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_types_documents' - REPLACE `spip`.event_types_documents (mime_type,titre,inclus,extension,upload) VALUES ('audio/x-aiff','AIFF','embed','aiff','oui')
+Dec 05 11:09:56 193.51.201.248 (pid 871333) INSERT,DELETE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_types_documents' - REPLACE `spip`.event_types_documents (mime_type,titre,inclus,extension,upload) VALUES ('video/x-ms-asf','Windows Media','embed','asf','oui')
+Dec 05 11:09:56 193.51.201.248 (pid 871333) INSERT,DELETE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_types_documents' - REPLACE `spip`.event_types_documents (mime_type,titre,inclus,extension,upload) VALUES ('video/x-msvideo','AVI','embed','avi','oui')
+Dec 05 11:09:56 193.51.201.248 (pid 871333) INSERT,DELETE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_types_documents' - REPLACE `spip`.event_types_documents (mime_type,titre,inclus,extension,upload) VALUES ('application/annodex','Annodex','embed','anx','oui')
+Dec 05 11:09:56 193.51.201.248 (pid 871333) INSERT,DELETE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_types_documents' - REPLACE `spip`.event_types_documents (mime_type,titre,inclus,extension,upload) VALUES ('audio/annodex','Annodex Audio','embed','axa','oui')
+Dec 05 11:09:56 193.51.201.248 (pid 871333) INSERT,DELETE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_types_documents' - REPLACE `spip`.event_types_documents (mime_type,titre,inclus,extension,upload) VALUES ('video/annodex','Annodex Video','embed','axv','oui')
+Dec 05 11:09:56 193.51.201.248 (pid 871333) INSERT,DELETE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_types_documents' - REPLACE `spip`.event_types_documents (mime_type,titre,inclus,extension,upload) VALUES ('video/x-dv','Digital Video','embed','dv','oui')
+Dec 05 11:09:56 193.51.201.248 (pid 871333) INSERT,DELETE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_types_documents' - REPLACE `spip`.event_types_documents (mime_type,titre,inclus,extension,upload) VALUES ('audio/mp4','Audio for Adobe Flash Player','embed','f4a','oui')
+Dec 05 11:09:56 193.51.201.248 (pid 871333) INSERT,DELETE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_types_documents' - REPLACE `spip`.event_types_documents (mime_type,titre,inclus,extension,upload) VALUES ('audio/mp4','Audio Book for Adobe Flash Player','embed','f4b','oui')
+Dec 05 11:09:56 193.51.201.248 (pid 871333) INSERT,DELETE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_types_documents' - REPLACE `spip`.event_types_documents (mime_type,titre,inclus,extension,upload) VALUES ('video/mp4','Protected Video for Adobe Flash Player','embed','f4p','oui')
+Dec 05 11:09:56 193.51.201.248 (pid 871333) INSERT,DELETE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_types_documents' - REPLACE `spip`.event_types_documents (mime_type,titre,inclus,extension,upload) VALUES ('video/mp4','Video for Adobe Flash Player','embed','f4v','oui')
+Dec 05 11:09:56 193.51.201.248 (pid 871333) INSERT,DELETE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_types_documents' - REPLACE `spip`.event_types_documents (mime_type,titre,inclus,extension,upload) VALUES ('audio/x-flac','Free Lossless Audio Codec','embed','flac','oui')
+Dec 05 11:09:56 193.51.201.248 (pid 871333) INSERT,DELETE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_types_documents' - REPLACE `spip`.event_types_documents (mime_type,titre,inclus,extension,upload) VALUES ('video/x-flv','Flash Video','embed','flv','oui')
+Dec 05 11:09:56 193.51.201.248 (pid 871333) INSERT,DELETE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_types_documents' - REPLACE `spip`.event_types_documents (mime_type,titre,inclus,extension,upload) VALUES ('audio/mp4a-latm','MPEG4 Audio','embed','m4a','oui')
+Dec 05 11:09:56 193.51.201.248 (pid 871333) INSERT,DELETE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_types_documents' - REPLACE `spip`.event_types_documents (mime_type,titre,inclus,extension,upload) VALUES ('audio/mp4a-latm','MPEG4 Audio','embed','m4b','oui')
+Dec 05 11:09:56 193.51.201.248 (pid 871333) INSERT,DELETE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_types_documents' - REPLACE `spip`.event_types_documents (mime_type,titre,inclus,extension,upload) VALUES ('audio/mp4a-latm','MPEG4 Audio','embed','m4p','oui')
+Dec 05 11:09:56 193.51.201.248 (pid 871333) INSERT,DELETE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_types_documents' - REPLACE `spip`.event_types_documents (mime_type,titre,inclus,extension,upload) VALUES ('video/vnd.mpegurl','MPEG4 playliste','non','m4u','oui')
+Dec 05 11:09:56 193.51.201.248 (pid 871333) INSERT,DELETE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_types_documents' - REPLACE `spip`.event_types_documents (mime_type,titre,inclus,extension,upload) VALUES ('video/x-m4v','MPEG4 Video','embed','m4v','oui')
+Dec 05 11:09:56 193.51.201.248 (pid 871333) INSERT,DELETE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_types_documents' - REPLACE `spip`.event_types_documents (mime_type,titre,inclus,extension,upload) VALUES ('audio/midi','Midi','embed','mid','oui')
+Dec 05 11:09:56 193.51.201.248 (pid 871333) INSERT,DELETE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_types_documents' - REPLACE `spip`.event_types_documents (mime_type,titre,inclus,extension,upload) VALUES ('audio/mka','Matroska Audio','embed','mka','oui')
+Dec 05 11:09:56 193.51.201.248 (pid 871333) INSERT,DELETE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_types_documents' - REPLACE `spip`.event_types_documents (mime_type,titre,inclus,extension,upload) VALUES ('video/mkv','Matroska Video','embed','mkv','oui')
+Dec 05 11:09:56 193.51.201.248 (pid 871333) INSERT,DELETE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_types_documents' - REPLACE `spip`.event_types_documents (mime_type,titre,inclus,extension,upload) VALUES ('video/x-mng','MNG','embed','mng','oui')
+Dec 05 11:09:56 193.51.201.248 (pid 871333) INSERT,DELETE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_types_documents' - REPLACE `spip`.event_types_documents (mime_type,titre,inclus,extension,upload) VALUES ('video/quicktime','QuickTime','embed','mov','oui')
+Dec 05 11:09:56 193.51.201.248 (pid 871333) INSERT,DELETE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_types_documents' - REPLACE `spip`.event_types_documents (mime_type,titre,inclus,extension,upload) VALUES ('audio/mpeg','MP3','embed','mp3','oui')
+Dec 05 11:09:56 193.51.201.248 (pid 871333) INSERT,DELETE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_types_documents' - REPLACE `spip`.event_types_documents (mime_type,titre,inclus,extension,upload) VALUES ('application/mp4','MPEG4','embed','mp4','oui')
+Dec 05 11:09:56 193.51.201.248 (pid 871333) INSERT,DELETE command denied to user 'dcfvgfr_platefor'@'localhost' for table 'event_types_documents' - REPLACE `spip`.event_types_documents (mime_type,titre,inclus,extension,upload) VALUES ('audio/x-musepack','Musepack','embed','mpc','oui')
+Dec 05 11:22:20 193.51.201.248 (pid 893052) Table 'dcfvgfr_plateforme.CONDITION' doesn't exist - SHOW CREATE TABLE `CONDITION`
+Dec 05 11:22:20 193.51.201.248 (pid 893052) Table 'dcfvgfr_plateforme.CONDITION' doesn't exist - SHOW CREATE TABLE `CONDITION`
+Dec 05 11:36:16 193.51.201.248 (pid 919981) Table 'dcfvgfr_plateforme.CONDITION' doesn't exist - SHOW CREATE TABLE `CONDITION`
+Dec 05 11:36:16 193.51.201.248 (pid 919981) Table 'dcfvgfr_plateforme.CONDITION' doesn't exist - SHOW CREATE TABLE `CONDITION`
+Dec 06 15:10:17 193.51.201.248 (pid 639665) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'id_article_lie=1' at line 3 - 
+SELECT rang
+FROM `dcfvgfr_plateforme`.event_articles_lies
+WHERE id_article=4AND id_article_lie=1
+Dec 06 15:10:17 193.51.201.248 (pid 639665) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'id_article_lie=1' at line 3 - query inconnue
+Dec 06 15:10:17 193.51.201.248 (pid 639665) Erreur 1064 de mysql: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'id_article_lie=1' at line 3
+
+SELECT rang
+FROM `dcfvgfr_plateforme`.event_articles_lies
+WHERE id_article=4AND id_article_lie=1
+Dec 06 15:10:17 193.51.201.248 (pid 639665) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'id_article_lie=1' at line 3 - query inconnue
+Dec 06 15:10:17 193.51.201.248 (pid 639665) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'rang>''' at line 3 - 
+SELECT *
+FROM `dcfvgfr_plateforme`.event_articles_lies
+WHERE id_article=4AND rang>''
+Dec 06 15:10:17 193.51.201.248 (pid 639665) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'rang>''' at line 3 - query inconnue
+Dec 06 15:10:17 193.51.201.248 (pid 639665) Erreur 1064 de mysql: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'rang>''' at line 3
+
+SELECT *
+FROM `dcfvgfr_plateforme`.event_articles_lies
+WHERE id_article=4AND rang>''
+Dec 06 15:10:17 193.51.201.248 (pid 639665) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'rang>''' at line 3 - query inconnue
+Dec 08 16:58:10 193.51.201.248 (pid 951288) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'id_article_lie=5' at line 3 - 
+SELECT rang
+FROM `dcfvgfr_plateforme`.event_articles_lies
+WHERE id_article=5AND id_article_lie=5
+Dec 08 16:58:10 193.51.201.248 (pid 951288) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'id_article_lie=5' at line 3 - query inconnue
+Dec 08 16:58:10 193.51.201.248 (pid 951288) Erreur 1064 de mysql: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'id_article_lie=5' at line 3
+
+SELECT rang
+FROM `dcfvgfr_plateforme`.event_articles_lies
+WHERE id_article=5AND id_article_lie=5
+Dec 08 16:58:10 193.51.201.248 (pid 951288) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'id_article_lie=5' at line 3 - query inconnue
+Dec 08 16:58:10 193.51.201.248 (pid 951288) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'rang>''' at line 3 - 
+SELECT *
+FROM `dcfvgfr_plateforme`.event_articles_lies
+WHERE id_article=5AND rang>''
+Dec 08 16:58:10 193.51.201.248 (pid 951288) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'rang>''' at line 3 - query inconnue
+Dec 08 16:58:10 193.51.201.248 (pid 951288) Erreur 1064 de mysql: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'rang>''' at line 3
+
+SELECT *
+FROM `dcfvgfr_plateforme`.event_articles_lies
+WHERE id_article=5AND rang>''
+Dec 08 16:58:10 193.51.201.248 (pid 951288) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'rang>''' at line 3 - query inconnue

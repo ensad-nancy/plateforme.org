@@ -1,0 +1,59 @@
+a:11:{s:5:"texte";s:2457:"
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr" dir="ltr">
+<head>
+<title>Annick Rivoire - Event — Multimodale Graphique</title>
+
+<?php echo recuperer_fond( 'inc-head', array('lang' => 'fr'), array("compil"=>array('squelettes/auteur.html','html_dc158b8634dbb66f351e7538048dfe2d','',7,$GLOBALS['spip_lang'])), _request("connect"));
+?>
+
+
+<link rel="shortcut icon" href="local/cache-gd2/22bbaa44119a0d1fd5915a11f921fc2f.ico" type="image/x-icon" />
+
+
+<link rel="alternate" type="application/rss+xml" title="Annick Rivoire" href="http://event.plateforme.org/spip.php?page=backend&amp;id_auteur=2" />
+</head>
+
+<body class="page_auteur">
+
+		<?php echo recuperer_fond( 'inc-barrehaute', array('skel' => 'squelettes/auteur.html',
+	'lang' => 'fr'), array("compil"=>array('squelettes/auteur.html','html_dc158b8634dbb66f351e7538048dfe2d','',18,$GLOBALS['spip_lang'])), _request("connect"));
+?>
+
+<div class="col">	
+		<div class="vcard">
+        <div class="cartouche">
+        <h1 class="fn">Annick Rivoire</h1>
+            <img class='spip_logos' alt="" src="local/cache-vignettes/L158xH106/auton2-e5808.png" width='158' height='106' style='height:106px;width:158px;' />
+        </div>
+
+        
+        <p class="hyperlien">Voir en ligne : <a href="http://www.poptronics.fr" class="url org spip_out">http://www.poptronics.fr</a></p>
+		</div>
+
+</div><!--#page-->
+
+       
+        <div class="col">
+         
+                
+                
+                <p><a title="Net Culture 1&nbsp;: Extimité vs droit à l&#8217;oubli" href="spip.php?article3"><img class='spip_logos' alt="" src="local/cache-vignettes/L500xH751/arton3-c8b8e.jpg" width='500' height='751' style='height:751px;width:500px;' /></a></p>
+                
+                
+                <p><a title="Net Culture 2&nbsp;: Hacktivisme &amp; culture "libre"" href="spip.php?article7"><img class='spip_logos' alt="" src="local/cache-vignettes/L500xH708/arton7-34222.jpg" width='500' height='708' style='height:708px;width:500px;' /></a></p>
+                
+        
+        </div>
+        
+
+  
+	<?php echo recuperer_fond( 'inc-pied', array('skel' => 'squelettes/auteur.html',
+	'lang' => 'fr'), array("compil"=>array('squelettes/auteur.html','html_dc158b8634dbb66f351e7538048dfe2d','',45,$GLOBALS['spip_lang'])), _request("connect"));
+?>
+
+
+</body>
+</html>
+
+";s:9:"squelette";s:37:"html_dc158b8634dbb66f351e7538048dfe2d";s:6:"source";s:22:"squelettes/auteur.html";s:11:"process_ins";s:3:"php";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"3/%2Fspip---79e51f40323335fbbec3ad6";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";i:86400;}s:5:"duree";i:0;s:5:"notes";s:0:"";s:8:"contexte";a:6:{s:7:"auteur2";s:0:"";s:9:"id_auteur";s:1:"2";s:4:"date";s:19:"2012-03-15 12:49:41";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2012-03-15 12:49:41";s:18:"date_redac_default";b:1;}s:12:"lastmodified";i:1331812181;s:2:"gz";b:0;}

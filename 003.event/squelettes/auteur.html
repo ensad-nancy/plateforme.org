@@ -1,0 +1,50 @@
+<BOUCLE_principale(AUTEURS) {id_auteur}>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="#LANG" lang="#LANG" dir="#LANG_DIR">
+<head>
+<title>[(#NOM|textebrut) - ][(#NOM_SITE_SPIP|textebrut)]</title>
+[<meta name="description" content="(#BIO|couper{150}|attribut_html)" />]
+<INCLURE{fond=inc-head} />
+
+[(#REM) Favicon personnalisee a partir du logo (si filtres d'image) ]
+[(#MODELE{favicon}{favicon=#LOGO_AUTEUR})]
+
+[(#REM) Lien vers le flux RSS des articles de l'auteur ]
+<link rel="alternate" type="application/rss+xml" title="[(#NOM|textebrut)]" href="[(#URL_PAGE{backend}|parametre_url{id_auteur,#ID_AUTEUR})]" />
+</head>
+
+<body class="page_auteur">
+
+		<INCLURE{fond=inc-barrehaute}{skel=#SQUELETTE}>
+
+<div class="col">	
+		<div class="vcard">[(#REM) microformat vcard]
+        <div class="cartouche">
+        <h1 class="#EDIT{qui} fn">#NOM</h1>
+            [(#LOGO_AUTEUR|image_reduire{200,200})]
+        </div>
+
+        [<div class="#EDIT{bio} texte note">(#BIO)</div>]
+        [<p class="#EDIT{hyperlien} hyperlien"><:voir_en_ligne:> : <a href="(#URL_SITE)" class="url org spip_out">[(#NOM_SITE|sinon{[(#URL_SITE|couper{80})]})]</a></p>]
+		</div>[(#REM) / vcard]
+
+</div><!--#page-->
+
+       
+        <div class="col">
+         <B_articles>
+                <BOUCLE_articles(ARTICLES) {id_rubrique=1}{id_auteur} {par popularite}{inverse}>
+                
+                <p><a title="#TITRE" href="#URL_ARTICLE">[(#LOGO_ARTICLE|image_reduire{500,800})]</a></p>
+                </BOUCLE_articles>
+        </B_articles>
+        </div>
+        
+
+  
+	<INCLURE{fond=inc-pied}{skel=#SQUELETTE}>
+
+
+</body>
+</html>
+</BOUCLE_principale>

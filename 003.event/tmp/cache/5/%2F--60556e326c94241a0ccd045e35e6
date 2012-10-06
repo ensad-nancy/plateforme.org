@@ -1,0 +1,34 @@
+a:11:{s:5:"texte";s:1478:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr" dir="ltr">
+<head>
+<title>Event — Multimodale Graphique</title>
+
+<?php echo recuperer_fond( 'inc-head', array('lang' => 'fr'), array("compil"=>array('squelettes/sommaire.html','html_be7988d8de6e93f608eeeaffdd33d364','',7,$GLOBALS['spip_lang'])), _request("connect"));
+?>
+</head>
+
+<body class="page_sommaire">
+<div id="page">
+	<?php echo recuperer_fond( 'inc-entete', array('lang' => 'fr'), array("compil"=>array('squelettes/sommaire.html','html_be7988d8de6e93f608eeeaffdd33d364','',12,$GLOBALS['spip_lang'])), _request("connect"));
+?>
+
+	<div class="hfeed" id="conteneur">
+	<?php echo recuperer_fond( 'inc-barrehaute', array('skel' => 'squelettes/sommaire.html',
+	'lang' => 'fr'), array("compil"=>array('squelettes/sommaire.html','html_be7988d8de6e93f608eeeaffdd33d364','',15,$GLOBALS['spip_lang'])), _request("connect"));
+?>
+	
+	<div id="contenu">
+		<div class="cartouche invisible">
+			<h1 class="invisible">Event — Multimodale Graphique</h1>
+		</div>
+	</div><!--#contenu-->
+	</div><!--#conteneur-->
+	
+	<?php echo recuperer_fond( 'inc-pied', array('skel' => 'squelettes/sommaire.html',
+	'lang' => 'fr'), array("compil"=>array('squelettes/sommaire.html','html_be7988d8de6e93f608eeeaffdd33d364','',24,$GLOBALS['spip_lang'])), _request("connect"));
+?>
+	
+</div><!--#page-->
+</body>
+</html>
+";s:9:"squelette";s:37:"html_be7988d8de6e93f608eeeaffdd33d364";s:6:"source";s:24:"squelettes/sommaire.html";s:11:"process_ins";s:3:"php";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"5/%2F--60556e326c94241a0ccd045e35e6";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";s:4:"3600";}s:5:"duree";i:3600;s:5:"notes";s:0:"";s:8:"contexte";a:4:{s:4:"date";s:19:"2012-03-23 21:34:39";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2012-03-23 21:34:39";s:18:"date_redac_default";b:1;}s:12:"lastmodified";i:1332534879;s:2:"gz";b:0;}
