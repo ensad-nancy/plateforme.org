@@ -1,1 +1,12 @@
-media/cache/profil/.DS_Store
+*/.DS_Store
+*.png
+*.jpg
+*.gif
+*.jpg
+*.jpeg
+*.zip
+*.gz
+*.pdf
+*.psd
+*.ps
+*.indd
