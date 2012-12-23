@@ -3,10 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>ex/index.php</string>
+	<string>003.event/config/connect.php</string>
 	<key>documents</key>
 	<array>
 		<dict>
+			<key>expanded</key>
+			<true/>
 			<key>name</key>
 			<string>_lib</string>
 			<key>regexFolderFilter</key>
@@ -15,6 +17,8 @@
 			<string>_lib</string>
 		</dict>
 		<dict>
+			<key>expanded</key>
+			<true/>
 			<key>name</key>
 			<string>000.home</string>
 			<key>regexFolderFilter</key>
@@ -23,6 +27,8 @@
 			<string>000.home</string>
 		</dict>
 		<dict>
+			<key>expanded</key>
+			<true/>
 			<key>name</key>
 			<string>001.profil</string>
 			<key>regexFolderFilter</key>
@@ -57,8 +63,6 @@
 			<string>004.nouvelleimage</string>
 		</dict>
 		<dict>
-			<key>expanded</key>
-			<true/>
 			<key>name</key>
 			<string>005.echanges2012</string>
 			<key>regexFolderFilter</key>
@@ -67,8 +71,6 @@
 			<string>005.echanges2012</string>
 		</dict>
 		<dict>
-			<key>expanded</key>
-			<true/>
 			<key>name</key>
 			<string>006.gratuit</string>
 			<key>regexFolderFilter</key>
@@ -78,22 +80,18 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>ex</string>
+			<string>007.wiki</string>
 			<key>regexFolderFilter</key>
 			<string>!.*/(\.[^/]*|CVS|_darcs|_MTN|\{arch\}|blib|.*~\.nib|.*\.(framework|app|pbproj|pbxproj|xcode(proj)?|bundle))$</string>
 			<key>sourceDirectory</key>
-			<string>ex</string>
-		</dict>
-		<dict>
-			<key>filename</key>
-			<string>index.php</string>
+			<string>007.wiki</string>
 		</dict>
 	</array>
 	<key>fileHierarchyDrawerWidth</key>
-	<integer>200</integer>
+	<integer>507</integer>
 	<key>metaData</key>
 	<dict>
-		<key>ex/index.php</key>
+		<key>000.home/pages/006.gratuit.php</key>
 		<dict>
 			<key>caret</key>
 			<dict>
@@ -107,14 +105,90 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
+		<key>000.home/robots.txt</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>003.event/COPYING.txt</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>003.event/config/connect.php</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>68</integer>
+				<key>line</key>
+				<integer>4</integer>
+			</dict>
+			<key>columnSelection</key>
+			<false/>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>86</integer>
+				<key>line</key>
+				<integer>4</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>68</integer>
+				<key>line</key>
+				<integer>4</integer>
+			</dict>
+		</dict>
+		<key>007.wiki/api.php</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>1</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
 	</dict>
 	<key>openDocuments</key>
 	<array>
-		<string>ex/index.php</string>
+		<string>007.wiki/api.php</string>
+		<string>000.home/robots.txt</string>
+		<string>000.home/pages/006.gratuit.php</string>
+		<string>003.event/COPYING.txt</string>
+		<string>003.event/config/connect.php</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{668, 84}, {656, 794}}</string>
+	<string>{{1899, 73}, {920, 874}}</string>
 </dict>
 </plist>

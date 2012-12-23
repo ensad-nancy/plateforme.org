@@ -55,8 +55,6 @@
     case "nouvelleimage":
         echo '<iframe class="ext" src="pages/004.nouvelle-image.php"></iframe>';
         break;
-        
-        
     default:
     	include('pages/000.home.php');
 	}

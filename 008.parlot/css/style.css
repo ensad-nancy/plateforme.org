@@ -1,0 +1,114 @@
+@import "baseline.reset.css";
+/**
+* www.g-u-i.net
+*/
+/** font */
+.8 {
+  font-size: 8px;
+}
+.9 {
+  font-size: 9px;
+}
+.10 {
+  font-size: 10px;
+}
+.11 {
+  font-size: 10px;
+}
+.12 {
+  font-size: 12px;
+}
+.14 {
+  font-size: 14px;
+}
+.16 {
+  font-size: 16px;
+}
+.18 {
+  font-size: 18px;
+}
+.24 {
+  font-size: 24px;
+}
+.30 {
+  font-size: 30px;
+}
+.36 {
+  font-size: 36px;
+}
+.48 {
+  font-size: 48px;
+}
+.60 {
+  font-size: 60px;
+}
+.72 {
+  font-size: 72px;
+}
+.regular {
+  font-weight: normal;
+}
+.bold {
+  font-weight: bold;
+}
+.100 {
+  font-weight: 100;
+}
+.300 {
+  font-weight: 300;
+}
+.500 {
+  font-weight: 500;
+}
+.700 {
+  font-weight: 700;
+}
+.900 {
+  font-weight: 900;
+}
+.upper {
+  text-transform: uppercase;
+}
+.italic {
+  font-style: italic;
+}
+.normal {
+  font-style: normal;
+}
+/** shortcuts */
+/** Inline blocks */
+/** HTML5 */
+body {
+  margin: 0;
+}
+body h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-right: 64px;
+}
+body #inc-projet {
+  border: 0;
+  position: absolute;
+  right: 0;
+  width: 70%;
+  height: 100%;
+}
+body #coverflow {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-left: 5%;
+  margin: 0;
+  background-color: white;
+  width: 25%;
+}
+body #coverflow #titre {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 8px;
+}
+body #coverflow li {
+  margin: 0;
+  list-style: none;
+  float: right;
+}
