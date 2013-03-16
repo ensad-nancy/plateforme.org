@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Average Sans";
+}
+body p {
+	margin: 15px 0 0 0;
+	text-align : justify;
+}
+body a {
+  color: red;
+}
+body footer {
+	margin: 15px 0 100px 0;
+}
+body a:hover {
+  color: blue;
+}
+body h1 {
+  font-size: 2.5em;
+  margin: 45px 0 15px 0;
+  text-decoration: underline;
+}
+body h2 {
+  font-size: 2.5em;
+  margin: 30px 0 15px 0;
+  text-decoration: underline;
+}
+body h3 {
+  font-size: 1.5em;
+  margin: 30px 0 10px 0;
+}
+body ul {
+  margin: 20px 0 20px 0px;
+  list-style: none;
+}
+body ul li:before {
+  content: "- ";
+}
+body img {
+  margin: 20px 0 20px 0px;
+}
+
+

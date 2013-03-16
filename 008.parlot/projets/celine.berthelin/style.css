@@ -1,0 +1,40 @@
+body
+{
+	text-align: left;  
+    background-color: #E2E3E3;
+    color: black;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+tittle {
+	font-size: 18px;
+	color: black;
+	font-family: Helvetica, Arial, sans-serif;  
+}
+
+h1 {
+	font-size: 18px;
+	color: black;
+	font-weight: black;
+	font-family: 'Quattrocento Sans', Helvetica, Arial, sans-serif, font-weight: 512;  
+}
+
+h2 {
+	font-size: 14px;
+	color: black;
+	font-family: 'Quattrocento Sans', Helvetica, Arial, sans-serif, font-weight: 512;
+}
+h3 {    text-align: justify;
+	font-size: 11px;
+	
+	color: black;
+	font-family: 'Quattrocento Sans', Helvetica, Arial, sans-serif, font-weight: 400;
+	width:512px  
+}
+
+p {     text-align: justify;
+	font-size: 11px;
+	color: black;
+	font-family: 'Quattrocento Sans', Helvetica, Arial, sans-serif, font-weight: 400;
+	width:512px  
+}

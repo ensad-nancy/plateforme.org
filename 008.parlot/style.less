@@ -1,8 +1,8 @@
-@import "baseline.reset.css";
 @import "gui";
 
 body {
     @g : 8px;
+    font-family:helvetica, arial, sans;
     
     h1 {
         .36;
@@ -21,22 +21,30 @@ body {
         position: absolute;
         left:0;
         top:0;
-        .pl(5%);
+        .p(0);
         .m(0);
         
         background-color: white;
         
-        width:25%;
+        width:30%;
+        
+
         
         #titre {
             .24;
             font-weight:bold;
-            .p(@g);
+            .p(@g*4);
+            text-transform:uppercase;
         }
         li {
+            overflow:hidden;
             .m(0);
             list-style:none;
-            float:right;
+            float:left;
+            width:25%;
+            img {
+              width:100%;
+            }
         }
     } 
 }

@@ -1,0 +1,58 @@
+p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:small; }
+
+h3 {
+	font-family:Arial, Helvetica, sans-serif; }
+
+.p1 {
+	text-align:center; }
+
+.p3 {
+	margin-left:18em;
+	margin-top:10em; }
+
+.escalator {
+	font-style: italic;
+	background:#FFFFFF; }
+
+.p2 {
+	margin-left:5em;
+	margin-top:13em; }
+
+.scans {
+	margin-top:3em;
+
+}
+.imgcentre {
+    	text-align:center;
+}
+
+.scan_choisi {
+	margin-left:5em; }
+
+.empreintes {
+	margin-left:5em; }
+
+.p4 {
+	margin-left:35em;
+	margin-top:10em; }
+
+.affichefilm {
+	margin-left:7em; }
+
+.pochette {
+	text-align:center;
+	margin-top:3em; }
+
+.film-album {
+	margin-left:24em;
+	text-align:left; }
+	
+body {
+	margin-bottom:10em; }
+	
+.pointilles {
+	margin-top:10em;
+	text-align:center;
+}

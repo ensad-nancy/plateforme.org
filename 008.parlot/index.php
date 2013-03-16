@@ -2,10 +2,12 @@
   include('function.php');
   
   $scan = glob("projets/*");
+  //shuffle($scan);
   foreach ($scan as $key => $folder) {
-    $list .= '<li>
-      <a href="?pr='.$key.'"><img width="64" src="'.$folder.'/icon.png" alt="'.cleanfoldername($folder).'"></a>
-    </li>';
+    
+    $icons = glob($folder."/icon*");
+    $list .= '<li><a href="?pr='.$key.'"><img src="'.$icons[0].'"></a></li>';
+    
   }
   $iframe = $scan[$_GET['pr']];
 ?>
@@ -18,7 +20,7 @@
 <body>
   
   <ul id="coverflow">
-    <? echo $list.$list.$list.$list.$list ?>
+    <? echo $list?>
     <li id="titre">par lots</li>
   </ul>
   <iframe id="inc-projet" src="<? echo $iframe ?>" border="none"></iframe>

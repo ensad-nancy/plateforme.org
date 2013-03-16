@@ -1,0 +1,12 @@
+body {
+    margin:15px;
+    padding:0;
+    font-family: courier, "courier", serif;
+    background:#ffffff;
+}
+
+body {color: green;}
+h1 {color:cc3651;}
+h2 {color:cc3651;}
+p.ex {color:rgb(0,0,255);}
+p {color:#929391;}

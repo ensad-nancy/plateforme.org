@@ -1,0 +1,27 @@
+/* ------------------------------------ *
+ CSS
+ dimanche 13 janvier 2013 17:28:37
+ HAPedit 3.1.11.111
+ * ------------------------------------ */
+
+
+titre1 {
+ font-family: Verdana, sans-serif;
+ font-size: 200%; 
+ color:#AEAEAE ;
+ text-align: center;
+ }
+
+ titre2 {
+ font-family: Verdana, sans-serif;
+ font-size: 100%;
+ color:#9A9A9A ;
+ text-align: center;
+ }
+
+p {
+ font-family: Verdana, sans-serif;
+ font-size: 100%;
+ style="text-align: justify;"
+ }
+

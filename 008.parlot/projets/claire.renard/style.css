@@ -1,0 +1,82 @@
+@font-face{
+	font-family: 'CaviarDreams-webfont';
+	src: url('CaviarDreams-webfont.eot') format('eot'),
+		 url('CaviarDreams-webfont.woff') format('woff'),
+		 url('CaviarDreams-webfont.ttf') format('truetype'),
+		 url('CaviarDreams-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: 'Caviar_Dreams_Bold-webfont';
+	src: url('Caviar_Dreams_Bold-webfont.eot') format('eot'),
+		 url('Caviar_Dreams_Bold-webfont.woff') format('woff'),
+		 url('Caviar_Dreams_Bold-webfont.ttf') format('truetype'),
+		 url('Caviar_Dreams_Bold-webfont.svg') format('svg');
+	}
+	
+
+.introduction
+{
+	font-family: 'Caviar_Dreams_Bold-webfont', sans-serif;
+	color: black;
+	font-size: 3em;
+	}
+
+h3, h4, h5, h6
+{
+	font-family: 'Caviar_Dreams_Bold-webfont', georgia, Arial, serif;
+	color: black;
+	}
+p
+{
+	font-family: Arial, serif;
+	text-align: justify;
+	color: black;
+}
+
+body
+{
+	margin:0;
+	padding:0;
+	background: white;
+	font-size: em;
+	
+	}
+	
+p, h2
+{
+	margin-left:200px;
+	}
+
+.class 
+{
+   top : 50px; 
+   left : 200px;
+   size : 3em;
+}
+	
+a
+{
+	color: navy;
+	}
+	
+h1 p 
+{
+    float : left;
+	}
+	
+h1
+ {  position : fixed;
+    margin-left : 50px;
+}
+
+
+
+ 
+
+	
+	
+	
+	
+	
+	
+	

@@ -1,0 +1,28 @@
+body
+{
+	text-align: left;  
+    background-color: #03F;
+    color: black;
+}
+
+h1 {
+	font-size: 16px;
+	color: #006;
+	font-family: Arial, Helvetica, sans-serif, Verdana, Geneva, sans-serif;  
+}
+
+h2 {
+	font-size: 16px;
+	color: #006;
+	font-family: Arial, Helvetica, sans-serif; 
+}
+
+p {
+	font-size: 14px; 
+	font-family: Arial, Helvetica, sans-serif , Verdana, Geneva, sans-serif
+}
+
+ul {
+	font-size: 14px; 
+	font-family: Arial, Helvetica, sans-serif , Verdana, Geneva, sans-serif
+}

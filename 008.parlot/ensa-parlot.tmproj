@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>projets/mon_projet3/index.html</string>
+	<string>style.less</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -26,7 +26,7 @@
 			<key>filename</key>
 			<string>index.php</string>
 			<key>lastUsed</key>
-			<date>2012-10-23T09:07:34Z</date>
+			<date>2013-03-12T12:00:03Z</date>
 		</dict>
 		<dict>
 			<key>expanded</key>
@@ -42,55 +42,43 @@
 			<key>filename</key>
 			<string>style.less</string>
 			<key>lastUsed</key>
-			<date>2012-10-23T09:07:02Z</date>
+			<date>2013-03-12T12:06:03Z</date>
+			<key>selected</key>
+			<true/>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>../../../g-u-i/frameworks/gui-codekit-framework/gui.less</string>
 			<key>lastUsed</key>
-			<date>2012-10-23T07:24:55Z</date>
+			<date>2013-03-12T12:06:03Z</date>
 		</dict>
 	</array>
 	<key>fileHierarchyDrawerWidth</key>
-	<integer>200</integer>
+	<integer>187</integer>
 	<key>metaData</key>
 	<dict>
-		<key>projets/autre_projet/style.css</key>
+		<key>../../../g-u-i/frameworks/gui-codekit-framework/gui.less</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>29</integer>
+				<integer>13</integer>
 				<key>line</key>
-				<integer>7</integer>
+				<integer>153</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>0</integer>
+			<integer>95</integer>
 		</dict>
-		<key>projets/mon_projet3/index.html</key>
+		<key>style.less</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>6</integer>
+				<integer>37</integer>
 				<key>line</key>
-				<integer>6</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>projets/mon_projet3/style.css</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>16</integer>
-				<key>line</key>
-				<integer>5</integer>
+				<integer>36</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -100,12 +88,12 @@
 	</dict>
 	<key>openDocuments</key>
 	<array>
-		<string>projets/mon_projet3/index.html</string>
-		<string>projets/mon_projet3/style.css</string>
+		<string>../../../g-u-i/frameworks/gui-codekit-framework/gui.less</string>
+		<string>style.less</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{1650, 276}, {622, 624}}</string>
+	<string>{{936, -153}, {960, 1024}}</string>
 </dict>
 </plist>

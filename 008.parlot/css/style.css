@@ -1,84 +1,29 @@
-@import "baseline.reset.css";
-/**
-* www.g-u-i.net
-*/
-/** font */
-.8 {
-  font-size: 8px;
+/*
+ * www.g-u-i.net
+ */
+.clear-after:after {
+  clear: both;
+  content: '';
+  display: block;
+  height: 0px;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0px;
 }
-.9 {
-  font-size: 9px;
+.clearfix {
+  *zoom: 1;
 }
-.10 {
-  font-size: 10px;
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
 }
-.11 {
-  font-size: 10px;
+.clearfix:after {
+  clear: both;
 }
-.12 {
-  font-size: 12px;
-}
-.14 {
-  font-size: 14px;
-}
-.16 {
-  font-size: 16px;
-}
-.18 {
-  font-size: 18px;
-}
-.24 {
-  font-size: 24px;
-}
-.30 {
-  font-size: 30px;
-}
-.36 {
-  font-size: 36px;
-}
-.48 {
-  font-size: 48px;
-}
-.60 {
-  font-size: 60px;
-}
-.72 {
-  font-size: 72px;
-}
-.regular {
-  font-weight: normal;
-}
-.bold {
-  font-weight: bold;
-}
-.100 {
-  font-weight: 100;
-}
-.300 {
-  font-weight: 300;
-}
-.500 {
-  font-weight: 500;
-}
-.700 {
-  font-weight: 700;
-}
-.900 {
-  font-weight: 900;
-}
-.upper {
-  text-transform: uppercase;
-}
-.italic {
-  font-style: italic;
-}
-.normal {
-  font-style: normal;
-}
-/** shortcuts */
-/** Inline blocks */
-/** HTML5 */
 body {
+  font-family: helvetica, arial, sans;
   margin: 0;
 }
 body h1 {
@@ -97,18 +42,24 @@ body #coverflow {
   position: absolute;
   left: 0;
   top: 0;
-  padding-left: 5%;
+  padding: 0;
   margin: 0;
   background-color: white;
-  width: 25%;
+  width: 30%;
 }
 body #coverflow #titre {
   font-size: 24px;
   font-weight: bold;
-  padding: 8px;
+  padding: 32px;
+  text-transform: uppercase;
 }
 body #coverflow li {
+  overflow: hidden;
   margin: 0;
   list-style: none;
-  float: right;
+  float: left;
+  width: 25%;
+}
+body #coverflow li img {
+  width: 100%;
 }
