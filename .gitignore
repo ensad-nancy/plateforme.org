@@ -10,3 +10,11 @@
 *.psd
 *.ps
 *.indd
+
+/002.capture/imap.php
+*connect.php
+/007.wiki/LocalSettings.php
+_log
+config
+
+connect.php
