@@ -18,3 +18,5 @@ _log
 config
 
 connect.php
+
+/003.event/config/connect.php
